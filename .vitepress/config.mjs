@@ -36,8 +36,6 @@ export default defineConfig({
         items: [
           { text: 'Home', link: '/' },
           { text: 'Merit API', link: '/aktiva-merit-api' },
-          { text: 'Reference Manual', link: '/reference-manual' },
-          //{ text: 'FAQ', link: '/faq.md' }
         ]
       }
     ],
