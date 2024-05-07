@@ -27,6 +27,9 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
+    search: {
+      provider: 'local'
+    },
     nav: [
       {
         text: 'Passeli Merit',
