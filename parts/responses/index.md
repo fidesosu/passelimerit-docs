@@ -1,6 +1,3 @@
----
-lastUpdated: true
----
 # Responses
 ## Successful responses
 Successful response is represented as JSON with response code 200. In many cases, when needed and possible, response will also include details of fulfilled requests (like added document id, transaction id or customer id).
