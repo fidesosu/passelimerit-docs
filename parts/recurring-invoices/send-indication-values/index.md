@@ -33,7 +33,7 @@
 |Address|string||
 |CustomerId|guid||
 |EndValue|decimal||
-|Quantity|decimal|If used then, EndValue is ignored|
+|Quantity|decimal|If used, EndValue is ignored|
 
 
 ## Successful Result
