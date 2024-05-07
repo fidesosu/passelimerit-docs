@@ -13,7 +13,8 @@ Query Payload
 }
 ```
 [Successful result v2](#resV2)
-## Successful result v1
+
+## V1 <br> Successful result
 
 The result, if not empty:
 
@@ -104,7 +105,7 @@ The result, if not empty:
 |AllocPct|Allocation percentage|
 |AllocAmount|Allocation amount|
 ---
-## Successful result v2 {#resV2}
+## V2 <br> Successful result {#resV2}
 
 |Field|Type|Comment|
 |-----|----|-------|
