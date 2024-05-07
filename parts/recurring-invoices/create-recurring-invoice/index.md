@@ -20,7 +20,7 @@
 |HComment|Str 4K||
 |FComment|Str 4K||
 |NextDate|Date||
-|Cycle|int|1-month, 2-quarter of a year , 3- year, 4-week|
+|Cycle|int|1-month, 2-quarter of a year , 3-year, 4-week|
 |Period|int|2-current period, 3-next period, 4-for the next period, 5-for previous period, 6-current period, less number of cycles|
 |PaymentDay|int||
 |PaymentMonth|int||
