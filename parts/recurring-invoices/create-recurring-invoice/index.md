@@ -5,10 +5,24 @@
 <!--@include: @/dist/md/api_url.md-->v2/sendperinvoice`
 
 ## Query Payload
-
+:::info Minumum Payload
+```json
+{ 
+  Customer: [
+    {
+      Id: "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
+      Name: "FirstCustomer Inc",
+      NotTDCustomer: true,
+      CountryCode: "FI"
+    }
+    
+  ]
+}
+```
+:::
 |Field|Type|Comment|
 |-----|----|-------|
-|Customer|CustomerObject||
+|Customer|[CustomerObject](#customerObject)||
 |Code|Str||
 |DepartmentCode|Str 20||
 |InvoiceNo|Str 35||
@@ -37,7 +51,7 @@
 |Payer|PayerObject||
 
 
-## CustomerObject
+## CustomerObject {#customerObject}
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -77,7 +91,7 @@
 
 |Field|Type|Comment|
 |-----|----|-------|
-|Item|ItemObject|Sometimes the volume of transactions in the sales software is very high and there is no need to duplicate all the data in accounting. In those cases, you could consider using the same item code for the items with the same VAT rate.<br><br>Items with different VAT rates must have a different item codes.<br><br>Also, for the VAT declarations to work, goods and services may not be summed up and must have different item codes.|
+|Item|[ItemObject](#itemObject)|Sometimes the volume of transactions in the sales software is very high and there is no need to duplicate all the data in accounting. In those cases, you could consider using the same item code for the items with the same VAT rate.<br><br>Items with different VAT rates must have a different item codes.<br><br>Also, for the VAT declarations to work, goods and services may not be summed up and must have different item codes.|
 |Quantity|Decimal 18.3||
 |Price|Decimal 18.7||
 |DiscountPct|Decimal 18.2||
@@ -95,7 +109,7 @@
 |CostAccCode|String 10||
 
 
-## ItemObject
+## ItemObject {#itemObject}
 
 |Field|Type|Comment|
 |-----|----|-------|
