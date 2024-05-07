@@ -8,11 +8,14 @@
 
 ```json
 { 
-  ArtCode: "", 
+  ArtCode: "EU-maat tav", 
   Values: [ 
-    { EndValue: 100.00, Address: "Sipelga 14-3\nLohkva" } 
+    { 
+      EndValue: 100.00, 
+      CustomerId: "7da4cd44-9b49-4a35-8d1b-f339a68e7058" 
+    } 
   ]
-}  
+}
 ```
 
 ### Payload
@@ -35,5 +38,8 @@
 
 ## Successful Result
 
-Näidud kanti üle x lepingu x reale ja kogused ning summad arvutati uuesti.
+`"The readings were moved to line 1 of 1 contract and the quantities and sums were recalculated."`
 
+:::info Additional Information
+You can find the CustomerId using [`v1/getcustomers`](../../customers/get-customer-list/)
+:::
