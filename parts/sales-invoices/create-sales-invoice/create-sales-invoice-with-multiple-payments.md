@@ -5,19 +5,20 @@
 
 ## Query Payload
 
-Example payload:
+:::info Example:
 
 ```json
 {
   "InvoiceNo": "123",
   "TaxAmount": [
     { 
-      "TaxId": "665f01a4-357a-4a6b-a565-2f17e6e1da13", 
+      "TaxId": "973a4395-665f-47a6-a5b6-5384dd24f8d0", 
       "Amount": 400.00 
     }
-  ],
+  ]
 }
 ```
+:::
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -36,8 +37,8 @@ Example payload:
 |TotalAmount|Decimal 18.2|Amount without VAT|
 |Payments|Array of Payment objects||
 |RefNo|String 36|Please validate this number yourself.|
-|Hcomment|String 4K|If not specified, API will get it from client record, if it is written there.|
-|Fcomment|String 4K|If not specified, API will get it from client record, if it is written there.|
+|Hcomment|String 4K|If not specified, API will get it from the client record, if it's written there.|
+|Fcomment|String 4K|If not specified, API will get it from the client record, if it's written there.|
 
 ## CustomerObject
 
@@ -69,7 +70,7 @@ Example payload:
 |PhoneNo2|Str 50||
 |HomePage|Str 80||
 |Email|Str 80||
-|SalesInvLang|Str 8|Invoice language for this specific customer.(ET,EN,RU,FI,PL,SV)|
+|SalesInvLang|Str 8|Invoice language for this specific customer.(`ET`, `EN`, `RU`, `FI`, `PL`, `SV`)|
 |Contact|Str 35||
 |GLNCode|Str 10||
 |PartyCode|Str 20||
