@@ -8,15 +8,18 @@
 :::info Minumum Payload
 ```json
 { 
-  Customer: [
-    {
-      Id: "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
-      Name: "FirstCustomer Inc",
-      NotTDCustomer: true,
-      CountryCode: "FI"
-    }
-    
-  ]
+  Customer: {
+    Id: "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
+    Name: "FirstCustomer Inc",
+    NotTDCustomer: true,
+    CountryCode: "FI"
+    },
+  Item: {
+    Code: "",
+    Description: "test",
+    Type: 3
+  },
+  TaxId: "973a4395-665f-47a6-a5b6-5384dd24f8d0"
 }
 ```
 :::
