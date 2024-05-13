@@ -2,11 +2,12 @@
 ---
   - [Create Sales Invoice v1](#endpointsv1)
   - [Create Sales Invoice v2](#endpointsv2)
+---
+# Endpoints v1 {#endpointsv1}
+<!--@include: @/dist/md/api_url.md-->v1/sendinvoice`
 ::: info NOTE:
 V2 should be used when willow dimensions ase used.
 :::
-# Endpoints v1 {#endpointsv1}
-<!--@include: @/dist/md/api_url.md-->v1/sendinvoice`
 
 ## Query Payload
 
@@ -14,29 +15,29 @@ V2 should be used when willow dimensions ase used.
 
 [Example payload 2: PHP example with sending](./example-create-sales-invoice-in-php.md)
 
-| Field            | Type                  | Comment                                                              |
-|------------------|----------------------------------|----------------------------------------------------------------------|
-| Customer         | [CustomerObject](#customerObject)|                                                                      |
-| AccountingDoc    | Int 1                 | Values: 1 faktura, 2 rachunek, 3 paragon, 4 nodoc, 5 credit, 6 prepinvoice, 7 fincchrg, 8 delivorder, 9 grpinv |
-| ProcCodes        | Array of Strings      | Poland only. Values: SW, EE, TP, TT_WNT, TT_D, MR_T, MR_UZ, I_42, I_63, B_SPV, B_SPV_DOSTAWA, B_MRV_PROWIZJA, MPP |
-| PolDocType       | Int                   | Poland only. Values: 1-RO, 2 - WEW, 3 - FP, 4 - OJPK                  |
-| DocDate          | Date                  |                                                                      |
-| DueDate          | Date                  |                                                                      |
-| TransactionDate  | Date                  |                                                                      |
-| InvoiceNo        | Str 35                | Required                                                             |
-| RefNo            | Str 36                | If not specified, generated automatically. Please validate this number yourself. |
-| CurrencyCode     | Str 4                 |                                                                      |
-| DepartmentCode   | Str 20                | If used then must be found in the company database.                 |
-| ProjectCode      | Str 20                | If used then must be found in the company database.                 |
-| InvoiceRow       | Array of InvoiceRow objects |                                                              |
-| TaxAmount        | Array of VAT objects  | Required                                                             |
-| RoundingAmount   | Decimal 18.2          | Use it for getting PDF invoice to round number. Does not affect TotalAmount. |
-| TotalAmount      | Decimal 18.2          | Amount without VAT                                                   |
-| Payment          | Payment object        |                                                                      |
-| Hcomment         | String 4K             | If not specified, API will get it from client record, if it is written there. |
-| Fcomment         | String 4K             | If not specified, API will get it from client record, if it is written there. |
-| ContractNo       | String 35             | Contract number with operator                                        |
-| PDF              | String 4K             | Pdf file in Base64 format                                            |
+|Field|Type|Comment|Required|
+|-----|----|-------|--------|
+|Customer|[CustomerObject](#customerObject)||
+|AccountingDoc|Int 1|Values: 1 faktura, 2 rachunek, 3 paragon, 4 nodoc, 5 credit, 6 prepinvoice, 7 fincchrg, 8 delivorder, 9 grpinv||
+|ProcCodes|Array of Strings|Poland only. Values: SW, EE, TP, TT_WNT, TT_D, MR_T, MR_UZ, I_42, I_63, B_SPV, B_SPV_DOSTAWA, B_MRV_PROWIZJA, MPP||
+|PolDocType|Int|Poland only. Values: 1-RO, 2 - WEW, 3 - FP, 4 - OJPK||
+|DocDate|Date|||
+|DueDate|Date|||
+|TransactionDate|Date|||
+|InvoiceNo|Str 35||Required|
+|RefNo|Str 36|If not specified, generated automatically. Please validate this number yourself.||
+|CurrencyCode|Str 4|||
+|DepartmentCode|Str 20|If used then must be found in the company database.||
+|ProjectCode|Str 20|If used then must be found in the company database.||
+|InvoiceRow|Array of InvoiceRow objects|||
+|TaxAmount|Array of VAT objects||Required|
+|RoundingAmount|Decimal 18.2|Use it for getting PDF invoice to round number. Does not affect TotalAmount.||
+|TotalAmount|Decimal 18.2|Amount without VAT||
+|Payment|Payment object|||
+|Hcomment|String 4K|If not specified, API will get it from client record, if it is written there.||
+|Fcomment|String 4K|If not specified, API will get it from client record, if it is written there.||
+|ContractNo|String 35|Contract number with operator||
+|PDF|String 4K|Pdf file in Base64 format||
 
 ## CustomerObject {#customerObject}
 
@@ -300,9 +301,14 @@ API always counts it as well to assure you have correct calculation.
 |ShowBalance|Bool||
 
 ## Successful Result
-
-- CustomerId
-- InvoiceId
-- InvoiceNo
-- RefNo
-- NewCustomer
+:::info Example Result
+```json
+{
+  "CustomerId": "88d0362a-5e55-4184-b9ff-ace2a4f93da4",
+  "InvoiceId": "70004f26-1e46-42bb-8ee4-a1c4e5938c32",
+  "InvoiceNo": "BL942019-PGG",
+  "RefNo": "9420199",
+  "NewCustomer": null
+}
+```
+:::
