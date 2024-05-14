@@ -12,6 +12,9 @@ export default defineConfig({
   title: "Passeli Merit API",
   description: "Documentation for Passeli Merit API",
   lastUpdated: true,
+  head: [
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/dist/images/favicon.png" }],
+  ],
   themeConfig: {
     logo: '/dist/images/favicon.png',
     // outline: false, // disables the 'on this page' text.
