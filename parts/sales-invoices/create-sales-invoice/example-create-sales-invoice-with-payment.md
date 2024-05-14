@@ -45,6 +45,6 @@
 ```
 ---
 :::info Additional Information
-- Set the `PaymentMethod` value within the JSON object to the banking details associated with your company's account.
-- The `PaidAmount` can't be more than the `TotalAmount`. 
+- Change the `PaymentMethod` value to the bank associated with your company's account.
+- The `PaidAmount` **can't** be more than the `TotalAmount`. 
 :::
