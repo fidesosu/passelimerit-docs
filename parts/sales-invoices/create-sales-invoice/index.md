@@ -47,33 +47,33 @@ V2 should be used when willow dimensions ase used.
   2. existing customer by name – if this name exists in our system, Merit will take info from client record instead of reading it from the payload.
   3. customer by ID – every time you add new customer, the CustomerId is returned, you can use this ID instead of name, the object = { CustomerId: <guid-of-the-customer }.
 
-  | Parameter         | Type      | Comment                                                                                      |
-|-------------------|-----------|----------------------------------------------------------------------------------------------|
-| Id                | Guid      | If filled and customer is found in the database then following fields are not important. If not found, the customer is added using the following fields. |
-| Name              | Str 150   | Required when customer is added                                                              |
-| RegNo             | Str 30    |                                                                                              |
-| NotTDCustomer     | Bool      | Required when customer is added. EE True for physical persons and foreign companies. PL True for physical persons. Allowed “true” or “false” (lowercase). |
-| VatRegNo          | Str 30    |                                                                                              |
-| CurrencyCode      | Str 30    |                                                                                              |
-| PaymentDeadLine   | Int       | If missing then taken from default settings.                                                 |
-| OverDueCharge     | Decimal 5.2 | If missing then taken from default settings.                                               |
-| Address           | Str 100   |                                                                                              |
-| City              | Str 30    |                                                                                              |
-| County            | Str 100   |                                                                                              |
-| PostalCode        | Str 15    |                                                                                              |
-| CountryCode       | Str 2     | Required when adding                                                                         |
-| PhoneNo           | Str 50    |                                                                                              |
-| PhoneNo2          | Str 50    |                                                                                              |
-| HomePage          | Str 80    |                                                                                              |
-| Email             | Str 80    |                                                                                              |
-| SalesInvLang      | Str 8     | Invoice language for this specific customer.(ET, EN, RU,FI,PL,SV)                            |
-| RefNoBase         | Str 36    |                                                                                              |
-| EInvPaymId        | Str 20    |                                                                                              |
-| EInvOperator      | Int       | 1 - Not exist, 2 - E-invoices to the bank through Omniva, 3 - Bank ( full extent E-invoice), 4- Bank (limited extent E-invoice) |
-| BankAccount       | Str 50    |                                                                                              |
-| Contact           | Str 35    |                                                                                              |
-| ApixEinv          | Str 20    |                                                                                              |
-| GroupInv          | Bool      |                                                                                              |
+  | Parameter         | Type      | Comment                                                                                      |Required|
+|-------------------|-----------|----------------------------------------------------------------------------------------------||
+| Id                | Guid      | If filled and customer is found in the database then following fields are not important. If not found, the customer is added using the following fields. ||
+| Name              | Str 150   | Required when customer is added                                                              ||
+| RegNo             | Str 30    |                                                                                              ||
+| NotTDCustomer     | Bool      | Required when customer is added. EE True for physical persons and foreign companies. PL True for physical persons. Allowed “true” or “false” (lowercase). ||
+| VatRegNo          | Str 30    |                                                                                              ||
+| CurrencyCode      | Str 30    |                                                                                              ||
+| PaymentDeadLine   | Int       | If missing then taken from default settings.                                                 ||
+| OverDueCharge     | Decimal 5.2 | If missing then taken from default settings.                                               ||
+| Address           | Str 100   |                                                                                              ||
+| City              | Str 30    |                                                                                              ||
+| County            | Str 100   |                                                                                              ||
+| PostalCode        | Str 15    |                                                                                              ||
+| CountryCode       | Str 2     | Required when adding                                                                         |Required?|
+| PhoneNo           | Str 50    |                                                                                              ||
+| PhoneNo2          | Str 50    |                                                                                              ||
+| HomePage          | Str 80    |                                                                                              ||
+| Email             | Str 80    |                                                                                              ||
+| SalesInvLang      | Str 8     | Invoice language for this specific customer.(ET, EN, RU,FI,PL,SV)                            ||
+| RefNoBase         | Str 36    |                                                                                              ||
+| EInvPaymId        | Str 20    |                                                                                              ||
+| EInvOperator      | Int       | 1 - Not exist, 2 - E-invoices to the bank through Omniva, 3 - Bank ( full extent E-invoice), 4- Bank (limited extent E-invoice) ||
+| BankAccount       | Str 50    |                                                                                              ||
+| Contact           | Str 35    |                                                                                              ||
+| ApixEinv          | Str 20    |                                                                                              ||
+| GroupInv          | Bool      |                                                                                              ||
 
 ## InvoiceRowObject
 
@@ -304,10 +304,10 @@ API always counts it as well to assure you have correct calculation.
 :::info Example Result
 ```json
 {
-  "CustomerId": "88d0362a-5e55-4184-b9ff-ace2a4f93da4",
-  "InvoiceId": "70004f26-1e46-42bb-8ee4-a1c4e5938c32",
+  "CustomerId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+  "InvoiceId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
   "InvoiceNo": "BL942019-PGG",
-  "RefNo": "9420199",
+  "RefNo": "xxxxxxx",
   "NewCustomer": null
 }
 ```
