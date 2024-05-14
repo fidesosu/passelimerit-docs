@@ -2,6 +2,10 @@ export const sidebarData = [
   {
     items: [
       {
+        text: 'Introduction',
+        link: '/parts/introduction/',
+      },
+      {
         text: 'Endpoints',
         link: '/parts/endpoints/',
       },
