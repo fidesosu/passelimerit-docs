@@ -22,4 +22,14 @@ The result for this request can be:
 |InvoiceNo|Str|Recurring invoice contract number|
 |Address|Str||
 
-
+:::info Example Result
+```json
+[
+  {
+    "Id": "2fb7301e-8c3c-4782-9419-96631d0e37eb",
+    "InvoiceNo": null,
+    "Address": "Merimiehenkatu 31\nHelsinki"
+  }
+]
+```
+:::
