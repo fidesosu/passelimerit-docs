@@ -51,6 +51,11 @@
       "Amount": 400.00
     }
   ],
+  "Payment": {
+    "PaymentMethod": "Nordea",
+    "PaidAmount": "100",
+    "PaymDate": "20190413202154"
+  },
   "HComment": "",
   "FComment": ""
 }
