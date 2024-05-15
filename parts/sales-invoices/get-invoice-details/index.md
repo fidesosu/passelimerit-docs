@@ -38,15 +38,17 @@ The result, if not empty:
   "Lines": [
     // ...
   ],
-  "Payments": [],
+  "Payments": [
+    // ...
+  ],
   "Attachment": null
 }
 ```
 :::
 
 :::details Click to see the object details
-|FieldName|Type|Comment|
-|---|---|---|
+|Field Name|Type|Comment|
+|----------|----|-------|
 |Header|SalesHeader object||
 |Lines|Array of Line objects||
 |Payments|Array of Payment objects||
@@ -244,6 +246,7 @@ The result, if not empty:
       "AllocAmount": 375.00
     }
   ]
+}
 ```
 :::
 
@@ -471,6 +474,7 @@ The result, if not empty:
 :::info Output
 ```json
 {
+  // ...
   "Lines": [
     {
       "DimAllocation": [  // [!code focus:7]
@@ -481,7 +485,8 @@ The result, if not empty:
         }
       ]
     }
-  ]
+  ],
+  //...
 }
 ```
 :::
@@ -508,10 +513,11 @@ The result, if not empty:
       "PaymentMethod": "Pangalink",
       "PaymentId": "00000000-0000-0000-0000-000000000000"
     }
-  ]
+  ],
   // ...
 }
 ```
+:::
 
 :::details Click to see the object details
 |Field|Type|Comment|
@@ -527,12 +533,14 @@ The result, if not empty:
 :::info Output
 ```json
 {
+  // ...
   "Attachment": {
     "Filename": "test.pdf",
-    "FileContent": "", // PDF in base64
+    "FileContent": "",
   }
 }
 ```
+:::
 
 :::details Click to see the object details
 |Field|Type|Comment|
