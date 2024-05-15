@@ -8,9 +8,9 @@ This endpoint creates document and general ledger records without any confirmati
 
 ## Query Payload
 
-Example payload1:  [Example create](./create-purchase-invoice/)
+Example payload 1:  [Example create](./example-create-purchase-invoice/)
 
-Example payload2:   [Example with proportional vat](./example-create-purchase-invoice-with-proportional-vat/)
+Example payload 2:   [Example with proportional vat](./example-create-purchase-invoice-with-proportional-vat/)
 
 ### PurchaseInvoice
 
@@ -238,7 +238,7 @@ Example payload2:   [Example with proportional vat](./example-create-purchase-in
 |Id|Guid|If filled and receiver (vendor) is found in the database then following fields are not important. If not found, the receiver is added using the following fields.|
 |Name|Str 150|Required when receiver is added|
 |RegNo|Str 30||
-|VatAccountable|Bool|Required when receiver is added. Allowed “true” or “false” (lowercase).|
+|VatAccountable|Bool|Required when receiver is added. Allowed "true" or "false" (lowercase).|
 |VatRegNo|Str 30||
 |CurrencyCode|Str 4||
 |PaymentDeadLine|Int|If missing then taken from default settings.|
