@@ -24,10 +24,10 @@
 ```
 :::
 
-:::details Click to see details
-|Field Name|Type|Comment|Required|
-|----------|----|-------|--------|
-|Code|Str 20||Required|
-|Name|Str 64||Required|
-|EndDate|date||Required|
+:::details Click to see output parameters
+|Field Name|Type|Comment|
+|----------|----|-------|
+|Code|Str 20||
+|Name|Str 64||
+|EndDate|date||
 :::
