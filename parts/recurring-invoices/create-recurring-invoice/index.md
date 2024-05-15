@@ -61,7 +61,7 @@
 |Id|Guid|If filled and customer is found in the database then following fields are not important. If not found, the customer is added using the following fields.|
 |Name|Str 150|Required when customer is added|
 |RegNo|Str 30||
-|NotTDCustomer|Bool|Required when customer is added. EE True for physical persons and foreign companies.  PL True for physical persons. Allowed “true” or “false” (lowercase).|
+|NotTDCustomer|Bool|Required when customer is added. EE True for physical persons and foreign companies.  PL True for physical persons. Allowed "true" or "false" (lowercase).|
 |VatRegNo|Str 30||
 |CurrencyCode|Str 30||
 |PaymentDeadLine|Int|If missing then taken from default settings.|
@@ -147,7 +147,7 @@
 |Id|Guid|If filled and payer (customer) is found in the database then following fields are not important. If not found, the payer is added using the following fields.|
 |Name|Str 150|Required when payer is added|
 |RegNo|Str 30||
-|NotTDCustomer|Bool|Required when payer is added. True for physical persons and foreign companies. Allowed “true” or “false” (lowercase).|
+|NotTDCustomer|Bool|Required when payer is added. True for physical persons and foreign companies. Allowed "true" or "false" (lowercase).|
 |VatRegNo|Str 30||
 |CurrencyCode|Str 30||
 |PaymentDeadLine|Int|If missing then taken from default settings.|

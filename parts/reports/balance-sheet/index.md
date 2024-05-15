@@ -9,7 +9,7 @@
 
 ```json
 {
-  EndDate: “yyyymmdd”,
+  EndDate: "yyyymmdd",
   PerCount: nn
 }
 ```

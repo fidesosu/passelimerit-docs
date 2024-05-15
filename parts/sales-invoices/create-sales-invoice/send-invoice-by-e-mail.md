@@ -7,7 +7,7 @@
 |Field|Type|Comment|
 |-|-|-|
 |Id|Guid|Sales invoice SIHId (one invoice per query)|
-|DelivNote|Bool|If true then, the sended invoice without prices. Allowed “true” or “false” (lowercase).|
+|DelivNote|Bool|If true then, the sended invoice without prices. Allowed "true" or "false" (lowercase).|
 
 ## Successful result
 

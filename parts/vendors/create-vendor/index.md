@@ -50,20 +50,20 @@
 
 ```json
 {
-  “Name”:”Mart Mustikas”,
-  “RegNo”:”1232233234″,
-  “VatAccountable”:true,
-  “VatRegNo”:”12342234″,
-  “CurrencyCode”:”EUR”,
-  “PaymentDeadLine”:7,
-  “OverDueCharge”:0,
-  “Address”:”Kalda tee 10″,
-  “City”:”Morna Linn”,
-  “County”:”Pärnu maa”,
-  “PostalCode”:”80034″,
-  “CountryCode”:”EE”,
-  “PhoneNo”:”55555555″,
-  “Email”:”mart.mustikas@example.com”,
-  “VendorType”:1
+  "Name":"Mart Mustikas",
+  "RegNo":"1232233234",
+  "VatAccountable":true,
+  "VatRegNo":"12342234",
+  "CurrencyCode":"EUR",
+  "PaymentDeadLine":7,
+  "OverDueCharge":0,
+  "Address":"Kalda tee 10",
+  "City":"Morna Linn",
+  "County":"Pärnu maa",
+  "PostalCode":"80034",
+  "CountryCode":"EE",
+  "PhoneNo":"55555555",
+  "Email":"mart.mustikas@example.com",
+  "VendorType":1
 }
 ```

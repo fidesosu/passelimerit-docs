@@ -40,7 +40,7 @@ console.log(signature);
 var url = 'https://app.passelimerit.fi/api/v1/sendinvoice' + '?ApiId=' + ApiId + '&timestamp=' + timestamp + '&signature=' + signature;
 ```
 
-You can check if your signing is correct from API settings. “SigningStatus” column can have value “OK” or “Insecure: ” with UTC date when last incorrectly signed API request occured.
+You can check if your signing is correct from API settings. "SigningStatus" column can have value "OK" or "Insecure: " with UTC date when last incorrectly signed API request occured.
 
 > [!IMPORTANT]
 > HMAC-SHA-256 should be encoded to Base64 from raw data. [Here you can see example, what’s the difference.](https://stackoverflow.com/a/32188410) <!--https://stackoverflow.com/questions/32188149/difference-between-cryptojs-enc-base64-stringify-and-normal-base64-encryption-->

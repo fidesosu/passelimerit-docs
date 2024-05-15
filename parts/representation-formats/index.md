@@ -6,7 +6,7 @@ All Passeli Merit API requests are composed of JSON and delivered as an HTTP req
   - Date and time values are of the form yyyyMMddHHmmss.
   - Preferred time zone in the API requests timestamp is UTC.
   - Dot (.) is used as a decimal separator.
-  - Booleans are either “true” or “false”, lowercase (not 1 or 0).
+  - Booleans are either "true" or "false", lowercase (not 1 or 0).
   - Empty values, represented as null should be lowercase.
   - Fields denoting percentages are passed as whole values, not decimals (e.g. 5 for five percent).
 

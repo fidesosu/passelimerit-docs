@@ -8,8 +8,8 @@
 
 ```json
 {      
-  PeriodStart: “YYYYmmdd”,       
-  PeriodEnd: “YYYYmmdd”,       
+  PeriodStart: "YYYYmmdd",       
+  PeriodEnd: "YYYYmmdd",       
   UnPaid: false
 }
 

@@ -11,7 +11,7 @@
 |Id|Guid||
 |Name|Str 150|Required when customer is added. The customer name must be unique.|
 |RegNo|Str 30||
-|NotTDCustomer|Bool|Required when customer is added. EE True for physical persons and foreign companies.  PL True for physical persons. Allowed “true” or “false” (lowercase).|
+|NotTDCustomer|Bool|Required when customer is added. EE True for physical persons and foreign companies.  PL True for physical persons. Allowed "true" or "false" (lowercase).|
 |VatRegNo|Str 30||
 |CurrencyCode|Str 30||
 |PaymentDeadLine|Int|If missing then taken from default settings.|
@@ -59,26 +59,26 @@
 ## Example payload
 ```json
 {
-  “Name”:”Mart Mustikas”,
-  “RegNo”:”1232233234″,
-  “NotTDCustomer”:false,
-  “CurrencyCode”:”EUR”,
-  “PaymentDeadLine”:7,
-  “OverDueCharge”:0,
-  “Address”:”Kalda tee 10″,
-  “City”:”Morna Linn”,
-  “County”:”Pärnu maa”,
-  “PostalCode”:”80034″,
-  “CountryCode”:”EE”,
-  “PhoneNo”:”55555555″,
-  “Email”:”mart.mustikas@example.com”,
-  “SalesInvLang”:”ET”,
-  “EInvOperator”:1,
-  “Dimensions”:[
+  "Name":"Mart Mustikas",
+  "RegNo":"1232233234",
+  "NotTDCustomer":false,
+  "CurrencyCode":"EUR",
+  "PaymentDeadLine":7,
+  "OverDueCharge":0,
+  "Address":"Kalda tee 10",
+  "City":"Morna Linn",
+  "County":"Pärnu maa",
+  "PostalCode":"80034",
+  "CountryCode":"EE",
+  "PhoneNo":"55555555",
+  "Email":"mart.mustikas@example.com",
+  "SalesInvLang":"ET",
+  "EInvOperator":1,
+  "Dimensions":[
     {           
-      “DimId”:12,           
-      “DimValueId”:”4c8b2ec0-af0f-46fb-8d2b-427165c1effc”,           
-      “DimCode”:”Miski”
+      "DimId":12,           
+      "DimValueId":"4c8b2ec0-af0f-46fb-8d2b-427165c1effc",           
+      "DimCode":"Miski"
     }
   ]
 }

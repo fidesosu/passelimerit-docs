@@ -8,12 +8,12 @@
 
 ```json
 {   
-  “PeriodStart”: “YYYYmmDD”,   
-  “PeriodEnd”: “YYYYmmDD”
+  "PeriodStart": "YYYYmmDD",   
+  "PeriodEnd": "YYYYmmDD"
 }
 ```
 
-Period = “date for the next invoice”.  The range can be up to 180 days.
+Period = "date for the next invoice".  The range can be up to 180 days.
 
 ## Successful result
 

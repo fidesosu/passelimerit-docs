@@ -7,10 +7,10 @@
 ## Query payload
 ```json
 { 
-  “CustName”: “Kliendinimi”,
-  “CustId”: “3a274294-9c60-4a3d-93f0-1874253f073e”,
-  “OverDueDays”: 5,
-  “DebtDate”:”20220501″ 
+  "CustName": "Kliendinimi",
+  "CustId": "3a274294-9c60-4a3d-93f0-1874253f073e",
+  "OverDueDays": 5,
+  "DebtDate":"20220501" 
 }
 ```
 

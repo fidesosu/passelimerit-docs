@@ -9,9 +9,9 @@
 
 ```json
 {
-  EndDate: “yyyymmdd”,
+  EndDate: "yyyymmdd",
   PerCount: n,
-  DepFilter: “”
+  DepFilter: ""
 }
 ```
 

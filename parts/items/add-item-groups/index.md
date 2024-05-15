@@ -7,7 +7,7 @@
 ## Query Payload
 ```json
 {     
-  “ItemGroups”:[ ]
+  "ItemGroups":[ ]
 }
 ```
 Array
