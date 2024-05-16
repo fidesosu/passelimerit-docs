@@ -36,9 +36,9 @@ Example send sales invoice:
 Status code:  200  —  OK
 Headers:  application/json; charset=utf-8
 Body:  {
-  CustomerId: "4feba750-4184-42f1-a278-1ed738b6cddd',
-  InvoiceId: "432aedaa-0998-46e0-9ecc-266134d11705',
-  InvoiceNo: "KALA00009',
+  CustomerId: "4feba750-4184-42f1-a278-1ed738b6cddd",
+  InvoiceId: "432aedaa-0998-46e0-9ecc-266134d11705",
+  InvoiceNo: "KALA00009",
   RefNo: null,
   NewCustomer: null
 }
