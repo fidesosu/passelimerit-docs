@@ -14,10 +14,10 @@ Response to the successful request is usually something like this
 ## Unsuccessful responses
 |response.statusCode|response.statusMessage|response.body|Description|
 |-------------------|----------------------|-------------|-----------|
-|400|Bad Request||API Id is wrong – make sure you haven’t copied spaces.|
+|400|Bad Request||API Id is wrong – make sure you haven't copied spaces.|
 |400|Bad Request||Description of an error|
-|401|Unauthorized|api-wrongsignature|This could be because of the body, because it is a part of the signature.|
-|401|Unauthorized|api-wronglicense|This company’s creator did not have PRO or PREMIUM license|
+|401|Unauthorized|api-wrongsignature|This could be because of the body, it cannot contain slashes (`/`)|
+|401|Unauthorized|api-wronglicense|This company's creator did not have PRO or PREMIUM license|
 |500|Internal Server Error|Stacktrace|Should not happen. An alert is generated and sent to our development team.|
 :::info From february 8, the new output format for the API:
 
@@ -36,9 +36,9 @@ Example send sales invoice:
 Status code:  200  —  OK
 Headers:  application/json; charset=utf-8
 Body:  {
-  CustomerId: ‘4feba750-4184-42f1-a278-1ed738b6cddd’,
-  InvoiceId: ‘432aedaa-0998-46e0-9ecc-266134d11705’,
-  InvoiceNo: ‘KALA00009’,
+  CustomerId: "4feba750-4184-42f1-a278-1ed738b6cddd',
+  InvoiceId: "432aedaa-0998-46e0-9ecc-266134d11705',
+  InvoiceNo: "KALA00009',
   RefNo: null,
   NewCustomer: null
 }

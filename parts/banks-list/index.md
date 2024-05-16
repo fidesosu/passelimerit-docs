@@ -19,3 +19,17 @@
 |Description|Str 20|
 |BankId|Guid|
 |CurrencyCode|Str|
+
+:::info
+```json
+[
+  {
+    "BankId": "93f8d710-d0d2-4e9c-8c66-XXXXXXXXXXXX",
+    "Name": "test",
+    "IBANCode": "FI32 3623 6540 XXXX XX",
+    "Description": "test",
+    "CurrencyCode": "EUR"
+  }
+]
+```
+:::

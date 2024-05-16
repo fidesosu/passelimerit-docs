@@ -72,7 +72,7 @@ Example payload: example send offer
 
 ## OfferRowObject
 
-Every offer has its rows. Row has its quantity and price, it also has its general ledger record and that’s why it has its own tax calculation.
+Every offer has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation.
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -198,7 +198,7 @@ API always counts it as well to assure you have correct calculation.
 
 ## Offer Row Object
 
-Every offer has its rows. Row has its quantity and price, it also has its general ledger record and that’s why it has its own tax calculation.
+Every offer has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation.
 
 |Field|Type|Comment|
 |-----|----|-------|

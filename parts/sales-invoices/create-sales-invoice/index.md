@@ -105,7 +105,7 @@ V2 should be used when willow dimensions ase used.
 
 ## InvoiceRowObject {#invoicerowobject}
 
-Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that’s why it has its own tax calculation. 
+Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation. 
 
 :::info JSON Snippet - [Full Example](./example-create-sales-invoice.md)
 ```json
@@ -332,7 +332,7 @@ API always counts it as well to assure you have correct calculation.
 
 ## InvoiceRowObject
 
-Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that’s why it has its own tax calculation. 
+Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation. 
 
 :::info JSON Snippet - [Full Example](./example-create-sales-invoice.md)
 ```json

@@ -85,7 +85,7 @@
 
 ## InvoiceRowObject
 
-Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that’s why it has its own tax calculation. 
+Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation. 
 
 |Field|Type|Comment|
 |-----|----|-------|

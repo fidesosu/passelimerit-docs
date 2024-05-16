@@ -5,7 +5,7 @@
 
 ## Query Payload
 
-`"<xml version=’1.0′ encoding=’utf-8’> …. </xml>"`
+`"<xml version='1.0' encoding='utf-8'> …. </xml>"`
 
 [File Format](https://wp.itl.ee/files/Estonian_e-invoice_description_ver1.2_eng.pdf)
 

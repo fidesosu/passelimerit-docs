@@ -4,7 +4,7 @@
 This page explains how you authenticate when sending a request. 
 :::
 
-For your company, you’ll be given a unique Api ID and Api Key. The admin user can  generate and reset API ID and Key on the [Settings](https://app.passelimerit.fi/settings) >> API Settings.
+For your company, you'll be given a unique Api ID and Api Key. The admin user can  generate and reset API ID and Key on the [Settings](https://app.passelimerit.fi/settings) >> API Settings.
 
 ![An image](../../dist/images/api-key-create-dark.png)
 
@@ -12,7 +12,7 @@ _**Keep your Api ID and Api Key secret**_. They should be guarded just as you wo
 
 ![An image](../../dist/images/api-keys-list-1-dark.png)
 
-For every API request you make, you’ll need to include `ApiId`, `timestamp` and `signature` as request parameters.
+For every API request you make, you'll need to include `ApiId`, `timestamp` and `signature` as request parameters.
 
 Signature is in Base64 format and is calculated using your ApiKey with HMAC-SHA-256, based on the ApiId+timestamp+RequestJSON.
 
@@ -43,4 +43,4 @@ var url = 'https://app.passelimerit.fi/api/v1/sendinvoice' + '?ApiId=' + ApiId +
 You can check if your signing is correct from API settings. "SigningStatus" column can have value "OK" or "Insecure: " with UTC date when last incorrectly signed API request occured.
 
 > [!IMPORTANT]
-> HMAC-SHA-256 should be encoded to Base64 from raw data. [Here you can see example, what’s the difference.](https://stackoverflow.com/a/32188410) <!--https://stackoverflow.com/questions/32188149/difference-between-cryptojs-enc-base64-stringify-and-normal-base64-encryption-->
+> HMAC-SHA-256 should be encoded to Base64 from raw data. [Here you can see example, what's the difference.](https://stackoverflow.com/a/32188410) <!--https://stackoverflow.com/questions/32188149/difference-between-cryptojs-enc-base64-stringify-and-normal-base64-encryption-->

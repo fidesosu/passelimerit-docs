@@ -8,7 +8,7 @@
 
 It is the same as create sales invoice, but use negative quantity. If you have discount, the DiscountAmount has to be negative value as well.
 
-This is the normal Sales invoice, we’re going to credit with second payload:
+This is the normal Sales invoice, we're going to credit with second payload:
 
 ```json
 {

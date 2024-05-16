@@ -1,6 +1,6 @@
 # Get Vendor List
 
-We’re aware of the problem of big responses. If you try to query full list of customers or vendors, it will respond with stacktrace that tells our server is unable to compile JSON that big. We’re working on it.
+We're aware of the problem of big responses. If you try to query full list of customers or vendors, it will respond with stacktrace that tells our server is unable to compile JSON that big. We're working on it.
 ## Endpoints
 
 <!--@include: @/dist/md/api_url.md-->v1/getvendors`

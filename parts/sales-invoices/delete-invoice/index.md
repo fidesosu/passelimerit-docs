@@ -11,5 +11,5 @@
 ```
 
 :::info Additional Information
-Use [<!--@include: @/dist/md/api_url.md-->v1/getinvoices`](../get-list-of-invoices/) to get the `SIHId` and use it in the `Id` field.
+Use [`/getinvoices`](../get-list-of-invoices/) to get the `SIHId` and use it in the `Id` field.
 :::
