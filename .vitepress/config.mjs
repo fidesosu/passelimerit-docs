@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { sidebarData } from '../dist/js/sidebar.mjs'
+import { sidebarData } from '../dist/js/sidebar-collapsed.mjs'
 //import { generateSidebar } from 'vitepress-sidebar';
 
 //const vitepressSidebarOptions = {
