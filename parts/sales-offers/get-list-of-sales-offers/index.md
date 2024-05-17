@@ -17,6 +17,52 @@
 
 ## Successful result
 
+:::info
+```json
+[
+  {
+    "SIHId": "31fe26d0-7928-47f7-8702-2d066e332b77",
+    "DepartmentName": null,
+    "Dimension1Code": null,
+    "Dimension2Code": null,
+    "Dimension3Code": null,
+    "Dimension4Code": null,
+    "Dimension5Code": null,
+    "Dimension6Code": null,
+    "Dimension7Code": null,
+    "AccountingDoc": 0,
+    "BatchInfo": null,
+    "OfferNo": "MPO-2001",
+    "DocumentDate": "2020-06-02T00:00:00",
+    "TransactionDate": "0001-01-01T00:00:00",
+    "CustomerId": "ac8a114d-e40c-4fa5-a57f-de30a03d550d",
+    "CustomerName": "Hindre",
+    "HComment": "säilivusaja tekst",
+    "FComment": "Kauba kohaletoimetamise tekst",
+    "DueDate": "0001-01-01T00:00:00",
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000,
+    "TaxAmount": 0.00,
+    "RoundingAmount": 0.00,
+    "TotalAmount": 100.00,
+    "ProfitAmount": 0.0,
+    "TotalSum": 100.00,
+    "UserName": "Merit API",
+    "ReferenceNo": null,
+    "PriceInclVat": false,
+    "VatRegNo": null,
+    "PaidAmount": 0.00,
+    "EInvSent": false,
+    "EmailSent": "1901-01-01T00:00:00",
+    "DocType": 2,
+    "DocStatus": 3,
+    "DeliveryDate": "2020-06-06T00:00:00"
+  }
+]
+```
+:::
+
+:::details Click to see the parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |SIHId|Guid||
@@ -55,5 +101,4 @@
 |DocStatus|Int|1=created, 2=sent, 3=approved, 4=rejected, 5=comment received, 6=invoice created, 7=canceled|
 |DeliveryDate|Date||
 |Paid|Bool||
-
-
+:::
