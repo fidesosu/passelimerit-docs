@@ -22,20 +22,22 @@ Response to the successful request is usually something like this
 :::info From february 8, the new output format for the API:
 
 The previous output is a string containing json.
+
 Example send sales invoice:
 ```text
 Status code:  200  —  OK
 Headers:  application/json; charset=utf-8
 Body:  {"CustomerId":"29fecd2e-ed07-4a1d-93f8-e6c24372f7d6","InvoiceId":"b6948bbc-79be-49ce-b92c-d17cd8c76001","InvoiceNo":"KALA00009","RefNo":null,"NewCustomer":null}
 ```
-
+---
 The new output is an object (json):
+
 Example send sales invoice:
 
 ```json
 Status code:  200  —  OK
 Headers:  application/json; charset=utf-8
-Body:  {
+Body: {
   CustomerId: "4feba750-4184-42f1-a278-1ed738b6cddd",
   InvoiceId: "432aedaa-0998-46e0-9ecc-266134d11705",
   InvoiceNo: "KALA00009",
@@ -45,6 +47,6 @@ Body:  {
 ```
 :::
 ::: info
-The date format in the new output is: `YYYY-mm-DDTHH:mm:ss` (The T is supposed to be there.)<br>
+The date format in the new output is: `YYYY-mm-DDTHH:mm:ss`<br>
 Please make changes to your API applications that work with Passeli Merit.
 :::
