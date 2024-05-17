@@ -39,8 +39,8 @@ Exampe Payload1:
 |RoundingAmount|Decimal 18.2||
 |TotalAmount|Decimal 18.2|Amount without VAT|
 |Payment|Payment object||
-|Hcomment|String 4K|Comment before invoice rows|
-|Fcomment|String 4K|Comment after invoice rows|
+|Hcomment|Str 4K|Comment before invoice rows|
+|Fcomment|Str 4K|Comment after invoice rows|
 |Attachment|AttachmentObject||
 |PolDocType|int 1|Poland only, 1-purchmk 2-purchvatrr 3-purchwe 0-nochoise|
 
@@ -140,8 +140,8 @@ Exampe Payload1:
 |TotalAmount|Decimal 18.2|Amount without VAT|
 |RoundingAmount|Decimal 18.2||
 |TaxAmount|Array of TaxObjects|Required|
-|Hcomment|String 4K|Comment before invoice rows|
-|Fcomment|String 4K|Comment after invoice rows|
+|Hcomment|Str 4K|Comment before invoice rows|
+|Fcomment|Str 4K|Comment after invoice rows|
 |Attachment|AttachmentObject||
 |Payment|Payment object||
 |BankAccount|Str 50||

@@ -16,6 +16,6 @@ In the input xml file required EAN or SellerProductID of sales articles.
 |-----|----|-------|
 |CustomerId|Guid||
 |InvoiceId|Guid||
-|InvoiceNo|String||
-|RefNo|String||
-|ErrMsg|String||
+|InvoiceNo|Str||
+|RefNo|Str||
+|ErrMsg|Str||

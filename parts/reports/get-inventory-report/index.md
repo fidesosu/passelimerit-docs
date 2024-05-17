@@ -20,13 +20,13 @@
 Array of articles
 |Field|Type|Comment|
 |-----|----|-------|
-|ItemCode|String||
-|EANCode|String||
-|ItemName|String||
-|LocName|String||
+|ItemCode|Str||
+|EANCode|Str||
+|ItemName|Str||
+|LocName|Str||
 |Quantity|Decimal||
 |ReservedQuantity|Decimal||
-|UnitCode|String||
+|UnitCode|Str||
 |Amount|Decimal||
 |Price|Decimal||
 

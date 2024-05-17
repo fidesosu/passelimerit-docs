@@ -36,9 +36,9 @@
 |RoundingAmount|Decimal 18.2|Use it for getting PDF invoice to round number. Does not affect TotalAmount.|
 |TotalAmount|Decimal 18.2|Amount without VAT|
 |Payments|Array of Payment objects||
-|RefNo|String 36|Please validate this number yourself.|
-|Hcomment|String 4K|If not specified, API will get it from the client record, if it's written there.|
-|Fcomment|String 4K|If not specified, API will get it from the client record, if it's written there.|
+|RefNo|Str 36|Please validate this number yourself.|
+|Hcomment|Str 4K|If not specified, API will get it from the client record, if it's written there.|
+|Fcomment|Str 4K|If not specified, API will get it from the client record, if it's written there.|
 
 ## CustomerObject
 
@@ -97,14 +97,14 @@ Every invoice has its rows. Row has its quantity and price, it also has its gene
 |TaxId|Guid|Required. Use gettaxes endpoint to detect the guid needed|
 |LocationCode|Str 20|Used for stock items and multiple stocks. If used then must be found in the company database.|
 |DepartmentCode|Str 20|If used then must be found in the company database.|
-|GLAccountCode|String 10|If used, must be found in the company database.|
+|GLAccountCode|Str 10|If used, must be found in the company database.|
 |Dimensions|Array of DimensionsObjects||
 |ItemCostAmount|Decimal 18.2|Required for credit invoices when crediting stock items.|
-|VatDate|Date String|YYYYMMDD type date. In some countries where you have to specify VatDate.|
-|SalesAccCode|String 10|If included GLAccountCode then the SalesAccCode not used|
-|PurchaseAccCode|String 10||
-|InventoryAccCode|String 10||
-|CostAccCode|String 10||
+|VatDate|Date Str|YYYYMMDD type date. In some countries where you have to specify VatDate.|
+|SalesAccCode|Str 10|If included GLAccountCode then the SalesAccCode not used|
+|PurchaseAccCode|Str 10||
+|InventoryAccCode|Str 10||
+|CostAccCode|Str 10||
 
 ## ItemObject
 

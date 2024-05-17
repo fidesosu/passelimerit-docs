@@ -23,7 +23,7 @@ Exampe Payload: payload only
 
 |Field|Type|Comment|
 |-|-|-|
-|ArticleCode|String 20|Must be found in the database|
-|UOMName|String 64||
+|ArticleCode|Str 20|Must be found in the database|
+|UOMName|Str 64||
 |ItemUnitCost|Decimal 18.3|Required for Type 1|
 |Quantity|Decimal 18.2||

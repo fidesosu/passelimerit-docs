@@ -15,5 +15,5 @@
 
 |Field|Type|Comment|
 |-----|----|-------|
-|FileName|String||
-|FileContent|String|Pdf file in base64|
+|FileName|Str||
+|FileContent|Str|Pdf file in base64|

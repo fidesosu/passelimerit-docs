@@ -29,13 +29,13 @@
 |Field|Type|Comment|
 |-----|----|-------|
 |PIHId|Guid||
-|BankName|String||	
+|BankName|Str||	
 |CounterPartType|Int|2 – customer,<br>3 - vendor|
-|CounterPartName|String||	
-|CurrencyCode|String||	
+|CounterPartName|Str||	
+|CurrencyCode|Str||	
 |CurrencyRate|Decimal||	
 |DocumentDate|Date||
-|DocumentNo|String||	
+|DocumentNo|Str||	
 |Direction|Int|1 - transactions with customers,<br> 2 - with vendors,<br> 3 - other income,<br> 4 - other expenses|
 |Amount|Decimal||
 
@@ -44,13 +44,13 @@
 |Field|Type|Comment|
 |-----|----|-------|
 |PIHId|Guid|| 	
-|BankName|String||	
+|BankName|Str||	
 |CounterPartType|Int|2 – customer,<br> 3- vendor|
-|CounterPartName|String||
-|CurrencyCode|String||
+|CounterPartName|Str||
+|CurrencyCode|Str||
 |CurrencyRate|Decimal||
 |DocumentDate|Date||
-|DocumentNo|String||
+|DocumentNo|Str||
 |Direction|Int|1- transactions with customers, <br>2- with vendors,<br> 3- other income,<br> 4- other expenses
 |Amount|Decimal||	
 |PaymAPIDetails|PaymAPIDetails object||
@@ -60,8 +60,8 @@
 |Field|Type|Comment|
 |-----|----|-------|
 |PaymId|Guid||
-|DocNo|String|Document (Invoice, Offer,Order) No|
+|DocNo|Str|Document (Invoice, Offer,Order) No|
 |DocAmount|Decimal||
 |PaidAmount|Decimal|Amount paid by payment|
-|CurrencyCode|String||
+|CurrencyCode|Str||
 |CurrencyRate|Decimal|Document currency rate|
