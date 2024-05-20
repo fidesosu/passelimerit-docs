@@ -18,4 +18,4 @@ The Passeli Merit API has a two points of entry.
 
 Please note the use of https:// in the URL above. All Passeli Merit API communication is encrypted over HTTPS. Any non-secure requests are automatically rejected.
 
-[Read our reference manuals.](/reference-manual)
+[Read our reference manuals.](/parts/introduction/)
