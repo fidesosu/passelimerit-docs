@@ -1,8 +1,8 @@
 # Responses
 ## Successful responses
-Successful response is represented as JSON with response code 200. In many cases, when needed and possible, response will also include details of fulfilled requests (like added document id, transaction id or customer id).
+Successful response is represented as `JSON` with response code `200`. <br>In many cases, when needed and possible, response will also include details of fulfilled requests (like added `document id`, `transaction id` or `customer id`).
 
-Response to the successful request is usually something like this
+:::info Response to the successful request is usually similar to the following example:
 ```json
 {
   "CustomerId":"665f01a4-357a-4a6b-a565-2f17e6e1da13",
@@ -11,6 +11,8 @@ Response to the successful request is usually something like this
   "RefNo":"11219"
 } 
 ```
+:::
+
 ## Unsuccessful responses
 |response.statusCode|response.statusMessage|response.body|Description|
 |-------------------|----------------------|-------------|-----------|
@@ -21,18 +23,15 @@ Response to the successful request is usually something like this
 |500|Internal Server Error|Stacktrace|Should not happen. An alert is generated and sent to our development team.|
 :::info From february 8, the new output format for the API:
 
-The previous output is a string containing json.
+The previous output is a string containing `JSON`.
 
-Example send sales invoice:
 ```text
 Status code:  200  —  OK
 Headers:  application/json; charset=utf-8
 Body:  {"CustomerId":"29fecd2e-ed07-4a1d-93f8-e6c24372f7d6","InvoiceId":"b6948bbc-79be-49ce-b92c-d17cd8c76001","InvoiceNo":"KALA00009","RefNo":null,"NewCustomer":null}
 ```
----
-The new output is an object (json):
 
-Example send sales invoice:
+The new output is an `JSON` object:
 
 ```json
 Status code:  200  —  OK
@@ -48,5 +47,6 @@ Body: {
 :::
 ::: info
 The date format in the new output is: `YYYY-mm-DDTHH:mm:ss`<br>
+
 Please make changes to your API applications that work with Passeli Merit.
 :::
