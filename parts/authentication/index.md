@@ -1,20 +1,19 @@
 # Authentication
 ---
-::: info
-This page explains how you authenticate when sending a request. 
-:::
-
 For your company, you'll be given a unique Api ID and Api Key. The admin user can  generate and reset API ID and Key on the [Settings](https://app.passelimerit.fi/settings) >> API Settings.
 
 ![An image](../../dist/images/api-key-create-dark.png)
 
-_**Keep your Api ID and Api Key secret**_. They should be guarded just as you would your regular account password. If you feel your ID and Key has been compromised, you can reset it by deleting and re creating a new ID and Key.
+There you just input the comment for the key and click "Create", The comment can be anything you like, it's just for your reference.
 
 ![An image](../../dist/images/api-keys-list-1-dark.png)
 
+>[!IMPORTANT]
+>_**Keep your Api ID and Api Key secret**_. They should be guarded just as you would your regular account password. If you feel your ID and Key has been compromised, you can reset it by deleting and re creating a >new ID and Key.
+
 For every API request you make, you'll need to include `ApiId`, `timestamp` and `signature` as request parameters.
 
-Signature is in Base64 format and is calculated using your ApiKey with HMAC-SHA-256, based on the ApiId+timestamp+RequestJSON.
+`Signature` is in `Base64` format and is calculated using your `ApiKey` with `HMAC-SHA-256`, based on the `ApiId` + `timestamp` + `RequestJSON`.
 
 ```js{13-15}
 function getTimestamp () {
