@@ -23,7 +23,7 @@ Successful response is represented as `JSON` with response code `200`. <br>In ma
 |500|Internal Server Error|Stacktrace|Should not happen. An alert is generated and sent to our development team.|
 :::info From february 8, the new output format for the API:
 
-The previous output is a string containing `JSON`.
+The old output was a string containing `JSON`.
 
 ```text
 Status code:  200  —  OK
