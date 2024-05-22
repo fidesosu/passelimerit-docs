@@ -13,7 +13,7 @@ export default defineConfig({
   description: "Documentation for Passeli Merit API",
   lastUpdated: true,
   head: [
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/dist/images/favicon.png" }],
+    //['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/dist/images/favicon.png" }],
   ],
   themeConfig: {
     logo: '/dist/images/favicon.png',
