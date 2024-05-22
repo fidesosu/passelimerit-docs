@@ -59,6 +59,6 @@
     "LinkedVendorName": null,
     "IsParent": "Detailne"
   }, 
-  ...
+  // ...
 ]
  ```
