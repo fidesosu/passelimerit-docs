@@ -1,6 +1,5 @@
 ## Stuff to check later
 
-http://localhost:5173/parts/project-list/<br>
 http://localhost:5173/parts/cost-centers-list/<br>
 http://localhost:5173/parts/dimensions/dimensionslist/<br>
 http://localhost:5173/parts/dimensions/add-dimensions/<br>
