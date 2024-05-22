@@ -22,6 +22,7 @@ Bare minimum when quering the list of invoices.
 > [!IMPORTANT]
 > Maximum period length is 3 months.
 ---
+:::details Click to see the result parameters
 <table>
 <tr><th><h4>Successful result v1</h4></th><th><h4>Successful result v2</h4></th></tr>
 <tr><td style="vertical-align: top;">
@@ -101,4 +102,4 @@ Bare minimum when quering the list of invoices.
 | Paid             | Bool    |                 |
 
 </td></tr> </table>
-
+:::
