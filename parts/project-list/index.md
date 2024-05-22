@@ -18,13 +18,18 @@
   {
     "Code": "P1",
     "Name": "Project 1",
-    "EndDate": "2021-12-31"
+    "EndDate": "5/7/2024"
+  },
+  {
+    "Code": "Project 2",
+    "Name": "Test Project 2",
+    "EndDate": "6/3/2027"
   }
 ]
 ```
 :::
 
-:::details Click to see output parameters
+:::details Click to see result parameters
 |Field Name|Type|Comment|
 |----------|----|-------|
 |Code|Str 20||
