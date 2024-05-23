@@ -18,28 +18,30 @@
 }
 ```
 
-### Payload
-
-|Field|Type|Comment|
-|-|-|-|
-|ArtCode|string 100|Article code to add value|
-|IndValue|IndValue Object||
-
+:::details Click to see the payload parameters
+|Field|Type|Comment|Required|
+|-----|----|-------|--------|
+|ArtCode|string 100|Article code to add value|Required|
+|Values|IndValue Object|||
+:::
 
 ### IndValue Object
 
+:::details Click to see the IndValue Object parameters
 |Field|Type|comment|
-|-|-|-|
+|-----|----|-------|
 |Address|string||
 |CustomerId|guid||
 |EndValue|decimal||
 |Quantity|decimal|If used, EndValue is ignored|
-
+:::
 
 ## Successful Result
 
-`"The readings were moved to line 1 of 1 contract and the quantities and sums were recalculated."`
-
+```
+"The readings were moved to line 1 of 1 contract and the quantities and sums were recalculated."
+```
+---
 :::info Additional Information
-You can find the CustomerId using [`v1/getcustomers`](../../customers/get-customer-list/)
+You can find the CustomerId using [`getcustomers`](../../customers/get-customer-list/) endpoint.
 :::
