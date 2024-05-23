@@ -14,13 +14,7 @@
 
 The result for this request can be:
 1. empty result
-2. a list of not ended recurring invoices
-
-|Field|Type|Comment|
-|-|-|-|
-|Id|Guid||
-|InvoiceNo|Str|Recurring invoice contract number|
-|Address|Str||
+2. a list of active recurring invoices
 
 :::info Example Result
 ```json
@@ -29,7 +23,16 @@ The result for this request can be:
     "Id": "2fb7301e-8c3c-4782-9419-96631d0e37eb",
     "InvoiceNo": null,
     "Address": "Merimiehenkatu 31\nHelsinki"
-  }
+  },
+  // ...
 ]
 ```
+:::
+
+:::details Click to see the result parameters
+|Field|Type|Comment|
+|-----|----|-------|
+|Id|Guid||
+|InvoiceNo|Str|Recurring invoice contract number|
+|Address|Str||
 :::
