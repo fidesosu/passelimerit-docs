@@ -28,7 +28,6 @@
   "NextDate": "20190414"
 }
 ```
-:::
 
 :::details Click to see payload parameters
 |Field|Type|Comment|Required|
@@ -76,7 +75,6 @@
   // ...
 }
 ```
-:::
 
 :::details Click to see CustomerObject parameters
 |Field|Type|Comment|Required|
@@ -130,7 +128,6 @@
   // ...
 }
 ```
-:::
 
 :::details Click to see InvoiceRowObject parameters
 |Field|Type|Comment|Required|
@@ -169,6 +166,7 @@
   // ...
 }
 ```
+
 :::details Click to see ItemObject parameters
 |Field|Type|Comment|Required|
 |-----|----|-------|--------|
@@ -193,7 +191,6 @@
   // ...
 }
 ```
-:::
 
 :::details Click to see TaxObject parameters
 |Field|Type|Comment|Required|
