@@ -10,7 +10,7 @@ For multiple dimensions:
 
 ## Query payload
 
-Bare minimum when quering the list of invoices.
+:::info Minimum Query
 ```json
 { 
   Periodstart: YYYYmmdd, 
@@ -18,6 +18,7 @@ Bare minimum when quering the list of invoices.
   UnPaid: true 
 }
 ```
+:::
 
 > [!IMPORTANT]
 > Maximum period length is 3 months.
