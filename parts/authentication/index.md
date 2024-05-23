@@ -15,6 +15,7 @@ For every API request you make, you'll need to include `ApiId`, `timestamp` and 
 
 `Signature` is in `Base64` format and is calculated using your `ApiKey` with `HMAC-SHA-256`, based on the `ApiId` + `timestamp` + `RequestJSON`.
 
+:::info
 ```js{13-15}
 function getTimestamp () {
   var d = new Date();
@@ -38,6 +39,7 @@ console.log(signature);
 
 var url = 'https://app.passelimerit.fi/api/v1/sendinvoice' + '?ApiId=' + ApiId + '&timestamp=' + timestamp + '&signature=' + signature;
 ```
+:::
 
 You can check if your signing is correct from API settings. "SigningStatus" column can have value "OK" or "Insecure: " with UTC date when last incorrectly signed API request occured.
 
