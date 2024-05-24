@@ -14,7 +14,6 @@
    "AddAttachment": true/false
 }
 ```
-:::
 
 :::details Click to see the payload parameters
 |field|type|description|Required|
@@ -44,9 +43,8 @@ The result, if not empty:
   "Attachment": null
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the result parameters
 |Field Name|Type|Comment|
 |----------|----|-------|
 |Header|SalesHeader object||
@@ -105,9 +103,8 @@ The result, if not empty:
   // ...
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the SalesHeaderObject parameters
 |Field Name|Comment|
 |----------|-------|
 |SIHId||
@@ -177,9 +174,8 @@ The result, if not empty:
   // ...
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the InvoiceRowObject parameters
 |Field Name|Comment|
 |----------|-------|
 |ArticleCode||
@@ -222,9 +218,8 @@ The result, if not empty:
   // ...
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the PaymentObject parameters
 |Field Name|Comment|
 |----------|-------|
 |PaymDate||
@@ -248,9 +243,8 @@ The result, if not empty:
   ]
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the CostAllocationObject parameters
 |Name|Type|Comment|
 |----|----|-------|
 |Code|Str|Code of project / cost center|
@@ -273,9 +267,8 @@ The result, if not empty:
   "Attachment": null
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the result parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Header|Header Object||
@@ -284,7 +277,7 @@ The result, if not empty:
 |Attachment|Attachment object||
 :::
 
-## Invoice header object
+## InvoiceHeaderObject
 
 :::info Output
 ```json
@@ -333,9 +326,8 @@ The result, if not empty:
   }
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the InvoiceHeaderObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Dimensions|Array of Dmensions Objects||
@@ -397,9 +389,8 @@ The result, if not empty:
   }
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the DimensionsObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Str||
@@ -441,9 +432,8 @@ The result, if not empty:
   // ...
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the InvoiceRowObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |SILId|Guid||
@@ -489,9 +479,8 @@ The result, if not empty:
   //...
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the DimensionsAllocationObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Str||
@@ -517,9 +506,8 @@ The result, if not empty:
   // ...
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the PaymentObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |PaymDate|Date||
@@ -540,9 +528,8 @@ The result, if not empty:
   }
 }
 ```
-:::
 
-:::details Click to see the object details
+:::details Click to see the AttachmentObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Filename|Str||
