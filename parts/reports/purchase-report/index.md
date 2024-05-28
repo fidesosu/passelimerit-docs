@@ -4,8 +4,24 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpurchrep`
 
-## Query payload
-
+---
+:::info Query payload
+```json
+{
+  "StartDate": "yyyyMMdd",
+  "EndDate": "yyyyMMdd",
+  "ReportType": 1,
+  "VendChoice": 1,
+  "VendGrpFilter": "",
+  "VendFilter": "",
+  "ItemGrFilter": "",
+  "ItemFilter": [],
+  "DepartFilter": [],
+  "FixAssetFilter": [],
+  "ByEntryNo": false
+}
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |StartDate|Date||
@@ -19,8 +35,13 @@
 |DepartFilter|Str|Array of departments|
 |FixAssetFilter|Str|Array of Fixed assets|
 |ByEntryNo|Bool|true/false|
-
-## Successful Result Report type 1
+:::
+---
+:::info Successful Result for Report type 1
+```json
+[]
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |DocId|Guid||
@@ -41,9 +62,13 @@
 |BatchCode|Str||
 |BatchNo|Int||
 |Ctry|Str||
-
-## Successful Result Report type 2
-
+:::
+---
+:::info Successful Result for Report type 2
+```json
+[]
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |CustomerId|Guid||
@@ -62,9 +87,13 @@
 |LnCnt|Decimal||
 |DiscAmt|Decimal||
 |CDiscAmt|Decimal||
-
-## Successful Result Report type 3
-
+:::
+---
+:::info Successful Result for Report type 3
+```json
+[]
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |ItemId|Guid||
@@ -79,9 +108,13 @@
 |Amount|Decimal||
 |UOMId1|Guid||
 |UOMId2|Guid||
-
-## Successful Result Report type 4
-
+:::
+---
+:::info Successful Result for Report type 4
+```json
+[]
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |DocId|Guid||
@@ -95,3 +128,4 @@
 |RemAmount|Decimal||
 |DocNo|Str||
 |DocDate|Date||
+:::

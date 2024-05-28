@@ -4,15 +4,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getprojects`
 
-## Query Payload
-
+---
+:::info Query Payload
 ```json
 { }
 ```
-
-## Successful result
-
-:::info JSON Result
+:::
+---
+:::info Successful result
 ```json
 [
   {
@@ -27,7 +26,6 @@
   }
 ]
 ```
-:::
 
 :::details Click to see result parameters
 |Field Name|Type|Comment|

@@ -4,42 +4,47 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getbalancerep`
 
-
-## Query Payload
+---
+:::info Query Payload
 
 ```json
 {
   EndDate: "yyyymmdd",
-  PerCount: nn
+  PerCount: 2
 }
 ```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |EndDate|Str|Balance date|
 |PerCount|Int|Number of periods (months)|
-
-
-## Successful result
-
-| | |
+:::
+---
+:::info Successful result
+```json
+{
+  "ErrorMsg": "",
+  "Data": []
+}
+```
+:::details Click to see the result parameters
+|Field|Comment|
 |-|-|
 |Data|Data Object|
 
+### Data Object
 
-## Data Object
-
-| | | |
-|-|-|-|
-|No|Report line number||
-|Description|||
+|Field|Comment|
+|-|-|
+|No|Report line number|
+|Description||
 |RowType|1-row description,<br> 2-balance of account,<br> 4-formula||
-|Balance|Report line totals starting from the period enddate descending|If RowType=1 Balance= null|
-|Details|Details Object|Report line detail info|
+|Balance|Report line totals starting from the period enddate descending.<br><br>If `RowType` is `1`, `Balance` is `null`|
+|Details|Details Object. Report line detail info|
 
+### Details Object
 
-## Details Object
-
-| | |
+|Field|Comment|
 |-|-|
 |AccountCode||
 |AccountName||

@@ -4,30 +4,51 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getcustdebtrep`
 
-## Query payload
+---
+:::info Query payload
 ```json
 { 
-  "CustName": "Kliendinimi",
-  "CustId": "3a274294-9c60-4a3d-93f0-1874253f073e",
+  "CustName": "FirstCustomer Inc",
+  "CustId": "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
   "OverDueDays": 5,
-  "DebtDate":"20220501" 
+  "DebtDate":"yyyyMMdd" 
 }
 ```
-
-|Field|Type|Comment|
-|-----|----|-------|
-|CustName|Str 150|Required if CustId not used. If  the CustName "" then all customers are selected.|
-|CustId|Guid||
-|OverDueDays|Int 3|more exceeded days|
-|DebtDate|Date|Date in the format yyyyMMdd, if not used the current date.|
-
-
-## Successful result
-
+:::details Click to see the query parameters
+|Field|Type|Comment|Required|
+|-----|----|-------|--------|
+|CustName|Str 150|Required if CustId not used. <br><br>If the CustName `""` then all customers are selected.|Required?|
+|CustId|Guid|||
+|OverDueDays|Int 3|more exceeded days||
+|DebtDate|Date|Date in the format yyyyMMdd, if not used then it defaults to the current date.||
+:::
+---
+:::info Successful result
+```json
+[
+  {
+    "PartnerId": "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
+    "PartnerName": "FirstCustomer Inc",
+    "DocType": "MA",
+    "DocDate": "2017-01-13T00:00:00",
+    "DocNo": "123",
+    "DocId": "ec87ddbf-3b7c-4c35-b40d-3b9b0a60e853",
+    "RefNo": "1232",
+    "DueDate": "2017-01-25T00:00:00",
+    "TotalAmount": 2000.00,
+    "PaidAmount": 0.0,
+    "UnPaidAmount": 2000.00,
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000
+  },
+  // ...
+]
+```
+:::details Click to see the result parameters
 |Field|Comment|
 |-----|-------|
-|PartnerName||
 |PartnerId||
+|PartnerName||
 |DocType|SO offer, MA invoice, SBx() initial balance, PR and BA from program.|
 |DocDate||
 |DocNo||

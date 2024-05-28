@@ -4,12 +4,33 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getprices`
 
-## Query Payload
+---
+:::info Query Payload
 ```json
-{  }
+{ }
 ```
-## Successful Result
-
+:::
+---
+:::info Successful Result
+```json
+[
+  {
+    "CompanyId": 404,
+    "LocationId": "b600826a-feaa-42ac-9dc3-ab03b4f66461",
+    "Code": "1",
+    "Name": "Varasto",
+    "InBPrefix": "ST-",
+    "InBNextNo": 4,
+    "OutBPrefix": "VM-",
+    "OutBNextNo": 2,
+    "Loc2LocPrefix": "LL-",
+    "Loc2LocNextNo": 1,
+    "InvSetPrefix": "KE-",
+    "InvSetNextNo": 1
+  }
+]
+```
+:::details Click to see the result parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Id|Guid||	
@@ -28,3 +49,4 @@
 |UOMId|Bool||	
 |UOMName|Str||	
 |UOMNamePlural|Str||
+:::

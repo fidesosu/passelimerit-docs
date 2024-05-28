@@ -4,23 +4,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getbanks`
 
-## Query Payload
-
+---
+:::info Query Payload
 ```json
 { }
 ```
+:::
 
-## Successful Result
-
-|Field Name|Type|
-|----------|----|
-|Name|Str 20|
-|IBANCode|Str 64|
-|Description|Str 20|
-|BankId|Guid|
-|CurrencyCode|Str|
-
-:::info
+:::info Successful Result
 ```json
 [
   {
@@ -32,4 +23,12 @@
   }
 ]
 ```
+:::details Click to see the result parameters
+|Field Name|Type|
+|----------|----|
+|Name|Str 20|
+|IBANCode|Str 64|
+|Description|Str 20|
+|BankId|Guid|
+|CurrencyCode|Str|
 :::

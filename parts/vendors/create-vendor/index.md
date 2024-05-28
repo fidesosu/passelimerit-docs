@@ -4,17 +4,15 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendvendor`
 
-## Query Payload
-
-:::info Minimum Payload
+---
+:::info Minimum Query Payload
 ```json
 {
-  "Name":"test1",
+  "Name":"testVendor",
   "VatAccountable":true,
-  "CountryCode":"EE"
+  "CountryCode":"FI"
 }
 ```
-:::
 
 :::details Click to see payload parameters
 |Field|Type|Comment|Required|
@@ -40,12 +38,11 @@
 |Dimensions|Array of DimensionsObjects|||
 |VendorType|Int|1 - vendor, <br>3 - the reporting entity||
 :::
-
-## DimensionsObject
-
-:::info
+---
+:::info DimensionsObject
 ```json
 {
+  // ...
   "Dimensions": [
     {
       "DimId": 1,
@@ -55,7 +52,6 @@
   ]
 }
 ```
-:::
 
 :::details Click to see DimensionsObject parameters
 |Field|Type|Comment|Required|
@@ -64,19 +60,17 @@
 |DimValueId|Guid|||
 |DimCode|Str|||
 :::
-
-## Successful Result
-
-:::info
+---
+:::info Successful Result
 ```json
 {
   "Id": "be20f410-2af5-40b1-xxxx-xxxxxxxxxxxx",
   "Name": "Mart Mustikas"
 }
 ```
-:::
-
+:::details Click to see the result parameters
 |Field|Type|
 |-----|----|
 |Id|Guid|
 |Name|Str|
+:::

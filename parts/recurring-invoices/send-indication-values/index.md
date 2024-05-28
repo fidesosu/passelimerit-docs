@@ -4,8 +4,8 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/sendindvalues`
 
-## Query Payload
-
+---
+:::info Query Payload
 ```json
 { 
   ArtCode: "EU-maat tav", 
@@ -23,11 +23,9 @@
 |-----|----|-------|--------|
 |ArtCode|string 100|Article code to add value|Required|
 |Values|IndValue Object|||
-:::
 
 ### IndValue Object
 
-:::details Click to see the IndValue Object parameters
 |Field|Type|comment|
 |-----|----|-------|
 |Address|string||

@@ -4,15 +4,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getcostcenters`
 
-## Query Payload
-
+---
+:::info Query Payload
 ```json
 { }
 ```
-
-## Successful Result
-
-:::info 
+:::
+---
+:::info Successful Result 
 ```json
 [
   {
@@ -22,7 +21,6 @@
   }
 ]
 ```
-:::
 
 :::details Click to see the parameters
 |Field Name|Type|Comment|

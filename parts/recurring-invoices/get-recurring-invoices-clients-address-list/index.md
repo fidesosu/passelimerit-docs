@@ -4,19 +4,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpershaddress`
 
-## Query Payload
-
+---
+:::info Query Payload
 ```json
 { }
 ```
-
-## Successful Result
-
-The result for this request can be:
-1. empty result
-2. a list of active recurring invoices
-
-:::info Example Result
+:::
+---
+:::info Successful Result
 ```json
 [
   {
@@ -27,7 +22,6 @@ The result for this request can be:
   // ...
 ]
 ```
-:::
 
 :::details Click to see the result parameters
 |Field|Type|Comment|

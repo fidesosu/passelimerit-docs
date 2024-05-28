@@ -4,8 +4,18 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getinventoryreport`
 
-## Query Payload
-
+---
+:::info Query Payload
+```json
+{
+  "ArticleGroups": [],
+  "Location": "",
+  "RepDate": "yyyyMMdd",
+  "ShowZero": false,
+  "WithReservations": false
+}
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |ArticleGroups|Array of article groups|Array of article group codes|
@@ -13,11 +23,13 @@
 |RepDate|Date|YYYYmmDD|
 |ShowZero|Bool|true/false|
 |WithReservations|Bool|true/false|
-
-
-## Successful Result
-
-Array of articles
+:::
+---
+:::info Successful Result
+```json
+[]
+```
+:::details Click to see the result parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |ItemCode|Str||
@@ -29,5 +41,4 @@ Array of articles
 |UnitCode|Str||
 |Amount|Decimal||
 |Price|Decimal||
-
-
+:::

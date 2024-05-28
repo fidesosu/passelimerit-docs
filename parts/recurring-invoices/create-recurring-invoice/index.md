@@ -1,11 +1,11 @@
 # Create Recurring Invoice
 
-## Endpoints:
+## Endpoints
 
 <!--@include: @/dist/md/api_url.md-->v2/sendperinvoice`
 
-## Query Payload
-:::info Minimum Payload
+---
+:::info Minimum Query Payload
 ```json
 { 
   "Customer": {

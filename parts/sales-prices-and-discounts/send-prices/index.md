@@ -4,13 +4,33 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendprices`
 
-## Query Payload
+---
+:::info Query Payload
+```json
+{
+  "Prices": [
+    {
+      "TargetGroup": 0,
+      "TargetName": "",
+      "ItemCode": "",
+      "Price": 0,
+      "CurrencyCode": "EUR",
+      "DiscountAllowed": true,
+      "StartDate": "20200707",
+      "EndDate": "20200707"
+    }
+  ]
+}
+```
+:::details Click to see the query parameters
+
+## Query Parameters
 
 |Field|Type|Comment|
 |-----|----|-------|
 |Prices|Array of prices objects||
 
-## Prices Object
+## Prices Object Parameters
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -22,7 +42,10 @@
 |DiscountAllowed|Bool|true / false|
 |StartDate|Date||	
 |EndDate|Date||
-
-## Successful Result
-
+:::
+---
+:::info Successful Result
+```text
 OK
+```
+:::
