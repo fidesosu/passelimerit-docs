@@ -10,7 +10,7 @@
 |-----|----|-------|
 |Id|Guid|Offer Id|
 
-## Successful result
+## Successful Result
 
 |Field|Type|Comment|
 |-----|----|-------|

@@ -31,7 +31,7 @@ The valid price for the customer on a given date.
 |DocDate|Date||Required|
 :::
 ---
-:::info Successful result
+:::info Successful Result
 ```json
 {
   "ItemCode": "testItem",

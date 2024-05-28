@@ -16,9 +16,9 @@
 }
 ```
 
-## [Successful result v2](#ResV2)
+## [Successful Result v2](#ResV2)
 
-## Successful result v1
+## Successful Result v1
 
 The result, if not empty:
 
@@ -103,7 +103,7 @@ The result, if not empty:
 |AllocPct|Allocation percentage|
 |AllocAmount|Allocation amount|
 
-## Successful result v2 {#ResV2}
+## Successful Result v2 {#ResV2}
 
 |Field|Type|comment|
 |-----|----|-------|

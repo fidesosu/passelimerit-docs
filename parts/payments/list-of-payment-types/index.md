@@ -11,7 +11,7 @@
 |Type|Int|1 - purchases,<br> 2 - expense reports,<br> 3 - sales|
 
 
-## Successful result
+## Successful Result
 
 |Field|Type|Comment|
 |-----|----|-------|

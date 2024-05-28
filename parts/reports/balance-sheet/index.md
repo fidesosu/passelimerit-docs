@@ -20,7 +20,7 @@
 |PerCount|Int|Number of periods (months)|
 :::
 ---
-:::info Successful result
+:::info Successful Result
 ```json
 {
   "ErrorMsg": "",

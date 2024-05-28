@@ -12,7 +12,7 @@
 }
 ```
 
-## Successful result
+## Successful Result
 
 |Field|Type|Comment|
 |-----|----|-------|

@@ -9,7 +9,7 @@ Endpoints
 |Id|Guid|Sales invoice SIHId (one invoice per query)|
 |DelivNote|Bool|If true then, the sended invoice without prices. Allowed "true" or "false" (lowercase).|
 
-## Successful result
+## Successful Result
 
 OK<br>
 If the receiver is not e-invoice capable, then there is a message: api-noeinv

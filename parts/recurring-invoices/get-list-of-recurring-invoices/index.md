@@ -17,7 +17,7 @@
 
 Period = "date for the next invoice".  The range can be up to 180 days.
 
-## Successful result
+## Successful Result
 
 :::info
 ```json

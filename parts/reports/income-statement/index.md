@@ -22,7 +22,7 @@
 |DepFilter|Str|Department if used|
 :::
 ---
-:::info Successful result
+:::info Successful Result
 ```json
 {
   "ErrorMsg": "",

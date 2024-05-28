@@ -4,12 +4,11 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getaccounts`
 
-## Query Payload
-:::info Minimum Payload
+---
+:::info Minimum Query Payload
 ```json
 { }
 ```
-:::
 
 :::details Click to see payload parameters
 |Field|Type|Comment|
@@ -23,10 +22,8 @@
 |IsParent|Str|`1` – details,  <br>`2` – summary|
 |UsageFilter|Int|`0` or `empty` - all accounts. <br>`1` - cost accounts, <br>`2` - cost contra-accounts, <br>`3` - purchase VAT accounts|
 :::
-
-## Successful Result
-
-:::info 
+---
+:::info Successful Result
 ```json
 [
   {

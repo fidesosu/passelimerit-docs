@@ -19,7 +19,7 @@
 |PeriodEnd|Date|In format yyyymmdd . Period length max 3 months!|
 |UnPaid|Bool|true/false|
 
-## Successful result v1
+## Successful Result v1
 ||
 |-|
 |PIHId|

@@ -24,7 +24,7 @@
 |UnPaid|Bool|true/false|
 
 
-## Successful result v1
+## Successful Result v1
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -39,7 +39,7 @@
 |Direction|Int|1 - transactions with customers,<br> 2 - with vendors,<br> 3 - other income,<br> 4 - other expenses|
 |Amount|Decimal||
 
-## Successful result v2
+## Successful Result v2
 
 |Field|Type|Comment|
 |-----|----|-------|

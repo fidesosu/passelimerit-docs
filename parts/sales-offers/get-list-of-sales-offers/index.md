@@ -15,7 +15,7 @@
 
 ```
 
-## Successful result
+## Successful Result
 
 :::info
 ```json

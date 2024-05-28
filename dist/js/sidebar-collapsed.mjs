@@ -319,13 +319,6 @@ export const sidebarData = [
       {
         text: 'Accounts List',
         link: '/parts/accounts-list/',
-        collapsed: true,
-        items: [
-          {
-            text: 'Result Example of GetAccounts',
-            link: '/parts/accounts-list/result-example-of-getaccounts/',
-          }
-        ]
       },
       {
         text: 'Project List',

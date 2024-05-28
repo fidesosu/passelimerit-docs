@@ -13,7 +13,7 @@
 |UnPaid|Bool|true/false|
 
 
-## Successful result
+## Successful Result
 
 | |
 |-|

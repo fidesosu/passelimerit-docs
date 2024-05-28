@@ -22,9 +22,9 @@
 |AddAttachment|bool|true/false (lowercase)|Required|
 :::
 
-[Successful result v2](#resV2)
+[Successful Result v2](#resV2)
 
-## V1 <br> Successful result
+## V1 <br> Successful Result
 
 The result, if not empty:
 
@@ -252,7 +252,7 @@ The result, if not empty:
 |AllocAmount|Int|Allocation amount|
 :::
 
-## V2 <br> Successful result {#resV2}
+## V2 <br> Successful Result {#resV2}
 
 :::info Output
 ```json

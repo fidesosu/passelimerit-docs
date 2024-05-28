@@ -25,7 +25,7 @@ For multiple dimensions:
 ---
 :::details Click to see the result parameters
 <table>
-<tr><th><h4>Successful result v1</h4></th><th><h4>Successful result v2</h4></th></tr>
+<tr><th><h4>Successful Result v1</h4></th><th><h4>Successful Result v2</h4></th></tr>
 <tr><td style="vertical-align: top;">
 
 |Field|

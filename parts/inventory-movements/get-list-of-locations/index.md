@@ -10,7 +10,7 @@
 { }
 ```
 
-## Successful result
+## Successful Result
 
 |Fields|Type|Comment|
 |------|----|-------|

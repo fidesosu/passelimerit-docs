@@ -23,7 +23,7 @@
 |DebtDate|Date|Date in the format yyyyMMdd, if not used then it defaults to the current date.||
 :::
 ---
-:::info Successful result
+:::info Successful Result
 ```json
 [
   {

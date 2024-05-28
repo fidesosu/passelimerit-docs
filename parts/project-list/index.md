@@ -11,7 +11,7 @@
 ```
 :::
 ---
-:::info Successful result
+:::info Successful Result
 ```json
 [
   {

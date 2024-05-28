@@ -20,7 +20,7 @@
 |Id|Guid|||
 
 
-## Successful result
+## Successful Result
 
 |Field Name|Type|Comment|
 |Header|GLBHeader object||
