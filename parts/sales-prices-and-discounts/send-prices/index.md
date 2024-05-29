@@ -10,18 +10,22 @@
 {
   "Prices": [
     {
-      "TargetGroup": 0,
-      "TargetName": "",
-      "ItemCode": "",
+      "TargetGroup": 1,
+      "TargetName": "testName",
+      "ItemCode": "eu-maat tav",
       "Price": 0,
       "CurrencyCode": "EUR",
       "DiscountAllowed": true,
       "StartDate": "20200707",
-      "EndDate": "20200707"
+      "EndDate": "20200708"
     }
   ]
 }
 ```
+
+>[!IMPORTANT]
+>There is a problem with how the API checks the ItmeCode. It has to be in lowercase or else it will not work. We will fix this in the near future.
+
 :::details Click to see the query parameters
 
 ## Query Parameters
