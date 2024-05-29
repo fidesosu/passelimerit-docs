@@ -4,8 +4,24 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendtax`
 
-## QUERY payload
-
+---
+:::info Query Payload
+```json
+{
+  "Code": "taxcode",
+  "CodeEN": "taxCodeEN",
+  "CodeSE": "taxCodeSE",
+  "CodeRU": "taxCodeRU",
+  "Name": "taxName",
+  "NameEN": "taxNameEN",
+  "NameSE": "taxNameSE",
+  "NameRU": "taxNameRU",
+  "TaxPct": 10.00,
+  "TaxType": 12,
+  "CountryCode": "FI"
+}
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Code|Str 16||
@@ -19,8 +35,11 @@
 |TaxPct|Dec 18.2||
 |TaxType|Int|Required. Available values:<br> 1 = VAT from sales and purchases<br> 2 = VAT free transaction<br> 5 = Not taxable<br> 6 = Reversed VAT (AVL 8 c §)<br> 8 = Sales revenue taxation (AVL 79 §)<br> 12 = OSS sales to EU customers not VAT responsible<br> 13 = VAT in EU fixed venue<br> 15 = Proportional VAT|
 |CountryCode|Str 2|Required|
-
-
-## Successful Result
-
-CreatedTaxId= taxid (guid of created taxid)
+:::
+---
+:::info Successful Result
+```json
+{
+  "CreatedTaxId": "0ccadbe0-67a2-40d2-ba78-1cacaa8a2544"
+}
+```
