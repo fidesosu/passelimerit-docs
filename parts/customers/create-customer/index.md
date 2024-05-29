@@ -4,59 +4,8 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendcustomer`
 
-## Query Payload
-
-|Parameter|Type|Comment|
-|---------|----|-------|
-|Id|Guid||
-|Name|Str 150|Required when customer is added. The customer name must be unique.|
-|RegNo|Str 30||
-|NotTDCustomer|Bool|Required when customer is added. EE True for physical persons and foreign companies.  PL True for physical persons. Allowed "true" or "false" (lowercase).|
-|VatRegNo|Str 30||
-|CurrencyCode|Str 30||
-|PaymentDeadLine|Int|If missing then taken from default settings.|
-|OverDueCharge|Decimal 5.2|If missing then taken from default settings.|
-|RefNoBase|Str 36||
-|Address|Str 100||
-|CountryCode|Str 2|Required when adding|
-|County|Str 100||
-|City|Str 30||
-|PostalCode|Str 15||
-|PhoneNo|Str 50||
-|PhoneNo2|Str 50||
-|HomePage|Str 80||
-|Email|Str 80||
-|SalesInvLang|Str 8|Invoice language for this specific customer.(ET,EN,RU,FI,PL,SV)|
-|Contact|Str 35||
-|GLNCode|Str 10||
-|PartyCode|Str 20||
-|EInvOperator|Int|1 - Not exist, 2 - E-invoices to the bank through Omniva, 3 - Bank ( full extent E-invoice), 4- Bank (limited extent E-invoice)|
-|EInvPaymId|Str 20||
-|BankAccount|Str 50||
-|Dimensions|Array of DimensionsObjects||
-|CustGrCode|Str 20||
-|ShowBalance|Bool||
-|ApixEInv|Str 20||
-
-
-## DimensionsObject
-
-|Field|Type|Comment|
-|-----|----|-------|
-|DimId|Int||
-|DimValueId|Guid||
-|DimCode|Str||
-
-
-
-## Successful Result
-
-|Field|Type|
-|-----|----|
-|Id|Guid|
-|Name|Str|
-
-## Example payload
+---
+:::info Query Payload
 ```json
 {
   "Name":"Mart Mustikas",
@@ -76,10 +25,78 @@
   "EInvOperator":1,
   "Dimensions":[
     {           
-      "DimId":12,           
-      "DimValueId":"4c8b2ec0-af0f-46fb-8d2b-427165c1effc",           
-      "DimCode":"Miski"
+      "DimId":2,           
+      "DimValueId":"7fc5f7f0-0537-4d64-b4cc-a8647bd217ac",           
+      "DimCode":"hfif"
     }
   ]
 }
 ```
+:::details Click to see the query parameters
+|Parameter|Type|Comment|Required|
+|---------|----|-------|--------|
+|Id|Guid|||
+|Name|Str 150|Required when customer is added. The customer name must be unique.|Required?|
+|RegNo|Str 30|||
+|NotTDCustomer|Bool|Required when customer is added. EE True for physical persons and foreign companies.  PL True for physical persons. Allowed "true" or "false" (lowercase).|Required?|
+|VatRegNo|Str 30|||
+|CurrencyCode|Str 30|||
+|PaymentDeadLine|Int|If missing then taken from default settings.||
+|OverDueCharge|Decimal 5.2|If missing then taken from default settings.||
+|RefNoBase|Str 36|||
+|Address|Str 100|||
+|CountryCode|Str 2|Required when adding|Required?|
+|County|Str 100|||
+|City|Str 30|||
+|PostalCode|Str 15|||
+|PhoneNo|Str 50|||
+|PhoneNo2|Str 50|||
+|HomePage|Str 80|||
+|Email|Str 80|||
+|SalesInvLang|Str 8|Invoice language for this specific customer.(ET,EN,RU,FI,PL,SV)||
+|Contact|Str 35|||
+|GLNCode|Str 10|||
+|PartyCode|Str 20|||
+|EInvOperator|Int|1 - Not exist, 2 - E-invoices to the bank through Omniva, 3 - Bank ( full extent E-invoice), 4- Bank (limited extent E-invoice)||
+|EInvPaymId|Str 20|||
+|BankAccount|Str 50|||
+|Dimensions|Array of DimensionsObjects|||
+|CustGrCode|Str 20|||
+|ShowBalance|Bool|||
+|ApixEInv|Str 20|||
+:::
+---
+:::info Dimensions |Object
+```json
+{
+  // ...
+  "Dimensions":[
+    {           
+      "DimId":2,           
+      "DimValueId":"7fc5f7f0-0537-4d64-b4cc-a8647bd217ac",           
+      "DimCode":"hfif"
+    }
+  ]
+}
+```
+:::details Click to see the dimensions object parameters
+|Field|Type|Comment|
+|-----|----|-------|
+|DimId|Int||
+|DimValueId|Guid||
+|DimCode|Str||
+:::
+---
+:::info Successful Result
+```json
+{
+  "Id": "2cbdda92-8cd6-439e-9c7a-a0d04144764f",
+  "Name": "Mart Mustikas"
+}
+```
+:::details Click to see the result parameters
+|Field|Type|
+|-----|----|
+|Id|Guid|
+|Name|Str|
+:::
