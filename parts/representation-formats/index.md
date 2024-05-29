@@ -15,7 +15,7 @@ For `GET` request, we expect you send all the parameters inside request body ele
 If the language you're using has problems doing that, you can also add the body to the parameter `Param4Net`.
 
 > [!NOTE]
-> Since November 2019 all endpoints accept `POST` method.
+> Since November 2019 all endpoints accept `POST` method. Except `v1/getglbatches`, which only accepts `GET` method.
 
 ## Language Classificator
 
