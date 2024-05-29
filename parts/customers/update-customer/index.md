@@ -23,7 +23,6 @@
   "RefNoBase": "1",
   "EInvPaymId": "123456",
   "EinvOperator": 1,
-  "BankAccount": "FI123456789",
   "Contact": "",
   "ApixEinv": "123456",
   "GroupInv": false,
@@ -55,7 +54,7 @@
 |RefNoBase|Str 36|||
 |EInvPaymId|Str 20|||
 |EinvOperator|Int|1 - Not exist, <br>2 - E-invoices to the bank through Omniva, <br>3 - Bank ( full extent E-invoice), <br>4- Bank (limited extent E-invoice)||
-|BankAccount|Str 50|||
+|BankAccount|Str 50|Needs confirmation on if this even works||
 |Contact|Str 35|||
 |ApixEinv|Str 20|||
 |GroupInv|Bool|||
