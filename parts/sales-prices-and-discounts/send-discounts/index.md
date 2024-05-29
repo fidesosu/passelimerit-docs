@@ -10,13 +10,13 @@
 {
   "Discounts": [
     {
-      "TargetGroup": 0,
-      "TargetName": "",
-      "GroupType": 0,
-      "GroupCode": "",
+      "TargetGroup": 1,
+      "TargetName": "testName",
+      "GroupType": 1,
+      "GroupCode": "testCode",
       "DiscountPrc": 0,
-      "StartDate": "20200707",
-      "EndDate": "20200707"
+      "StartDate": "20200709",
+      "EndDate": "20200709"
     }
   ]
 }
@@ -40,7 +40,7 @@
 :::
 ---
 :::info Successful Result
-```text
-OK
+```json
+"OK"
 ```
 :::
