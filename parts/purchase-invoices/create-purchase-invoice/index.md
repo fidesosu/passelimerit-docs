@@ -7,18 +7,17 @@
 ---
 >[!IMPORTANT]
 >This endpoint creates document and general ledger records without any confirmation. If you need solution where book keepers are approving puchase orders and expanse claims, use different endpoint: sendpurchorder.
-
+---
 :::info Query Payload
-
 Example payload 1:  [Example create](./example-create-purchase-invoice/)
 
 Example payload 2:   [Example with proportional vat](./example-create-purchase-invoice-with-proportional-vat/)
 
 :::details Clickto see the query payload
-### PurchaseInvoice
+## PurchaseInvoice
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |Vendor|VendorObject||
 |ExpenseClaim|bool|If false, it indicates a normal purchase invoice. If true, the purchase invoice is handled as presented by responsible employee for expense claim.|
 |DocDate|Date||
@@ -42,10 +41,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |PolDocType|int 1|Poland only 1-purchmk 2-purchvatrr 3-purchwe 0-nochoise|
 
 
-### VendorObject
+## VendorObject
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |Id|Guid|If filled and vendor is found in the database then following fields are not important. If not found, the vendor is added using the following fields.|
 |Name|Str 150|Required when vendor is added|
 |RegNo|Str 30||
@@ -65,10 +64,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |Email|Str 80||
 
 
-### ItemObject
+## ItemObject
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |Code|Str 20|Required. Must be found in company database.|
 |Description|Str 100|Required|
 |Type|Int|1 = stock item, 2 = service, 3 = item. Required.|
@@ -76,10 +75,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
 
 
-### InvoiceRowObject
+## InvoiceRowObject
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |Item|ItemObject||
 |Quantity|Decimal 18.3||
 |Price|Decimal 18.7||
@@ -91,30 +90,30 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |CostCenterCode|Str 20|If used then must be found in the company database|
 
 
-### TaxObject
+## TaxObject
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |TaxId|Guid|Required. Use gettaxes endpoint to detect the guid needed|
 |Amount|Decimal 18.2||
 
 
-### PaymentObject
+## PaymentObject
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |PaymentMethod|Str 150|Name of the payment method. Must be found in the company database.|
 |PaidAmount|Decimal 18.2|Amount with VAT (not more) or less if partial payment|
 |PaymDate|Date|YYYYmmddHHii|
 
 
-### AttachmentObject
+## AttachmentObject
 
 |Field|Type|Comment|
-|-|-|-|
+|-----|----|-------|
 |FileName|Str||
 |FileContent|Str|PDF In Base64 format|
-
+:::
 
 ## Endpoints v2
 
