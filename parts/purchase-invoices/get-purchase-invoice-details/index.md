@@ -8,20 +8,20 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpurchorder`
 
-## Query Payload
-
+---
+:::info Query Payload
 ```json
 { 
   "Id":  "xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx" .
 }
 ```
+:::
 
-## [Successful Result v2](#ResV2)
+:::info Successful Result v1
+```json
 
-## Successful Result v1
-
-The result, if not empty:
-
+```
+:::details Click to see the result parameters
 |Field Name|Type|Comment|
 |----------|----|-------|
 |Header|SalesHeader object||
@@ -102,9 +102,13 @@ The result, if not empty:
 |Code|Code of project / cost center|
 |AllocPct|Allocation percentage|
 |AllocAmount|Allocation amount|
+:::
 
-## Successful Result v2 {#ResV2}
+:::info Successful Result v2
+```json
 
+```
+:::details Click to see the result parameters
 |Field|Type|comment|
 |-----|----|-------|
 |Header|HeaderObject||
@@ -112,7 +116,7 @@ The result, if not empty:
 |Payments|Array of PaymentObjects||	
 |Attachment|Attachment Object||
 
-## HeaderObject
+### HeaderObject
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -147,7 +151,7 @@ The result, if not empty:
 |Operator|||		
 |Paid|Bool|true/false|
 
-## DimensionObject
+### DimensionObject
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -155,7 +159,7 @@ The result, if not empty:
 |DimValueId|Guid||	
 |DimCode|Str||
 
-## InvoiceRowObject
+### InvoiceRowObject
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -179,7 +183,7 @@ The result, if not empty:
 |FixAsset|Bool|true/false|
 |DimAllocation|Array of DimensionsAllocationObjects|
 
-## DimensionAllocationObject
+### DimensionAllocationObject
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -188,7 +192,7 @@ The result, if not empty:
 |AllocPct|Dec||
 |AllocAmount|Dec||
 
-## PaymentObject
+### PaymentObject
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -197,9 +201,10 @@ The result, if not empty:
 |PaymentMethod|Str||	
 |PaymentId|Guid||
 
-## AttachmentObject
+### AttachmentObject
 
 |Field|Type|Comment|
 |-----|----|-------|
 |Filename|Str||
 |FileContent|Str|File in base64|
+:::

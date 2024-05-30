@@ -4,14 +4,17 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/sendpurchinvoice`
 
-This endpoint creates document and general ledger records without any confirmation. If you need solution where book keepers are approving puchase orders and expanse claims, use different endpoint: sendpurchorder.
+---
+>[!IMPORTANT]
+>This endpoint creates document and general ledger records without any confirmation. If you need solution where book keepers are approving puchase orders and expanse claims, use different endpoint: sendpurchorder.
 
-## Query Payload
+:::info Query Payload
 
 Example payload 1:  [Example create](./example-create-purchase-invoice/)
 
 Example payload 2:   [Example with proportional vat](./example-create-purchase-invoice-with-proportional-vat/)
 
+:::details Clickto see the query payload
 ### PurchaseInvoice
 
 |Field|Type|Comment|
