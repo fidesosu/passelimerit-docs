@@ -24,7 +24,7 @@
 ```
 
 >[!IMPORTANT]
->There is a problem with how the API checks the ItmeCode. It has to be in lowercase or else it will not work. We will fix this in the near future.
+>There is a problem with how the API checks the ItemCode. It has to be in lowercase or else it will not work.
 
 :::details Click to see the query parameters
 
