@@ -207,12 +207,6 @@ export const sidebarData = [
             text: 'Send Inventory Movements',
             link: '/parts/inventory-movements/send-inventory-movements/',
             collapsed: true,
-            items: [
-              {
-                text: 'Example Send Inventori Movements',
-                link: '/parts/inventory-movements/send-inventory-movements/example-send-inventori-movements/',
-              }
-            ]
           }
         ]
       },
