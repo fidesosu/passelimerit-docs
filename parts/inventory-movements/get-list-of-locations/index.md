@@ -4,30 +4,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getlocations`
 
-## Query payload
-
+---
+:::info Query Payload
 ```json
 { }
 ```
-
-## Successful Result
-
-|Fields|Type|Comment|
-|------|----|-------|
-|CompanyId|Int||	
-|LocationId|Guid||	
-|Code|Str||	
-|Name|Str||	
-|InBPrefix|Str 5||	
-|InBNextNo|Int||	
-|OutBPrefix|Str 5||	
-|OutBNextNo|Int||	
-|Loc2LocPrefix|Str 5||	
-|Loc2LocNextNo|Int||	
-|InvSetPrefix|Str 5||	
-|InvSetNextNo|Int||
-
-:::info Example Result
+:::
+---
+:::info Successful Result
 ```json
 [
   {
@@ -46,4 +30,19 @@
   }
 ]
 ```
+:::details Click to see the query parameters
+|Fields|Type|Comment|
+|------|----|-------|
+|CompanyId|Int||	
+|LocationId|Guid||	
+|Code|Str||	
+|Name|Str||	
+|InBPrefix|Str 5||	
+|InBNextNo|Int||	
+|OutBPrefix|Str 5||	
+|OutBNextNo|Int||	
+|Loc2LocPrefix|Str 5||	
+|Loc2LocNextNo|Int||	
+|InvSetPrefix|Str 5||	
+|InvSetNextNo|Int||
 :::

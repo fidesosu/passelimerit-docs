@@ -4,10 +4,33 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/SendInvMovement`
 
-## Query Payload
-
-Exampe Payload: payload only
-
+---
+:::info Query Payload
+```json
+{     
+  DocDate:"20200831",     
+  DocNo:"LL-4",     
+  Location1Code:"1",     
+  Location2Code:"2",
+  DepartmentCode:"Netti",     
+  Type:3,     
+  Rows: [     
+    {       
+      ArticleCode:"lamp",
+      UOMName: "tk",
+      ItemUnitCost: 1.50,       
+      Quantity: 10     
+    },     
+    {       
+    ArticleCode:"pirn60w",
+    UOMName: "tk",
+    ItemUnitCost: 2.00,       
+    Quantity: 10     
+    }    
+  ] 
+}
+```
+:::details Click to see the query parameters
 |Field|Type|Comment|
 |-|-|-|
 |DocDate|Date||
@@ -18,8 +41,7 @@ Exampe Payload: payload only
 |Type|int|1-in, 2-out, 3-between Stocks|
 |Rows|Array of Row objects||
 
-
-## Row Object
+### Rows Object
 
 |Field|Type|Comment|
 |-|-|-|
@@ -27,3 +49,4 @@ Exampe Payload: payload only
 |UOMName|Str 64||
 |ItemUnitCost|Decimal 18.3|Required for Type 1|
 |Quantity|Decimal 18.2||
+:::

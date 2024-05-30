@@ -4,7 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getoffers`
 
-## Query payload
+## Query Payload
 
 ```json
 {      

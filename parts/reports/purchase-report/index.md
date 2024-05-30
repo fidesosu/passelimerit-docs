@@ -5,7 +5,7 @@
 <!--@include: @/dist/md/api_url.md-->v2/getpurchrep`
 
 ---
-:::info Query payload
+:::info Query Payload
 ```json
 {
   "StartDate": "yyyyMMdd",

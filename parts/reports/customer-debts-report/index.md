@@ -5,7 +5,7 @@
 <!--@include: @/dist/md/api_url.md-->v1/getcustdebtrep`
 
 ---
-:::info Query payload
+:::info Query Payload
 ```json
 { 
   "CustName": "FirstCustomer Inc",

@@ -7,7 +7,7 @@ The valid price for the customer on a given date.
 <!--@include: @/dist/md/api_url.md-->v2/getprice`
 
 ---
-:::info Query payload
+:::info Query Payload
 ```json
 {
   "ItemCode": "testItem",

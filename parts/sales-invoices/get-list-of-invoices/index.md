@@ -8,7 +8,7 @@ For multiple dimensions:
 
 <!--@include: @/dist/md/api_url.md-->v2/getinvoices`
 
-## Query payload
+## Query Payload
 
 :::info Minimum Query
 ```json
