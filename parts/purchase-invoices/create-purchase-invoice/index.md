@@ -1,6 +1,6 @@
 # Create Purchase Invoice
 
-## Endpoints
+## Endpoints v1
 
 <!--@include: @/dist/md/api_url.md-->v1/sendpurchinvoice`
 
@@ -8,14 +8,13 @@
 >[!IMPORTANT]
 >This endpoint creates document and general ledger records without any confirmation. If you need solution where book keepers are approving puchase orders and expanse claims, use different endpoint: sendpurchorder.
 ---
-:::info Query Payload
+::::info Query Payload
 Example payload 1:  [Example create](./example-create-purchase-invoice/)
 
 Example payload 2:   [Example with proportional vat](./example-create-purchase-invoice-with-proportional-vat/)
 
-:::details Clickto see the query payload
-## PurchaseInvoice
-
+## Purchase Invoice
+:::details Purchase Invoice
 |Field|Type|Comment|
 |-----|----|-------|
 |Vendor|VendorObject||
@@ -39,10 +38,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |Fcomment|Str 4K|Comment after invoice rows|
 |Attachment|AttachmentObject||
 |PolDocType|int 1|Poland only 1-purchmk 2-purchvatrr 3-purchwe 0-nochoise|
+:::
 
-
-## VendorObject
-
+## Vendor Object
+:::details Vendor Object
 |Field|Type|Comment|
 |-----|----|-------|
 |Id|Guid|If filled and vendor is found in the database then following fields are not important. If not found, the vendor is added using the following fields.|
@@ -62,10 +61,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |PhoneNo2|Str 50||
 |HomePage|Str 80||
 |Email|Str 80||
+:::
 
-
-## ItemObject
-
+## Item Object
+:::details Item Object
 |Field|Type|Comment|
 |-----|----|-------|
 |Code|Str 20|Required. Must be found in company database.|
@@ -73,10 +72,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |Type|Int|1 = stock item, 2 = service, 3 = item. Required.|
 |UOMName|Str 64|Name for the unit. Required for stock item|
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
+:::
 
-
-## InvoiceRowObject
-
+## InvoiceRow Object
+:::details InvoiceRow Object
 |Field|Type|Comment|
 |-----|----|-------|
 |Item|ItemObject||
@@ -88,39 +87,42 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |GLAccountCode|Str 10|General ledger Account code. If used then must be found in the company database|
 |ProjectCode|Str 20|If used then must be found in the company database|
 |CostCenterCode|Str 20|If used then must be found in the company database|
+:::
 
-
-## TaxObject
-
+## Tax Object
+:::details Tax Object
 |Field|Type|Comment|
 |-----|----|-------|
 |TaxId|Guid|Required. Use gettaxes endpoint to detect the guid needed|
 |Amount|Decimal 18.2||
+:::
 
-
-## PaymentObject
-
+## Payment Object
+:::details Payment Object
 |Field|Type|Comment|
 |-----|----|-------|
 |PaymentMethod|Str 150|Name of the payment method. Must be found in the company database.|
 |PaidAmount|Decimal 18.2|Amount with VAT (not more) or less if partial payment|
 |PaymDate|Date|YYYYmmddHHii|
+:::
 
-
-## AttachmentObject
-
+## Attachment Object
+:::details Attachment Object
 |Field|Type|Comment|
 |-----|----|-------|
 |FileName|Str||
 |FileContent|Str|PDF In Base64 format|
 :::
+::::
 
 ## Endpoints v2
 
 `https://aktiva.meritaktiva.fi/api/v2/sendpurchinvoice`
 
-## Query Payload
-
+---
+::::info Query Payload
+## Purchase Invoice
+:::details Purchase Invoice
 |Field|Type|Comment|
 |-|-|-|
 |Vendor|VendorObject||
@@ -144,10 +146,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |Attachment|AttachmentObject||
 |BankAccount|Str 50||
 |Receiver|ReceiverObject||
-
+:::
 
 ## Vendor Object
-
+:::details Vendor Object
 |Field|Type|Comment|
 |-|-|-|
 |Id|Guid|If filled and vendor is found in the database then following fields are not important. If not found, the vendor is added using the following fields.|
@@ -167,10 +169,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |PhoneNo2|Str 50||
 |HomePage|Str 80||
 |Email|Str 80||
-
+:::
 
 ## InvoiceRowObject
-
+:::details InvoiceRow Object
 |Field|Type|Comment|
 |-|-|-|
 |Item|Item Object||
@@ -186,10 +188,10 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |PurchaseAccCode|Str 10|If included GLAccountCode then the PurchaseAccCode not be used|
 |InventoryAccCode|Str 10||
 |CostAccCode|Str 10||
-
+:::
 
 ## ItemObject
-
+:::details Item Object
 |Field|Type|Comment|
 |-|-|-|
 |Code|Str 20|Required. Must be found in company database.|
@@ -197,44 +199,44 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |Type|Int|1 = stock item, 2 = service, 3 = item. Required.|
 |UOMName|Str 64|Name for the unit. Required for stock item|
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
-
+:::
 
 ## DimensionsObject
-
+:::details Dimensions Object
 |Field|Type|Comment|
 |-|-|-|
 |DimId|Int||
 |DimValueId|Guid||
 |DimCode|Str||
-
+:::
 
 ## TaxObject
-
+:::details Tax Object
 |Field|Type|Comment|
 |-|-|-|
 |TaxId|Guid|Required. Use gettaxes endpoint to detect the guid needed|
 |Amount|Decimal 18.2||
-
+:::
 
 ## PaymentObject
-
+:::details Payment Object
 |Field|Type|Comment|
 |-|-|-|
 |PaymentMethod|Str 150|Name of the payment method. Must be found in the company database.|
 |PaidAmount|Decimal 18.2|Amount with VAT (not more) or less if partial payment|
 |PaymDate|Date|YYYYmmddHHii|
-
+:::
 
 ## AttachmentObject
-
+:::details Attachment Object
 |Field|Type|Comment|
 |-|-|-|
 |FileName|Str||
 |FileContent|Str|PDF In Base64 format|
-
+:::
 
 ## ReceiverObject
-
+:::details Receiver Object
 |Field|Type|Comment|
 |-|-|-|
 |Id|Guid|If filled and receiver (vendor) is found in the database then following fields are not important. If not found, the receiver is added using the following fields.|
@@ -254,11 +256,17 @@ Example payload 2:   [Example with proportional vat](./example-create-purchase-i
 |PhoneNo2|Str 50||
 |HomePage|Str 80||
 |Email|Str 80||
+:::
 
+:::info Successful Result
+```json
 
-## Successful Result
+```
+
 - VendorId
 - BillId
 - BillNo
 - RefNo
 - BatcInfo
+:::
+<!------ Footnotes ------>

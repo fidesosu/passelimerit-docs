@@ -40,7 +40,7 @@
 |-----|----|-------|
 |TargetGroup|Int|0-campaign, <br>1- Customer, <br>2- Customer Group|
 |TargetName|Str||	
-|ItemCode|Str||	
+|ItemCode[^1]|Str||	
 |Price|Decimal||
 |CurrencyCode|Str||
 |DiscountAllowed|Bool|true / false|
@@ -53,3 +53,6 @@
 OK
 ```
 :::
+
+## API Problems
+[^1]: ItemCode has to be in lowercase or else it will not work.
