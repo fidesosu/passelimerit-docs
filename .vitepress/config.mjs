@@ -1,11 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sidebarData } from '../dist/js/sidebar-collapsed.mjs'
-//import { generateSidebar } from 'vitepress-sidebar';
-
-//const vitepressSidebarOptions = {
-//  includeFolderIndexFile: true,
-//  documentRootPath: '/parts',
-//};
+import footnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,7 +14,6 @@ export default defineConfig({
     logo: '/dist/images/favicon.png',
     // outline: false, // disables the 'on this page' text.
     // aside: false, // disables the 'on this page' area.
-    // https://vitepress.dev/reference/default-theme-config
     editLink: {
       pattern: 'https://github.com/fidesosu/passelimerit-docs/tree/main/:path'
     },
@@ -42,7 +36,11 @@ export default defineConfig({
         ]
       }
     ],
-    // sidebar: generateSidebar(vitepressSidebarOptions) // Delete if not needed
     sidebar: sidebarData,
+  },
+  markdown: {
+    config: (md) => {
+      md.use(footnote)
+    }
   }
 })
