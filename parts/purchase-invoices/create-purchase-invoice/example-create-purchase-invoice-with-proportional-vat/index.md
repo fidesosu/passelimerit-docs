@@ -1,5 +1,5 @@
 # Example create purchase invoice with proportional VAT
-
+---
 Tax % 20,   Proportion used on VAT deduction in percents 34
 
 ```json
