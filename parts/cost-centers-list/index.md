@@ -15,9 +15,9 @@
 ```json
 [
   {
-    "Code": "test",
-    "Name": "test",
-    "EndDate": "2021-01-01"
+    "Code": "testCostCenterCode",
+    "Name": "testCostCenterName",
+    "EndDate": "6/25/2033"
   }
 ]
 ```
