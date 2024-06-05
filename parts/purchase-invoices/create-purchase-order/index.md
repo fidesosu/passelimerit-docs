@@ -9,15 +9,11 @@
 <!--@include: @/dist/md/api_url.md-->v1/sendpurchorder`
 
 ---
+
+>[!NOTE]
+>Please make sure the PDF is a valid file and correctly encoded into Base64. We validate these attachements. This is quite otfen that API responds with error because of attachment that is broken file. <br><br>Also, if you want to send expense document instead of invoice, please use attribute  `ExpenseClaim: true`. <br><br>If you want to send document straight to book keeping with general ledger records and stuff. Please use endpoint `sendpurchinvoice`.
+---
 ::::info Query Payload
-
-Please make sure that PDF is valid fail and correctly encoded into Base64. We validate these attachements. This is quite otfen that API responds with error because of attachment that is broken file.
-
-Also, if you want to send expense document instead of invoice, please use attribute  `ExpenseClaim: true`.
-
-If you want to send document straight to book keeping with general ledger records and stuff. Please use endpoint `sendpurchinvoice`.
-
-## Purchase Invoice
 ```json
 {
   "Vendor": {
@@ -83,6 +79,7 @@ If you want to send document straight to book keeping with general ledger record
   }
 }
 ```
+
 :::details Purchase Invoice
 |Field|Type|Comment|
 |-|-|-|
