@@ -16,21 +16,132 @@
 }
 ```
 :::
-
-:::info Successful Result v1
+# Successful Result V1
+::::info Successful Result v1
 ```json
-
+{
+  "Header": {
+    "PIHId": "5312a13d-64ad-4032-b523-d81c420d246a",
+    "DepartmentCode": null,
+    "DepartmentName": null,
+    "ProjectCode": null,
+    "CostCenterCode": null,
+    "BatchInfo": "OS-3",
+    "BillNo": "987654324",
+    "DocumentDate": "2020-05-06T00:00:00",
+    "TransactionDate": "2020-05-06T00:00:00",
+    "VendorId": "cbd0cd6b-c6ce-42c5-9162-0eb4942f2dd5",
+    "VendorName": "Mingi Firma AS",
+    "VendorRegNo": "123456789",
+    "DueDate": "2020-05-06T00:00:00",
+    "Fine": 0.00,
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000,
+    "TaxAmount": 0.00,
+    "RoundingAmount": 0.00,
+    "TotalAmount": 471.20,
+    "ProfitAmount": 471.20,
+    "TotalSum": 471.20,
+    "ReferenceNo": null,
+    "PriceInclVat": false,
+    "VatRegNo": "EE123456789",
+    "PaidAmount": 380.00,
+    "FileExists": true,
+    "InboundTime": "2024-06-03T09:44:46.547",
+    "Operator": null,
+    "Paid": false
+  },
+  "Lines": [
+    {
+      "PILId": "8b3c11dc-9356-482c-89eb-84eaa87283ad",
+      "ArticleCode": "ENVOICE_SERVICE",
+      "LocationCode": null,
+      "Quantity": 1.000,
+      "Price": 471.2000000,
+      "TaxName": "Ei veronalainen",
+      "TaxPct": 0.00,
+      "AmountExclVat": 471.20,
+      "AmountInclVat": 471.20,
+      "VatAmount": 0.00,
+      "AccountCode": "1531",
+      "DepartmentName": null,
+      "DepartmentCode": null,
+      "ItemCostAmount": 0.00,
+      "ProfitAmount": 471.20,
+      "Description": "Rehvivahetuse ettemaks",
+      "UOMName": null,
+      "FixAsset": false,
+      "ProjectAllocation": [],
+      "CostCenterAllocation": [
+        {
+          "Code": "testCostCenterCode",
+          "AllocPct": 100.0000000,
+          "AllocAmount": 471.20
+        }
+      ]
+    }
+  ],
+  "Payments": [
+    {
+      "PaymDate": "2024-06-03T00:00:00",
+      "Amount": 380.00,
+      "PaymentMethod": null,
+      "PaymentId": "4d4554e7-372b-478a-9bcb-794224916b5e"
+    }
+  ],
+  "Attachment": {
+    "FileName": "file.pdf",
+    "FileContent": "YmFzZTY0"
+  }
+}
 ```
 :::details Click to see the result parameters
 |Field Name|Type|Comment|
 |----------|----|-------|
-|Header|SalesHeader object||
-|Lines|Array of Line objects||
-|Payments|Array of Payment objects||
-|Allocations|Project and Cost Center allocations (if existing)||
+|[Header](#header1)|SalesHeader object||
+|[Lines](#linesv1)|Array of Line objects||
+|[Payments](#paymentsv1)|Array of Payment objects||
+|[Allocations](#costallocation)|Project and Cost Center allocations (if existing)||
+:::
 
-### PurchaseInvoiceHeaderObject
-
+## Header Object {#header1}
+```json
+{
+  "Header": {
+    "PIHId": "5312a13d-64ad-4032-b523-d81c420d246a",
+    "DepartmentCode": null,
+    "DepartmentName": null,
+    "ProjectCode": null,
+    "CostCenterCode": null,
+    "BatchInfo": "OS-3",
+    "BillNo": "987654324",
+    "DocumentDate": "2020-05-06T00:00:00",
+    "TransactionDate": "2020-05-06T00:00:00",
+    "VendorId": "cbd0cd6b-c6ce-42c5-9162-0eb4942f2dd5",
+    "VendorName": "Mingi Firma AS",
+    "VendorRegNo": "123456789",
+    "DueDate": "2020-05-06T00:00:00",
+    "Fine": 0.00,
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000,
+    "TaxAmount": 0.00,
+    "RoundingAmount": 0.00,
+    "TotalAmount": 471.20,
+    "ProfitAmount": 471.20,
+    "TotalSum": 471.20,
+    "ReferenceNo": null,
+    "PriceInclVat": false,
+    "VatRegNo": "EE123456789",
+    "PaidAmount": 380.00,
+    "FileExists": true,
+    "InboundTime": "2024-06-03T09:44:46.547",
+    "Operator": null,
+    "Paid": false
+  },
+  // ...
+}
+```
+:::details Header Object
 |Field Name|Comment|
 |----------|-------|
 |PIHId|| 	 
@@ -59,9 +170,42 @@
 |VatRegNo||
 |InboundTime||
 |Operator||
+:::
 
-### InvoiceRowObject
-
+## Lines Object {#linesv1}
+```json
+{
+  // ...
+  "Lines": [
+    {
+      "PILId": "8b3c11dc-9356-482c-89eb-84eaa87283ad",
+      "ArticleCode": "ENVOICE_SERVICE",
+      "LocationCode": null,
+      "Quantity": 1.000,
+      "Price": 471.2000000,
+      "TaxName": "Ei veronalainen",
+      "TaxPct": 0.00,
+      "AmountExclVat": 471.20,
+      "AmountInclVat": 471.20,
+      "VatAmount": 0.00,
+      "AccountCode": "1531",
+      "DepartmentName": null,
+      "DepartmentCode": null,
+      "ItemCostAmount": 0.00,
+      "ProfitAmount": 471.20,
+      "Description": "Rehvivahetuse ettemaks",
+      "UOMName": null,
+      "FixAsset": false,
+      "ProjectAllocation": [],
+      "CostCenterAllocation": [
+        // ...
+      ]
+    }
+  ],
+  // ...
+}
+```
+:::details InvoiceRow Object
 |Field Name|Comment|
 |----------|-------|
 |ArticleCode||
@@ -85,39 +229,189 @@
 |FixAsset||
 |ProjectAllocation|Array(CostAllocation)|
 |CostCenterAllocation|Array(CostAllocation)|
+:::
 
-### PaymentObject
-
+## Payments Object {#paymentsv1}
+```json
+{
+  // ...
+  "Payments": [
+    {
+      "PaymDate": "2024-06-03T00:00:00",
+      "Amount": 380.00,
+      "PaymentMethod": null,
+      "PaymentId": "4d4554e7-372b-478a-9bcb-794224916b5e"
+    }
+  ],
+  // ...
+}
+```
+:::details Payment Object
 |Field Name|Comment|
 |----------|-------|
 |PaymDate||
 |Amount||
 |PaymentMethod||	
 |PaymentId||
+:::
 
-### CostAllocationObject
-
+## CostAllocation Object {#costallocation}
+```json
+{
+  // ...
+  "Lines": [
+    {
+      // ...
+      "CostCenterAllocation": [
+        {
+          "Code": "testCostCenterCode",
+          "AllocPct": 100.0000000,
+          "AllocAmount": 471.20
+        }
+      ]
+    }
+  ],
+  // ...
+}
+```
+:::details CostAllocation Object
 |Field Name|Comment|
 |----------|-------|
 |Code|Code of project / cost center|
 |AllocPct|Allocation percentage|
 |AllocAmount|Allocation amount|
 :::
+::::
 
-:::info Successful Result v2
+# Successful Result V2
+
+::::info Successful Result v2
 ```json
-
+{
+  "Header": {
+    "Dimensions": [],
+    "PIHId": "c28546dc-ab9a-4ecd-b9d5-1cf4a0a97348",
+    "DepartmentCode": null,
+    "DepartmentName": null,
+    "ProjectCode": null,
+    "CostCenterCode": null,
+    "BatchInfo": "OS-4",
+    "BillNo": "987654324",
+    "DocumentDate": "2020-05-06T00:00:00",
+    "TransactionDate": "2020-05-06T00:00:00",
+    "VendorId": "cbd0cd6b-c6ce-42c5-9162-0eb4942f2dd5",
+    "VendorName": "Mingi Firma AS",
+    "VendorRegNo": "123456789",
+    "DueDate": "2020-05-06T00:00:00",
+    "Fine": 0.00,
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000,
+    "TaxAmount": 0.00,
+    "RoundingAmount": 0.00,
+    "TotalAmount": 471.20,
+    "ProfitAmount": 471.20,
+    "TotalSum": 471.20,
+    "ReferenceNo": null,
+    "PriceInclVat": false,
+    "VatRegNo": "EE123456789",
+    "PaidAmount": 380.00,
+    "FileExists": true,
+    "InboundTime": "0001-01-01T00:00:00",
+    "Operator": null,
+    "Paid": false
+  },
+  "Lines": [
+    {
+      "PILId": "fe0f1268-b315-4b4e-8a9e-55acd06e6ccf",
+      "ArticleCode": "ENVOICE_SERVICE",
+      "LocationCode": null,
+      "Quantity": 1.000,
+      "Price": 471.2000000,
+      "TaxName": "Ei veronalainen",
+      "TaxPct": 0.00,
+      "AmountExclVat": 471.20,
+      "AmountInclVat": 471.20,
+      "VatAmount": 0.00,
+      "AccountCode": "1531",
+      "DepartmentName": null,
+      "DepartmentCode": null,
+      "ItemCostAmount": 0.00,
+      "ProfitAmount": 471.20,
+      "Description": "Rehvivahetuse ettemaks",
+      "UOMName": null,
+      "FixAsset": false,
+      "DimAllocation": [
+        {
+          "DimId": 1,
+          "Code": "testCostCenterCode",
+          "AllocPct": 100.0000000,
+          "AllocAmount": 471.20
+        }
+      ]
+    }
+  ],
+  "Payments": [
+    {
+      "PaymDate": "2024-06-03T00:00:00",
+      "Amount": 380.00,
+      "PaymentMethod": null,
+      "PaymentId": "42235110-1b86-4f4d-9d23-686d7d0b4d0a"
+    }
+  ],
+  "Attachment": {
+    "FileName": "file.pdf",
+    "FileContent": "YmFzZTY0"
+  }
+}
 ```
 :::details Click to see the result parameters
 |Field|Type|comment|
 |-----|----|-------|
-|Header|HeaderObject||
-|Lines|Array of LinesObjects||	
-|Payments|Array of PaymentObjects||	
-|Attachment|Attachment Object||
+|[Header](#headerv2)|HeaderObject||
+|[Lines](#linesv2)|Array of LinesObjects||	
+|[Payments](#paymentsv2)|Array of PaymentObjects||	
+|[Attachment](#attachmentv2)|Attachment Object||
+:::
 
-### HeaderObject
-
+## Header Object {#headerv2}
+```json
+{
+  "Header": {
+    "Dimensions": [],
+    "PIHId": "c28546dc-ab9a-4ecd-b9d5-1cf4a0a97348",
+    "DepartmentCode": null,
+    "DepartmentName": null,
+    "ProjectCode": null,
+    "CostCenterCode": null,
+    "BatchInfo": "OS-4",
+    "BillNo": "987654324",
+    "DocumentDate": "2020-05-06T00:00:00",
+    "TransactionDate": "2020-05-06T00:00:00",
+    "VendorId": "cbd0cd6b-c6ce-42c5-9162-0eb4942f2dd5",
+    "VendorName": "Mingi Firma AS",
+    "VendorRegNo": "123456789",
+    "DueDate": "2020-05-06T00:00:00",
+    "Fine": 0.00,
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000,
+    "TaxAmount": 0.00,
+    "RoundingAmount": 0.00,
+    "TotalAmount": 471.20,
+    "ProfitAmount": 471.20,
+    "TotalSum": 471.20,
+    "ReferenceNo": null,
+    "PriceInclVat": false,
+    "VatRegNo": "EE123456789",
+    "PaidAmount": 380.00,
+    "FileExists": true,
+    "InboundTime": "0001-01-01T00:00:00",
+    "Operator": null,
+    "Paid": false
+  },
+  // ...
+}
+```
+:::details Header Object
 |Field|Type|Comment|
 |-----|----|-------|
 |Dimensions|Array of DimensionObjects||
@@ -150,17 +444,59 @@
 |InboundTime|Date||	
 |Operator|||		
 |Paid|Bool|true/false|
+:::
 
-### DimensionObject
-
+## Dimensions Object
+```json
+{
+  "Header": {
+    "Dimensions": [],
+    // ...
+  },
+  // ...
+}
+```
+:::details Dimensions Object
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Str||	
 |DimValueId|Guid||	
 |DimCode|Str||
+:::
 
-### InvoiceRowObject
-
+## Lines Object {#linesv2}
+```json
+{
+  // ...
+  "Lines": [
+    {
+      "PILId": "fe0f1268-b315-4b4e-8a9e-55acd06e6ccf",
+      "ArticleCode": "ENVOICE_SERVICE",
+      "LocationCode": null,
+      "Quantity": 1.000,
+      "Price": 471.2000000,
+      "TaxName": "Ei veronalainen",
+      "TaxPct": 0.00,
+      "AmountExclVat": 471.20,
+      "AmountInclVat": 471.20,
+      "VatAmount": 0.00,
+      "AccountCode": "1531",
+      "DepartmentName": null,
+      "DepartmentCode": null,
+      "ItemCostAmount": 0.00,
+      "ProfitAmount": 471.20,
+      "Description": "Rehvivahetuse ettemaks",
+      "UOMName": null,
+      "FixAsset": false,
+      "DimAllocation": [
+        // ...
+      ]
+    }
+  ],
+  // ...
+}
+```
+:::details InvoiceRow Object
 |Field|Type|Comment|
 |-----|----|-------|
 |PILId|Guid||	
@@ -182,29 +518,75 @@
 |UOMName|Str||
 |FixAsset|Bool|true/false|
 |DimAllocation|Array of DimensionsAllocationObjects|
+:::
 
-### DimensionAllocationObject
-
+## DimensionAllocation Object
+```json
+{
+  // ...
+  "Lines": [
+    {
+      // ...
+      "DimAllocation": [
+        {
+          "DimId": 1,
+          "Code": "testCostCenterCode",
+          "AllocPct": 100.0000000,
+          "AllocAmount": 471.20
+        }
+      ]
+    }
+  ],
+  // ...
+}
+```
+:::details DimensionAllocation Object
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Str||
 |Code|Str||
 |AllocPct|Dec||
 |AllocAmount|Dec||
+:::
 
-### PaymentObject
-
+## Payments Object {#paymentsv2}
+```json
+{
+  // ...
+  "Payments": [
+    {
+      "PaymDate": "2024-06-03T00:00:00",
+      "Amount": 380.00,
+      "PaymentMethod": null,
+      "PaymentId": "42235110-1b86-4f4d-9d23-686d7d0b4d0a"
+    }
+  ],
+  // ...
+}
+```
+:::details Payment Object
 |Field|Type|Comment|
 |-----|----|-------|
 |PaymDate|Date||	
 |Amount|Dec||
 |PaymentMethod|Str||	
 |PaymentId|Guid||
+:::
 
-### AttachmentObject
-
+## Attachment Object {#attachmentv2}
+```json
+{
+  // ...
+  "Attachment": {
+    "FileName": "file.pdf",
+    "FileContent": "YmFzZTY0"
+  }
+}
+```
+:::details Attachment Object
 |Field|Type|Comment|
 |-----|----|-------|
 |Filename|Str||
 |FileContent|Str|File in base64|
 :::
+::::
