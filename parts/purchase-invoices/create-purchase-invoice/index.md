@@ -9,11 +9,6 @@
 >This endpoint creates document and general ledger records without any confirmation. If you need solution where book keepers are approving puchase orders and expanse claims, use different endpoint: sendpurchorder.
 ---
 ::::info Query Payload
-Example payload 1:  [Example create](./example-create-purchase-invoice/)
-
-Example payload 2:   [Example with proportional vat](./example-create-purchase-invoice-with-proportional-vat/)
-
-## Purchase Invoice
 ```json
 {
   "Vendor": {
