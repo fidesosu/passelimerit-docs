@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@mdit/plugin-tab": "^0.12.0",
     "vitepress": "^1.1.4"
   },
   "scripts": {
