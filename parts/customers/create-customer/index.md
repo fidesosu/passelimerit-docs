@@ -33,7 +33,7 @@
 }
 ```
 :::details Click to see the query parameters
-|Parameter|Type|Comment|Required|
+|Field|Type|Comment|Required|
 |---------|----|-------|--------|
 |Id|Guid|||
 |Name|Str 150|Required when customer is added. The customer name must be unique.|Required?|
@@ -66,7 +66,7 @@
 |ApixEInv|Str 20|||
 :::
 ---
-:::info Dimensions |Object
+:::info Dimensions Object
 ```json
 {
   // ...
