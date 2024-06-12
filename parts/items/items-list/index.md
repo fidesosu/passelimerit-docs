@@ -4,7 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getitems`
 
-:::info Query Payload
+## Query Payload
 ```json
 { }
 ```
@@ -16,8 +16,8 @@
 |Description|Str|Broad match||
 |LocationCode|Str|Optional if filled, then stock code for current goods on hand report||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

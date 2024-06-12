@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getcustomers`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { "Name": "FirstCustomer Inc" }
 ```
@@ -20,8 +19,8 @@
 |CommentsFrom|Date|Date later|
 |ChangedDate|Date|Date of changing or creating customer/vendor (YYYYmmDD)|
 :::
----
-:::info Successful response
+
+## Successful response
 ```json
 [
   {
@@ -67,10 +66,9 @@
   }
 ]
 ```
-:::details Click to see the result parameters
 
 ### Result parameters
-
+:::details Click to see the result parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |CustomerId|Guid||
@@ -100,15 +98,18 @@
 |RefNoBase|Str||
 |Comments|Array of comments||
 |Dimensions|Array of dimensions||
-### Comments parameters
+:::
 
+### Comments parameters
+:::details Comments parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Comment|Str|Comment|
 |CommDate|Date|Date|
+:::
 
 ### Dimensions parameters
-
+:::details Dimensions parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |Id|Guid||
@@ -116,6 +117,6 @@
 |DimValueId|Guid||
 |DimCode|Str||
 :::
-
+---
 > [!IMPORTANT]
 > We're aware of the problem of big responses. If you try to query full list of customers or vendors, it will respond with stacktrace that tells our server is unable to compile JSON that big. We're working on it.

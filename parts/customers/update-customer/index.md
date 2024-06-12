@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/updatecustomer`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Id": "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
@@ -62,8 +61,8 @@
 |Comments|Array of comments|Comment Str CommDate Date||
 |OverdueCharge|Decimal|||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 "Updated"
 ```

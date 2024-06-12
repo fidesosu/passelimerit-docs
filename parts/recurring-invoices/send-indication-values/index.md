@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/sendindvalues`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { 
   ArtCode: "EU-maat tav", 

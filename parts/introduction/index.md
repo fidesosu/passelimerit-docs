@@ -9,8 +9,8 @@ The documentation might not include every possible parameter. If you need more i
 
 |Value|Description|
 |-----|-----------|
-|`Required`|The parameter is required for the request.|
-|`Required?`|The parameter is required in some cases, but not all.|
+|Required|The parameter is required for the request.|
+|Required[`?`](## "Required at specific sircumstances")|The parameter is required in some cases, but not all. They also have a "link" that is used as a roundabout way to set a "[tooltip](## "Example tooltip")"|
 ||The parameter is optional.|
 
 ## `Type` column

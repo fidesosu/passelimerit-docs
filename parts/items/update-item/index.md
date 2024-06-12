@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/updateitem`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Id": "c9a417e7-bf34-4443-9f11-daf0912e99df",
@@ -40,8 +39,8 @@
 |ItemCostAccountCode|Str 10|If used then must be found in the company database||
 |TaxId|Guid|||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 "Updated"
 ```

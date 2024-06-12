@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getaccounts`
 
----
-:::info Minimum Query Payload
+## Minimum Query Payload
 ```json
 { }
 ```
@@ -22,8 +21,8 @@
 |IsParent|Str|`1` – details,  <br>`2` – summary|
 |UsageFilter|Int|`0` or `empty` - all accounts. <br>`1` - cost accounts, <br>`2` - cost contra-accounts, <br>`3` - purchase VAT accounts|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {
@@ -38,4 +37,3 @@
   // ...
 ]
 ```
-:::

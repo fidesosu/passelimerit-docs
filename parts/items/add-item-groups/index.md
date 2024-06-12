@@ -4,7 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/senditemgroups`
 
-:::info Query Payload
+## Query Payload
 ```json
 {     
   "ItemGroups":[
@@ -21,8 +21,8 @@
 |Code|Str||	
 |Name|Str||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

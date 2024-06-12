@@ -21,7 +21,8 @@ Successful response is represented as `JSON` with response code `200`. <br>In ma
 |401|Unauthorized|api-wrongsignature|This could be because of the body, it cannot contain slashes (`/`)|
 |401|Unauthorized|api-wronglicense|This company's creator did not have PRO or PREMIUM license|
 |500|Internal Server Error|Stacktrace|Should not happen. An alert is generated and sent to our development team.|
-:::info From february 8, the new output format for the API:
+---
+From february 8, the new output format for the API:
 
 The old output was a string containing `JSON`.
 
@@ -44,9 +45,9 @@ Body: {
   NewCustomer: null
 }
 ```
-:::
+
 ::: info
-The date format in the new output is: `YYYY-mm-DDTHH:mm:ss`<br>
+The date format in the new output is: `YYYY-mm-DDTHH:mm:ss` (In most cases. Sometimes it's `YYYY/MM/DD`)<br>
 
 Please make changes to your API applications that work with Passeli Merit.
 :::

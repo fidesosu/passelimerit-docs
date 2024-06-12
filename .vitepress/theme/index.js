@@ -20,10 +20,10 @@ export default {
         let level1Count = 0;  // x.
         let level2Count = 0;  // x.x.
         let level3Count = 0;  // x.x.x.
-      
-        document.querySelectorAll('.item .link .text').forEach(function(element) {
+
+        document.querySelectorAll('.item .link .text').forEach(function (element) {
           const parentClasses = element.closest('.level-1, .level-2, .level-3');
-      
+
           if (parentClasses.classList.contains('level-1')) {
             level1Count++;
             level2Count = 0;
@@ -44,33 +44,33 @@ export default {
 
         // Loop through each item
         items.forEach(item => {
-            // Select the nested elements
-            const links = item.querySelectorAll('.link .text');
+          // Select the nested elements
+          const links = item.querySelectorAll('.link .text');
 
-            // Loop through each link
-            links.forEach(link => {
-                const textContent = link.textContent;
+          // Loop through each link
+          links.forEach(link => {
+            const textContent = link.textContent;
 
-                // Apply regex to match patterns like 1., 1.1., 1.1.1.
-                const regex = /\b\d+\.\s|\b\d+\.\d+\.\s|\b\d+\.\d+\.\d+\.\s/g;
-                const matchedNumbers = textContent.match(regex);
+            // Apply regex to match patterns like 1., 1.1., 1.1.1.
+            const regex = /\b\d+\.\s|\b\d+\.\d+\.\s|\b\d+\.\d+\.\d+\.\s/g;
+            const matchedNumbers = textContent.match(regex);
 
-                if (matchedNumbers) {
-                    const firstMatch = matchedNumbers[0];
-                    const startIndex = textContent.indexOf(firstMatch);
-                    const endIndex = startIndex + firstMatch.length;
+            if (matchedNumbers) {
+              const firstMatch = matchedNumbers[0];
+              const startIndex = textContent.indexOf(firstMatch);
+              const endIndex = startIndex + firstMatch.length;
 
-                    // Wrap the matched text in a span with the style applied
-                    const styledText = `<span style="font-weight: bold; color: #bbb;">${firstMatch}</span>`;
-                    const newTextContent = textContent.substring(0, startIndex) + styledText + textContent.substring(endIndex);
+              // Wrap the matched text in a span with the style applied
+              const styledText = `<span style="font-weight: bold; color: #bbb;">${firstMatch}</span>`;
+              const newTextContent = textContent.substring(0, startIndex) + styledText + textContent.substring(endIndex);
 
-                    // Set the modified text content back to the element
-                    link.innerHTML = newTextContent;
-                }
-                else {
-                  
-                }
-            });
+              // Set the modified text content back to the element
+              link.innerHTML = newTextContent;
+            }
+            else {
+
+            }
+          });
         });
       }
     }, 1);

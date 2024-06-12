@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/senddimensions`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Dimensions": [

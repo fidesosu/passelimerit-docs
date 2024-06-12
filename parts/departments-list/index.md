@@ -4,16 +4,13 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getdepartments`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { }
 ```
-:::
 
 ## Successful Result
 
-:::info
 ```json
 [
   {

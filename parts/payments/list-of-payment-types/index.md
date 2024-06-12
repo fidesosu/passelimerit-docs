@@ -4,20 +4,19 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpaymenttypes`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Type": 1
 }
 ```
 :::details Click to see the query parameters
-|Field|Type|Comment|
-|-----|----|-------|
-|Type|Int|1 - purchases,<br> 2 - expense reports,<br> 3 - sales|
+|Field|Type|Comment|Required|
+|-----|----|-------|--------|
+|Type|Int|1 - purchases,<br> 2 - expense reports,<br> 3 - sales||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

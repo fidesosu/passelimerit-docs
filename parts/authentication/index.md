@@ -8,6 +8,8 @@ There you just input the comment for the key and click "Create", The comment can
 
 ![An image](../../dist/images/api-keys-list-1-dark.png)
 
+>The images are slightly altered to make them fit the page better. The actual UI might look slightly different, but the functionality is the same.
+---
 >[!IMPORTANT]
 >_**Keep your Api ID and Api Key secret**_. They should be guarded just as you would your regular account password. If you feel your ID and Key has been compromised, you can reset it by deleting and re creating a >new ID and Key.
 
@@ -15,7 +17,6 @@ For every API request you make, you'll need to include `ApiId`, `timestamp` and 
 
 `Signature` is in `Base64` format and is calculated using your `ApiKey` with `HMAC-SHA-256`, based on the `ApiId` + `timestamp` + `RequestJSON`.
 
-:::info
 ```js{13-15}
 function getTimestamp () {
   var d = new Date();
@@ -39,7 +40,6 @@ console.log(signature);
 
 var url = 'https://app.passelimerit.fi/api/v1/sendinvoice' + '?ApiId=' + ApiId + '&timestamp=' + timestamp + '&signature=' + signature;
 ```
-:::
 
 You can check if your signing is correct from API settings. "SigningStatus" column can have value "OK" or "Insecure: " with UTC date when last incorrectly signed API request occured.
 

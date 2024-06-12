@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getinventoryreport`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "ArticleGroups": [],
@@ -24,8 +23,8 @@
 |ShowZero|Bool|true/false|
 |WithReservations|Bool|true/false|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 []
 ```

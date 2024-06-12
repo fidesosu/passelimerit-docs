@@ -60,10 +60,6 @@ export const sidebarData = [
                 link: '/parts/sales-invoices/create-sales-invoice/example-create-sales-invoice-in-php.md',
               },
               {
-                text: 'Example: Create Sales Invoice',
-                link: '/parts/sales-invoices/create-sales-invoice/example-create-sales-invoice.md',
-              },
-              {
                 text: 'Example: Create Sales Invoice WITH PAYMENT',
                 link: '/parts/sales-invoices/create-sales-invoice/example-create-sales-invoice-with-payment.md',
               },

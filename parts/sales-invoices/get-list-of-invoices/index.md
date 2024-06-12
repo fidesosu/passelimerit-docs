@@ -9,8 +9,6 @@ For multiple dimensions:
 <!--@include: @/dist/md/api_url.md-->v2/getinvoices`
 
 ## Query Payload
-
-:::info Minimum Query
 ```json
 { 
   Periodstart: YYYYmmdd, 
@@ -18,9 +16,7 @@ For multiple dimensions:
   UnPaid: true 
 }
 ```
-:::
 
-> [!IMPORTANT]
 > Maximum period length is 3 months.
 ---
 :::details Click to see the result parameters

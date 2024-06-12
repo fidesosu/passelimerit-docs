@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpurchrep`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "StartDate": "yyyyMMdd",
@@ -36,10 +35,33 @@
 |FixAssetFilter|Str|Array of Fixed assets|
 |ByEntryNo|Bool|true/false|
 :::
----
-:::info Successful Result for Report type 1
+
+## Successful Result
+### Report type 1
 ```json
-[]
+[
+  {
+    "DocId": "c28546dc-ab9a-4ecd-b9d5-1cf4a0a97348",
+    "InvoiceNo": "987654324",
+    "CurrencyCode": "EUR",
+    "CurrencyRate": 1.0000000,
+    "CustomerId": "00000000-0000-0000-0000-000000000000",
+    "CustomerName": "Mingi Firma AS",
+    "RegNo": "123456789",
+    "VatRegNo": "EE123456789",
+    "InvoiceDate": "2020-05-06T00:00:00",
+    "Amount": 471.20,
+    "VatAmount": 0.00,
+    "RoundingAmount": 0.00,
+    "TotalAmount": 471.20,
+    "ExpenseClaim": false,
+    "BatchId": "70348d4c-4860-4abb-a376-20fcf7512c2e",
+    "BatchCode": "OS",
+    "BatchNo": 4,
+    "Ctry": null
+  },
+  // ...
+]
 ```
 :::details Click to see the query parameters
 |Field|Type|Comment|
@@ -63,10 +85,30 @@
 |BatchNo|Int||
 |Ctry|Str||
 :::
----
-:::info Successful Result for Report type 2
+
+### Report type 2
 ```json
-[]
+[
+  {
+    "CustomerId": "cbd0cd6b-c6ce-42c5-9162-0eb4942f2dd5",
+    "CurrencyCode": "EUR",
+    "CustomerName": "Mingi Firma AS",
+    "RegNo": "123456789",
+    "VatRegNo": "EE123456789",
+    "Amount": 2827.20,
+    "CAmount": 2827.200000000000000,
+    "VatAmount": 0.00,
+    "RoundingAmount": 0.000000,
+    "TotalAmount": 2827.20,
+    "CVatAmount": 0.000000000000000,
+    "CRoundingAmount": 0.000000000000000,
+    "CTotalAmount": 2827.200000000000000,
+    "LnCnt": 0.0,
+    "DiscAmt": 0.0,
+    "CDiscAmt": 0.0
+  },
+  // ...
+]
 ```
 :::details Click to see the query parameters
 |Field|Type|Comment|
@@ -88,10 +130,26 @@
 |DiscAmt|Decimal||
 |CDiscAmt|Decimal||
 :::
----
-:::info Successful Result for Report type 3
+
+### Report type 3
 ```json
-[]
+[
+  {
+    "ItemId": "00000000-0000-0000-0000-000000000000",
+    "ItemCode": "ENVOICE_SERVICE",
+    "ItemName": "Rehvivahetuse ettemaks",
+    "ItemGrId": "00000000-0000-0000-0000-000000000000",
+    "ItemGrName": null,
+    "CurrencyCode": null,
+    "Unit": null,
+    "Quantity": 6.000,
+    "Price": 471.200000000000,
+    "Amount": 2827.200000000000000,
+    "UOMId1": "00000000-0000-0000-0000-000000000000",
+    "UOMId2": "00000000-0000-0000-0000-000000000000"
+  },
+  // ...
+]
 ```
 :::details Click to see the query parameters
 |Field|Type|Comment|
@@ -109,8 +167,8 @@
 |UOMId1|Guid||
 |UOMId2|Guid||
 :::
----
-:::info Successful Result for Report type 4
+
+### Report type 4
 ```json
 []
 ```

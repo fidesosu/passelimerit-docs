@@ -15,9 +15,15 @@
 
 ```
 
-## Successful Result
+:::details Click to see the query parameters
+|Field|Type|Comment|
+|---|---|---|
+|PeriodStart|Str|Start date of the period|
+|PeriodEnd|Str|End date of the period|
+|UnPaid|Bool|If true then, the query returns only unpaid offers. Allowed "true" or "false" (lowercase).|
+:::
 
-:::info
+## Successful Result
 ```json
 [
   {
@@ -60,7 +66,6 @@
   }
 ]
 ```
-:::
 
 :::details Click to see the parameters
 |Field|Type|Comment|

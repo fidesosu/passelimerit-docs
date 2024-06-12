@@ -4,14 +4,12 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getaccperiods`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { }
 ```
-:::
 
-:::info Successful Result
+## Successful Result
 ```json
 {
   "SaveFrom": "1901-01-01T00:00:00Z",
@@ -34,7 +32,7 @@
 |SaveTo|DateTime||
 |AccPeriods|Array of AccPeriods||
 
-## AccPeriod
+### AccPeriod
 
 |Field|Type|Comment|
 |-----|----|-------|

@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/senddimvalues`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Dimensions": [
@@ -21,7 +20,6 @@
 ```
 
 :::details Click to see Dimensions parameters
-
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Int||

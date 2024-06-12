@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getglbatches`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { 
   "PeriodStart": "20200709",
@@ -20,8 +19,8 @@
 |PeriodEnd|Date|In format yyyymmdd . Period length max 3 months!|
 |UnPaid|Bool|true/false|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

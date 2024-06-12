@@ -5,21 +5,17 @@
 <!--@include: @/dist/md/api_url.md-->v2/getperinvoices`
 
 ## Query Payload
-
-:::info Payload
 ```json
 {   
   "PeriodStart": "YYYYmmDD",   
   "PeriodEnd": "YYYYmmDD"
 }
 ```
-:::
 
-Period = "date for the next invoice".  The range can be up to 180 days.
+>[!NOTE]
+> The maximum period length for this endpoint is 180 days.
 
 ## Successful Result
-
-:::info
 ```json
 [
   {
@@ -52,7 +48,6 @@ Period = "date for the next invoice".  The range can be up to 180 days.
   // ...
 ]
 ```
-:::
 
 :::details Click to see the result parameters
 |Field|

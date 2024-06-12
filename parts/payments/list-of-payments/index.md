@@ -8,8 +8,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpayments`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { 
   "PeriodStart": "yyyyMMdd",
@@ -23,8 +22,8 @@
 |PeriodEnd|Date|In format yyyyMMdd. Period length max 3 months!|
 |UnPaid|Bool|true/false|
 :::
----
-:::info Successful Result v1
+
+## Successful Result v1
 ```json
 [
   {
@@ -56,8 +55,8 @@
 |Direction|Int|1 - transactions with customers,<br> 2 - with vendors,<br> 3 - other income,<br> 4 - other expenses|
 |Amount|Decimal||
 :::
----
-:::info Successful Result v2
+
+## Successful Result v2
 ```json
 [
   {

@@ -13,7 +13,10 @@
 ```
 
 ## Successful Result
+```json
 
+```
+:::details Click to see the result parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |CustomerName|Str||
@@ -43,9 +46,10 @@
 |Dimensions|Array of dimensions objects||	
 |TaxAmount|Decimal||
 |Lines|Array of Invoice Row Objects||
+:::
 
-## InvoiceRowObject
-
+### InvoiceRowObject
+:::details Click to see the InvoiceRowObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |SILID|Guid||
@@ -66,20 +70,23 @@
 |StartIndVal|Decimal||	
 |EndIndVal|Decimal||
 |UnitofMeasure|Str||
+:::
 
-## DimensionsObject
-
+### DimensionsObject
+:::details Click to see the DimensionsObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Int||
 |DimValueId|Guid||	
 |DimCode|Str||
+:::
 
-## LineDimensionsObject
-
+### LineDimensionsObject 
+:::details Click to see the LineDimensionsObject parameters
 |Field|Type|Comment|
 |-----|----|-------|
 |DimId|Int||	
 |Code|Str||	
 |AllocPct|Decimal||	
 |AllocAmount|Decimal||
+:::

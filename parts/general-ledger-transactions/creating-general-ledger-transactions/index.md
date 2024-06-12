@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/sendglbatch`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "DocNo": "testDocNo",
@@ -59,8 +58,8 @@
 |FileName|Str|Name in Base64 format|
 |FileContent|Str|PDF In Base64 format|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "BatchId": "0e0b6b8e-0cd5-4d35-a37f-d09e24924a17",

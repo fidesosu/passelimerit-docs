@@ -1,13 +1,12 @@
 # Get sales invoice details
-### Endpoints v1
+
+## Endpoints v1
 <!--@include: @/dist/md/api_url.md-->v1/getinvoice`
 
-### Endpoints v2
+## Endpoints v2
 <!--@include: @/dist/md/api_url.md-->v2/getinvoice`
 
----
-
-:::info Query Payload:
+## Query Payload:
 ```json
 { 
    "Id":  "xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx",
@@ -24,11 +23,7 @@
 
 [Successful Result v2](#resV2)
 
-## V1 <br> Successful Result
-
-The result, if not empty:
-
-:::info Output
+## V1 Successful Result
 ```json
 {
   "Header": {
@@ -53,9 +48,8 @@ The result, if not empty:
 |Allocations|Project and Cost Center allocations (if existing)||
 :::
 
-## SalesHeaderObject
-
-:::info Output
+---
+### SalesHeaderObject
 ```json
 {
   "Header": {
@@ -140,9 +134,8 @@ The result, if not empty:
 |ContractNo||
 :::
 
-## InvoiceRowObject
-
-:::info Output
+---
+### InvoiceRowObject
 ```json
 {
   // ...
@@ -201,9 +194,8 @@ The result, if not empty:
 |CostCenterAllocation|Array(CostAllocation)|
 :::
 
-## PaymentObject
-
-:::info Output
+---
+### PaymentObject
 ```json
 {
   // ...
@@ -228,9 +220,8 @@ The result, if not empty:
 |PaymentId||
 :::
 
-## CostAllocationObject
-
-:::info Output
+---
+### CostAllocationObject
 ```json
 {
   // ...
@@ -252,9 +243,8 @@ The result, if not empty:
 |AllocAmount|Int|Allocation amount|
 :::
 
-## V2 <br> Successful Result {#resV2}
+## V2 Successful Result {#resV2}
 
-:::info Output
 ```json
 {
   "Header": {
@@ -277,9 +267,8 @@ The result, if not empty:
 |Attachment|Attachment object||
 :::
 
-## InvoiceHeaderObject
-
-:::info Output
+---
+### InvoiceHeaderObject
 ```json
 {
   "Header": {
@@ -372,9 +361,8 @@ The result, if not empty:
 |Contact|Str||
 :::
 
-## DimensionsObject
-
-:::info Output
+---
+### DimensionsObject
 ```json
 {
   "header": {
@@ -398,9 +386,8 @@ The result, if not empty:
 |DimCode|Str||
 :::
 
-## InvoiceRowObject
-
-:::info Output
+---
+### InvoiceRowObject
 ```json
 {
   // ...
@@ -459,14 +446,14 @@ The result, if not empty:
 |DimAllocation|Array of Dimensions Allocation Objects||
 :::
 
-## DimensionsAllocationObject
-
-:::info Output
+---
+### DimensionsAllocationObject
 ```json
 {
   // ...
   "Lines": [
     {
+      // ...
       "DimAllocation": [  // [!code focus:7]
         {
           "DimId": "Dim1",
@@ -476,7 +463,7 @@ The result, if not empty:
       ]
     }
   ],
-  //...
+  // ...
 }
 ```
 
@@ -489,9 +476,8 @@ The result, if not empty:
 |AllocAmount|Dec||
 :::
 
-## PaymentObject
-
-:::info Output
+---
+### PaymentObject
 ```json
 {
   // ...
@@ -516,9 +502,8 @@ The result, if not empty:
 |PaymentId|Guid||
 :::
 
-## AttachmentObject
-
-:::info Output
+---
+### AttachmentObject
 ```json
 {
   // ...

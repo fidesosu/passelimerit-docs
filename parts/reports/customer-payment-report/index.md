@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getcustpaymrep`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "CustName": "",
@@ -24,8 +23,8 @@
 |PeriodEnd|Date||
 |CurrncyCode|Str 4||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "Data": "[{\"CustId\":\"7da4cd44-9b49-4a35-8d1b-f339a68e7058\",\"CustName\":\"FirstCustomer Inc\",\"DocDate\":\"\/Date(1484265600000)\/\",\"DocNo\":\"123\",\"DocId\":\"ec87ddbf-3b7c-4c35-b40d-3b9b0a60e853\",\"TotalAmount\":2000.00,\"DueDate\":\"\/Date(1485302400000)\/\",\"UnPaidAmount\":2000.00,\"OverDue\":2680},}]",
@@ -54,7 +53,7 @@
 |OverDue||
 :::
 
-If `HasMore` is `true`, send a new request to the `v2/getmoredata` endpoint using the GUID from `Id4More`.
+>If `HasMore` is `true`, send a new request to the `v2/getmoredata` endpoint using the GUID from `Id4More`.
 
 ## Endpoints
 <!--@include: @/dist/md/api_url.md-->v2/getmoredata`
@@ -67,5 +66,5 @@ If `HasMore` is `true`, send a new request to the `v2/getmoredata` endpoint usin
 }
 ```
 :::
-> [!NOTE]
+
 > The request must repeat until HasMore is false

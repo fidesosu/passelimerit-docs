@@ -8,16 +8,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getpurchorder`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { 
   "Id":  "xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx" .
 }
 ```
-:::
-# Successful Result V1
-::::info Successful Result v1
+
+## Successful Result V1
 ```json
 {
   "Header": {
@@ -104,7 +102,7 @@
 |[Allocations](#costallocation)|Project and Cost Center allocations (if existing)||
 :::
 
-## Header Object {#header1}
+### Header Object {#header1}
 ```json
 {
   "Header": {
@@ -172,7 +170,7 @@
 |Operator||
 :::
 
-## Lines Object {#linesv1}
+### Lines Object {#linesv1}
 ```json
 {
   // ...
@@ -231,7 +229,7 @@
 |CostCenterAllocation|Array(CostAllocation)|
 :::
 
-## Payments Object {#paymentsv1}
+### Payments Object {#paymentsv1}
 ```json
 {
   // ...
@@ -255,7 +253,7 @@
 |PaymentId||
 :::
 
-## CostAllocation Object {#costallocation}
+### CostAllocation Object {#costallocation}
 ```json
 {
   // ...
@@ -281,11 +279,8 @@
 |AllocPct|Allocation percentage|
 |AllocAmount|Allocation amount|
 :::
-::::
 
-# Successful Result V2
-
-::::info Successful Result v2
+## Successful Result V2
 ```json
 {
   "Header": {
@@ -373,7 +368,7 @@
 |[Attachment](#attachmentv2)|Attachment Object||
 :::
 
-## Header Object {#headerv2}
+### Header Object {#headerv2}
 ```json
 {
   "Header": {
@@ -446,7 +441,7 @@
 |Paid|Bool|true/false|
 :::
 
-## Dimensions Object
+### Dimensions Object
 ```json
 {
   "Header": {
@@ -464,7 +459,7 @@
 |DimCode|Str||
 :::
 
-## Lines Object {#linesv2}
+### Lines Object {#linesv2}
 ```json
 {
   // ...
@@ -520,7 +515,7 @@
 |DimAllocation|Array of DimensionsAllocationObjects|
 :::
 
-## DimensionAllocation Object
+### DimensionAllocation Object
 ```json
 {
   // ...
@@ -549,7 +544,7 @@
 |AllocAmount|Dec||
 :::
 
-## Payments Object {#paymentsv2}
+### Payments Object {#paymentsv2}
 ```json
 {
   // ...
@@ -573,7 +568,7 @@
 |PaymentId|Guid||
 :::
 
-## Attachment Object {#attachmentv2}
+### Attachment Object {#attachmentv2}
 ```json
 {
   // ...
@@ -589,4 +584,3 @@
 |Filename|Str||
 |FileContent|Str|File in base64|
 :::
-::::

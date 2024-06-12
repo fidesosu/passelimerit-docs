@@ -4,9 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getbalancerep`
 
----
-:::info Query Payload
-
+## Query Payload
 ```json
 {
   EndDate: "yyyymmdd",
@@ -19,8 +17,8 @@
 |EndDate|Str|Balance date|
 |PerCount|Int|Number of periods (months)|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "ErrorMsg": "",
@@ -31,9 +29,10 @@
 |Field|Comment|
 |-|-|
 |Data|Data Object|
+:::
 
-### Data Object
-
+### DataObject
+:::details Click to see the DataObject parameters
 |Field|Comment|
 |-|-|
 |No|Report line number|
@@ -41,14 +40,14 @@
 |RowType|1-row description,<br> 2-balance of account,<br> 4-formula||
 |Balance|Report line totals starting from the period enddate descending.<br><br>If `RowType` is `1`, `Balance` is `null`|
 |Details|Details Object. Report line detail info|
+:::
 
-### Details Object
-
+### DetailsObject
+:::details Click to see the DetailsObject parameters
 |Field|Comment|
 |-|-|
 |AccountCode||
 |AccountName||
 |TypeId|1-assets, 2-liabilities|
 |Balance|Report line totals starting from the period enddate descending|
-
-
+:::

@@ -7,8 +7,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/sendPaymentO`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "BankId": "93f8d710-d0d2-4e9c-8c66-c2f669a1885d",
@@ -36,7 +35,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendPaymentO`
 
-:::info Query Payload
+## Query Payload
 ```json
 {
   "BankId": "93f8d710-d0d2-4e9c-8c66-c2f669a1885d",

@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getglbatch`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { 
   "Id": "0e0b6b8e-0cd5-4d35-a37f-d09e24924a17",
@@ -18,8 +17,8 @@
 |Id|Guid||
 |AddAttachment|Bool|true/false|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "Header": {
@@ -56,8 +55,10 @@
 
 :::details Click to see the result parameters
 |Field Name|Type|Comment|
+|----------|----|-------|
 |Header|GLBHeader object||
 |Lines|Array of GLEntry objects||
+|Attachment|Attachment object||
 
 ### GLBHeaderObject
 
@@ -87,4 +88,11 @@
 |DebitCurrency|amount in currency e.g. amount*currency rate|
 |CreditAmount||
 |CreditCurrency|amount in currency e.g. amount*currency rate|
+
+### AttachmentObject
+
+|Field Name|Comment|
+|----------|-------|
+|FileName|Str|
+|FileContent|PDF file in base64|
 :::

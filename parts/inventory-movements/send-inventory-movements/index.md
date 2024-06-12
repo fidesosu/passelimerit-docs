@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/SendInvMovement`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {     
   DocDate:"20200831",     

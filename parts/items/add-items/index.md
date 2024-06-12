@@ -4,7 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/senditems`
 
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Items": [
@@ -22,7 +22,7 @@
 |-----|----|-------|--------|
 |Items|Array of itemobjects||Required|
 
-## ItemObject
+### ItemObject
 |Field|Type|Comment|Required|
 |-----|----|-------|--------|
 |Type|Int|1-stock item, <br>2-service, <br>3-item.|Required|
@@ -43,8 +43,8 @@
 |InventoryAccCode|Str 10|||
 |CostAccCode|Str 10|||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

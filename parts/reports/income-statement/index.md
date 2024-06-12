@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getprofitrep`
 
----
-:::info Query Payload
+## Query Payload
 
 ```json
 {
@@ -21,8 +20,8 @@
 |PerCount|Int|Number of periods (months)|
 |DepFilter|Str|Department if used|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "ErrorMsg": "",

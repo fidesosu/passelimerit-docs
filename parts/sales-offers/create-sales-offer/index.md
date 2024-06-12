@@ -8,8 +8,6 @@
 
 ## Query Payload
 
-Example payload: example send offer
-
 :::info 
 ```json
 {
@@ -66,7 +64,7 @@ Example payload: example send offer
 |ContactInfo|Str|||
 :::
 
-## Customer Object {#customeObject}
+### Customer Object {#customeObject}
 
 3 use cases:
 1. new customer – you will create new client record when this name was not found
@@ -116,7 +114,7 @@ Example payload: example send offer
 |BankAccount|Str 50|||
 :::
 
-## OfferRowObject
+### OfferRowObject
 
 Every offer has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation.
 :::info
@@ -155,7 +153,7 @@ Every offer has its rows. Row has its quantity and price, it also has its genera
 |CostCenterCode|Str 20|If used, must be found in the company database.||
 :::
 
-## ItemObject
+### ItemObject
 
 :::details Click to see the ItemObject parameters
 |Field|Type|Comment|Required|
@@ -168,7 +166,7 @@ Every offer has its rows. Row has its quantity and price, it also has its genera
 |EANCode|Str 20|||
 :::
 
-## PaymentObject
+### PaymentObject
 
 You can mark the invoice already paid. This is useful when you create invoice only when internet bank payment is successful, or you have received cash.
 
@@ -180,7 +178,7 @@ You can mark the invoice already paid. This is useful when you create invoice on
 |PaymDate|Date|YYYYmmddHHii|
 :::
 
-## TaxObject
+### TaxObject
 
 Every invoice has section of taxes. Those taxes have to be calculated grouped and summed by TaxId. Every row has its own tax calculation, you have to group and sum them up.
 
@@ -228,7 +226,7 @@ API always counts it as well to assure you have correct calculation.
 |Payer|PayerObject|||
 :::
 
-## Customer Object {#customerObject2}
+### Customer Object {#customerObject2}
 
 3 use cases:
 1. new customer – you will create new client record when this name was not found
@@ -265,7 +263,7 @@ API always counts it as well to assure you have correct calculation.
 |ShowBalance|Bool|||
 :::
 
-## Offer Row Object
+### Offer Row Object
 
 Every offer has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation.
 
@@ -289,7 +287,7 @@ Every offer has its rows. Row has its quantity and price, it also has its genera
 |CostAccCode|Str 10|||
 :::
 
-## ItemObject
+### ItemObject
 
 :::details Click to see the ItemObject parameters
 |Field|Type|Comment|Required|
@@ -302,7 +300,7 @@ Every offer has its rows. Row has its quantity and price, it also has its genera
 |EANCode|Str 20|||
 :::
 
-## DimensionsObject
+### DimensionsObject
 
 :::details Click to see the DimensionsObject parameters
 |Field|Type|Comment|Required|
@@ -312,7 +310,7 @@ Every offer has its rows. Row has its quantity and price, it also has its genera
 |DimCode|Str|||
 :::
 
-## PaymentObject
+### PaymentObject
 
 You can mark the invoice already paid. This is useful when you create invoice only when internet bank payment is successful, or you have received cash.
 
@@ -324,7 +322,7 @@ You can mark the invoice already paid. This is useful when you create invoice on
 |PaymDate|Date|YYYYmmddHHii||
 :::
 
-## TaxObject
+### TaxObject
 
 Every offer has section of taxes. Those taxes have to be calculated grouped and summed by TaxId. Every row has its own tax calculation, you have to group and sum them up.
 
@@ -339,7 +337,7 @@ API always counts it as well to assure you have correct calculation.
 |Amount|Decimal 18.2|||
 :::
 
-## PayerObject
+### PayerObject
 
 :::details Click to see the PayerObject parameters
 |Field|Type|Comment|Required|

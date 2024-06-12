@@ -12,8 +12,8 @@
 
 >[!NOTE]
 >Please make sure the PDF is a valid file and correctly encoded into Base64. We validate these attachements. This is quite otfen that API responds with error because of attachment that is broken file. <br><br>Also, if you want to send expense document instead of invoice, please use attribute  `ExpenseClaim: true`. <br><br>If you want to send document straight to book keeping with general ledger records and stuff. Please use endpoint `sendpurchinvoice`.
----
-::::info Query Payload
+
+## Query Payload
 ```json
 {
   "Vendor": {
@@ -106,7 +106,7 @@
 |PolDocType|int 1|Poland only, 1-purchmk 2-purchvatrr 3-purchwe 0-nochoise|
 :::
 
-## Vendor Object
+### Vendor Object
 ```json
 {
   "Vendor": {
@@ -153,7 +153,7 @@
 |Email|Str 80||
 :::
 
-## Item Object
+### Item Object
 ```json
 {
   // ...
@@ -181,7 +181,7 @@
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
 :::
 
-## InvoiceRow Object
+### InvoiceRow Object
 ```json
 {
   // ...
@@ -213,7 +213,7 @@
 |CostCenterCode|Str 20|If used then must be found in the company database|
 :::
 
-## Tax Object
+### Tax Object
 ```json
 {
   // ...
@@ -233,7 +233,7 @@
 |Amount|Decimal 18.2||
 :::
 
-## Payment Object
+### Payment Object
 ```json
 {
   // ...
@@ -253,7 +253,7 @@
 |PaymDate|Date|YYYYmmddHHii|
 :::
 
-## Attachment Object
+### Attachment Object
 ```json
 {
   // ...
@@ -269,15 +269,12 @@
 |FileName|Str||
 |FileContent|Str|PDF In Base64 format|
 :::
-::::
 
 ## Endpoints v2 {#ver2}
 
 <!--@include: @/dist/md/api_url.md-->v2/sendpurchorder`
 
----
-::::info Query Payload
-## Purchase Invoice
+## Query Payload
 ```json
 {
   "PolDocType": 1,
@@ -394,7 +391,7 @@
 |Receiver|ReceiverObject||
 :::
 
-## Vendor Object
+### Vendor Object
 ```json
 {
   "Vendor": {
@@ -441,7 +438,7 @@
 |Email|Str 80||
 :::
 
-## Item Object
+### Item Object
 ```json
 {
   // ...
@@ -469,7 +466,7 @@
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
 :::
 
-## InvoiceRow Object
+### InvoiceRow Object
 ```json
 {
   // ...
@@ -502,7 +499,7 @@
 |Dimensions|Array of Dimensions objects||
 :::
 
-## Tax Object
+### Tax Object
 ```json
 {
   // ...
@@ -522,7 +519,7 @@
 |Amount|Decimal 18.2||
 :::
 
-## Payment Object
+### Payment Object
 ```json
 {
   // ...
@@ -542,7 +539,7 @@
 |PaymDate|Date|YYYYmmddHHii|
 :::
 
-## Attachment Object
+### Attachment Object
 ```json
 {
   // ...
@@ -560,7 +557,7 @@
 |FileContent|Str|PDF In Base64 format|
 :::
 
-## Dimensions Object
+### Dimensions Object
 ```json
 {
   // ...
@@ -582,7 +579,7 @@
 |DimCode|Str||
 :::
 
-## Receiver Object
+### Receiver Object
 ```json
 {
   // ...
@@ -627,9 +624,7 @@
 |HomePage|Str 80||
 |Email|Str 80||
 :::
-::::
----
-:::info
+
 ## Successful Result
 ```json
 {
@@ -640,4 +635,3 @@
   "BatchInfo": null
 }
 ```
-:::

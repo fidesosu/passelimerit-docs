@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getcustdebtrep`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { 
   "CustName": "FirstCustomer Inc",
@@ -22,8 +21,8 @@
 |OverDueDays|Int 3|more exceeded days||
 |DebtDate|Date|Date in the format yyyyMMdd, if not used then it defaults to the current date.||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

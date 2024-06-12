@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendperinvoice`
 
----
-:::info Minimum Query Payload
+## Minimum Query Payload
 ```json
 { 
   "Customer": {
@@ -58,12 +57,10 @@
 |Dimensions|Array of Dimensions objects|||
 |[InvoiceRow](#invoicerowobject)|Array of InvoiceRow objects||Required|
 |TaxAmount|Array of VAT objects||Required|
-|Payer|[PayerObject](#payerObject)|||
+|[Payer](#payerObject)|PayerObject|||
 :::
 
-## CustomerObject {#customerObject}
-
-:::info
+### CustomerObject {#customerObject}
 ```json
 { 
   "Customer": {
@@ -80,16 +77,16 @@
 |Field|Type|Comment|Required|
 |-----|----|-------|--------|
 |Id|Guid|If filled and customer is found in the database then following fields are not important. If not found, the customer is added using the following fields.||
-|Name|Str 150|Required when customer is added|Required?|
+|Name|Str 150||Required[?](## "Required when a new customer is added.")|
 |RegNo|Str 30|||
-|NotTDCustomer|Bool|Required when customer is added. <br><br>EE True for physical persons and foreign companies. <br><br>PL True for physical persons. Allowed "true" or "false" (lowercase).|Required?|
+|NotTDCustomer|Bool|<br><br>EE True for physical persons and foreign companies. <br><br>PL True for physical persons. <br><br>Allowed "true" or "false" (lowercase).|Required[?](## "Required when a new customer is added.")|
 |VatRegNo|Str 30|||
 |CurrencyCode|Str 30|||
 |PaymentDeadLine|Int|If missing then taken from default settings.||
 |OverDueCharge|Decimal 5.2|If missing then taken from default settings.||
 |RefNoBase|Str 36|||
 |Address|Str 100|||
-|CountryCode|Str 2|Required when adding a new customer|Required?|
+|CountryCode|Str 2||Required[?](## "Required when a new customer is added.")|
 |County|Str 100|||
 |City|Str 30|||
 |PostalCode|Str 15|||
@@ -111,9 +108,7 @@
 |GroupInv|Bool|||
 :::
 
-## InvoiceRowObject {#invoicerowobject}
-
-:::info
+### InvoiceRowObject {#invoicerowobject}
 ```json
 { 
   // ...
@@ -142,7 +137,7 @@
 |DepartmentCode|Str 20|If used then must be found in the company database.||
 |GLAccountCode|Str 10|If used, must be found in the company database.||
 |Dimensions|Array of DimensionsObjects|||
-|ItemCostAmount|Decimal 18.2|Required for credit invoices when crediting stock items.|Required?|
+|ItemCostAmount|Decimal 18.2||Required[?](## "Required for credit invoices when crediting stock items.")|
 |VatDate|Date Str|YYYYMMDD type date. In some countries where you have to specify VatDate.||
 |SalesAccCode|Str 10|If included GLAccountCode then  the SalesAccCode not used||
 |PurchaseAccCode|Str 10|||
@@ -150,17 +145,16 @@
 |CostAccCode|Str 10|||
 :::
 
-## ItemObject {#itemObject}
-:::info ItemObject
+### ItemObject {#itemObject}
 ```json
 { 
   // ...
   "InvoiceRow": [
     {
-      "Item": { // [!code focus:3]
+      "Item": {
         "Code": "EU-maat tav"
       },
-      "TaxId": "973a4395-665f-47a6-a5b6-5384dd24f8d0"
+      // ...
     }
   ],
   // ...
@@ -174,12 +168,10 @@
 |Description|Str 100||Required|
 |Type|Int|1 = stock item, <br>2 = service, <br>3 = item.|Required|
 |UOMName|Str 64|Name for the unit||
-|DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required for all stock items.|Required?|
+|DefLocationCode|Str 20||Required[?](## "If company has more than one (default) stock, stock code in this field is required for all stock items.")|
 :::
 
-## TaxObject
-
-:::info
+### TaxObject
 ```json
 { 
   // ...
@@ -199,9 +191,7 @@
 |Amount|Decimal 18.2|||
 :::
 
-## DimensionsObject
-
-:::info
+### DimensionsObject
 ```json
 { 
   // ...
@@ -224,9 +214,7 @@
 |DimCode|Str|||
 :::
 
-## PayerObject {#payerObject}
-
-:::info
+### PayerObject {#payerObject}
 ```json
 { 
   // ...
@@ -241,16 +229,16 @@
 |Field|Type|Comment|Required|
 |-----|----|-------|--------|
 |Id|Guid|If filled and payer (customer) is found in the database then following fields are not important. If not found, the payer is added using the following fields.||
-|Name|Str 150|Required when payer is added|Required?|
+|Name|Str 150|Required when payer is added|Required[?](## "Required when a new payer is added.")|
 |RegNo|Str 30|||
-|NotTDCustomer|Bool|Required when payer is added. True for physical persons and foreign companies. Allowed "true" or "false" (lowercase).|Required?|
+|NotTDCustomer|Bool|Required when payer is added. True for physical persons and foreign companies. Allowed "true" or "false" (lowercase).|Required[?](## "Required when a new payer is added")|
 |VatRegNo|Str 30|||
 |CurrencyCode|Str 30|||
 |PaymentDeadLine|Int|If missing then taken from default settings.||
 |OverDueCharge|Decimal 5.2|If missing then taken from default settings.||
 |RefNoBase|Str 36|||
 |Address|Str 100|||
-|CountryCode|Str 2|Required when adding|Required?|
+|CountryCode|Str 2|Required when adding|Required[?](## "Required when a new payer is added.")|
 |County|Str 100|||
 |City|Str 30|||
 |PostalCode|Str 15|||
@@ -262,10 +250,21 @@
 |Contact|Str 35|||
 |GLNCode|Str 10|||
 |PartyCode|Str 20|||
-|EInvOperator|Int|1 - Not exist, <br>2 - E-invoices to the bank through Omniva, <br>3 - Bank ( full extent E-invoice), <br>4- Bank (limited extent E-invoice)||
+|EInvOperator|Int|1 - Not exist, <br>2 - E-invoices to the bank through Omniva, <br>3 - Bank (full extent E-invoice), <br>4- Bank (limited extent E-invoice)||
 |EInvPaymId|Str 20|||
 |BankAccount|Str 50|||
 |Dimensions|Array of DimensionsObjects|||
 |CustGrCode|Str 20|||
 |ShowBalance|Bool|||
 :::
+
+## Successful Result
+```json
+{
+  "CustomerId": "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
+  "InvoiceId": "44a0ebc0-b69b-4e36-ad76-2e0b9b9ef9e2",
+  "InvoiceNo": null,
+  "RefNo": "113",
+  "NewCustomer": null
+}
+```

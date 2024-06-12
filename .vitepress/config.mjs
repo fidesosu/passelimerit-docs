@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sidebarData } from '../dist/js/sidebar-collapsed.mjs'
 import footnote from 'markdown-it-footnote'
-
 import MarkdownIt from "markdown-it";
 import { tab } from "@mdit/plugin-tab";
 
@@ -21,6 +20,7 @@ export default defineConfig({
     //['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/dist/images/favicon.png" }],
   ],
   themeConfig: {
+    outline: 'deep',
     logo: '/dist/images/favicon.png',
     // outline: false, // disables the 'on this page' text.
     // aside: false, // disables the 'on this page' area.
@@ -35,8 +35,15 @@ export default defineConfig({
       }
     },
     search: {
-      provider: 'local'
-    },
+      provider: 'local',
+      options: {
+        miniSearch: {
+          options: {
+            
+          }
+        }
+      }
+    }, 
     nav: [
       {
         text: 'Passeli Merit',
@@ -51,6 +58,19 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(footnote)
+    }
+  },
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    fi: {
+      label: 'Finnish',
+      lang: 'fi', // optional, will be added  as `lang` attribute on `html` tag
+      link: '/fi/' // default /fr/ -- shows on navbar translations menu, can be external
+
+      // other locale specific properties...
     }
   }
 })

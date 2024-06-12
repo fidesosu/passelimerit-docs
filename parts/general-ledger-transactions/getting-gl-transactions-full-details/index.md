@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getglbatchesfull`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "PeriodStart": "20200709",
@@ -22,8 +21,8 @@
 |WithLines|int|if 1 then with the lines|
 |WithCostAlloc|int|if 1 then with the cost allocations|
 :::
----
-:::info Succesful result
+
+## Succesful result
 ```json
 [
   {

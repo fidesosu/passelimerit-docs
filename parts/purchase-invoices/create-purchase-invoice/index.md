@@ -7,8 +7,8 @@
 ---
 >[!IMPORTANT]
 >This endpoint creates document and general ledger records without any confirmation. If you need solution where book keepers are approving puchase orders and expanse claims, use different endpoint: sendpurchorder.
----
-::::info Query Payload
+
+## Query Payload
 ```json
 {
   "Vendor": {
@@ -93,7 +93,7 @@
 |PolDocType|int 1|Poland only 1-purchmk 2-purchvatrr 3-purchwe 0-nochoise|
 :::
 
-## Vendor Object
+### Vendor Object
 ```json
 {
   "Vendor": {
@@ -138,7 +138,7 @@
 |Email|Str 80||
 :::
 
-## Item Object
+### Item Object
 ```json
 {
   // ...
@@ -166,7 +166,7 @@
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
 :::
 
-## InvoiceRow Object
+### InvoiceRow Object
 ```json
 {
   // ...
@@ -199,7 +199,7 @@
 |CostCenterCode|Str 20|If used then must be found in the company database|
 :::
 
-## TaxAmount Object
+### TaxAmount Object
 ```json
 {
   // ...
@@ -219,7 +219,7 @@
 |Amount|Decimal 18.2||
 :::
 
-## Payment Object
+### Payment Object
 ```json
 {
   // ...
@@ -239,7 +239,7 @@
 |PaymDate|Date|YYYYmmddHHii|
 :::
 
-## Attachment Object
+### Attachment Object
 ```json
 {
   // ...
@@ -256,15 +256,12 @@
 |FileName|Str||
 |FileContent|Str|PDF In Base64 format|
 :::
-::::
 
 ## Endpoints v2
 
-`https://aktiva.meritaktiva.fi/api/v2/sendpurchinvoice`
+<!--@include: @/dist/md/api_url.md-->v2/sendpurchinvoice`
 
----
-::::info Query Payload
-## Purchase Invoice
+## Query Payload
 ```json
 {
   "Vendor": {
@@ -379,7 +376,7 @@
 |Receiver|ReceiverObject||
 :::
 
-## Vendor Object
+### Vendor Object
 ```json
 {
   "Vendor": {
@@ -424,7 +421,7 @@
 |Email|Str 80||
 :::
 
-## InvoiceRow Object
+### InvoiceRow Object
 ```json
 {
   // ...
@@ -463,7 +460,7 @@
 |CostAccCode|Str 10||
 :::
 
-## Item Object
+### Item Object
 ```json
 {
   // ...
@@ -491,7 +488,7 @@
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required if the item is a stock item and does not exist yet.|
 :::
 
-## Dimensions Object
+### Dimensions Object
 ```json
 {
   // ...
@@ -520,7 +517,7 @@
 |DimCode|Str||
 :::
 
-## TaxAmount Object
+### TaxAmount Object
 ```json
 {
   // ...
@@ -540,7 +537,7 @@
 |Amount|Decimal 18.2||
 :::
 
-## Payment Object
+### Payment Object
 ```json
 {
   // ...
@@ -560,7 +557,7 @@
 |PaymDate|Date|YYYYmmddHHii|
 :::
 
-## Attachment Object
+### Attachment Object
 ```json
 {
   // ...
@@ -578,7 +575,7 @@
 |FileContent|Str|PDF In Base64 format|
 :::
 
-## Receiver Object
+### Receiver Object
 ```json
 {
   // ...
@@ -625,9 +622,7 @@
 |HomePage|Str 80||
 |Email|Str 80||
 :::
-::::
----
-:::info Successful Result
+
 ## Successful Result
 ```json
 {
@@ -638,4 +633,3 @@
   "BatchInfo": "OS-1"
 }
 ```
-:::

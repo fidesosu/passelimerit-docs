@@ -4,15 +4,14 @@
 - [Create Payment of purchase invoice v2](#v2)
 
 ---
-::: info NOTE:
-V2 should be used when the payment is not in local currency
-:::
+>[!NOTE]
+>V2 should be used when the payment is not in local currency
+
 ## Endpoints v1 {#v1}
 
 <!--@include: @/dist/md/api_url.md-->v1/sendPaymentV`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "BankId": "93f8d710-d0d2-4e9c-8c66-c2f669a1885d",
@@ -40,8 +39,7 @@ V2 should be used when the payment is not in local currency
 
 <!--@include: @/dist/md/api_url.md-->v2/sendPaymentV`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "BankId": "93f8d710-d0d2-4e9c-8c66-c2f669a1885d",
