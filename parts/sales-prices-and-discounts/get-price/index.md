@@ -6,8 +6,8 @@ The valid price for the customer on a given date.
 
 <!--@include: @/dist/md/api_url.md-->v2/getprice`
 
----
-:::info Query Payload
+
+## Query Payload
 ```json
 {
   "ItemCode": "testItem",
@@ -30,8 +30,8 @@ The valid price for the customer on a given date.
 |UOMName|Str|||
 |DocDate|Date||Required|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "ItemCode": "testItem",

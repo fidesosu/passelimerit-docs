@@ -4,14 +4,14 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getdiscounts`
 
----
-:::info Query Payload
+
+## Query Payload
 ```json
 { }
 ```
-:::
----
-:::info Successful Result
+
+
+## Successful Result
 ```json
 [
   {

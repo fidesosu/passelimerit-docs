@@ -7,8 +7,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/updatevendor`
 
----
-:::info V1 - Query Payload
+## Query Payload
 ```json
 {
   "Id": "01b7732d-ef2b-43a1-bb25-0ad715cf6b22",
@@ -52,8 +51,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/updatevendor`
 
----
-:::info V2 - Query Payload
+## Query Payload
 ```json
 {
   "Id": "01b7732d-ef2b-43a1-bb25-0ad715cf6b22",
@@ -108,9 +106,8 @@
 |DimValueId|Guid|||
 |DimCode|Str|||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 "Updated"
 ```
-:::

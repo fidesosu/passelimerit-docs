@@ -4,14 +4,12 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getunits`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { }
 ```
-:::
 
-:::info Successful Result
+## Successful Result
 ```json
 [
   {

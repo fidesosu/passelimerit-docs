@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/senddiscounts`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Discounts": [
@@ -26,7 +25,7 @@
 |-----|----|-------|
 |Discounts|Array of Discounts objects||
 
-## Discounts Object
+### Discounts Object
 
 |Field|Type|Comment|
 |------|----|-------|
@@ -38,8 +37,8 @@
 |StartDate|Date||	
 |EndDate|Date||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 "OK"
 ```

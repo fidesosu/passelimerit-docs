@@ -98,6 +98,8 @@ V2 should be used when willow dimensions ase used.
 |ContractNo|Str 35|Contract number with operator||
 |PDF|Str 4K|Pdf file in Base64 format||
 :::
+
+---
 ### CustomerObject {#customerObject}
 
 3 use cases:
@@ -160,6 +162,7 @@ V2 should be used when willow dimensions ase used.
 |GroupInv|Bool|||
 :::
 
+---
 ### InvoiceRowObject {#invoicerowobject}
 
 Every invoice has its rows. Row has its quantity and price, it also has its general ledger record and that's why it has its own tax calculation. 
@@ -197,6 +200,7 @@ Every invoice has its rows. Row has its quantity and price, it also has its gene
 |VatDate|Date Str|YYYYMMDD type date. In some countries where you have to specify VatDate.||
 :::
 
+---
 ### ItemObject {#itemObject}
 
 ```json
@@ -226,6 +230,7 @@ Every invoice has its rows. Row has its quantity and price, it also has its gene
 |GTUCode|Int|Poland only, values: 1-13||
 :::
 
+---
 ### PaymentObject
 
 You can mark the invoice already paid. This is useful when you create invoice only when internet bank payment is successful, or you have received cash.
@@ -248,6 +253,7 @@ You can mark the invoice already paid. This is useful when you create invoice on
 |PaymDate     |Date         |YYYYmmddHHii                                                       |
 :::
 
+---
 ### TaxObject
 
 Every invoice has section of taxes. Those taxes have to be calculated grouped and summed by TaxId. Every row has its own tax calculation, you have to group and sum them up.
@@ -404,6 +410,7 @@ API always counts it as well to assure you have correct calculation.
 |Payer|PayerObject||
 |DeliveryType|Bool||
 :::
+
 ---
 ### CustomerObject {#customerObject2}
 
@@ -471,6 +478,7 @@ API always counts it as well to assure you have correct calculation.
 |ApixEinv|Str 20|||
 |GroupInv|Bool|||
 :::
+
 ---
 ### InvoiceRowObject
 
@@ -511,6 +519,7 @@ Every invoice has its rows. Row has its quantity and price, it also has its gene
 |InventoryAccCode|Str 10||
 |CostAccCode|Str 10||
 :::
+
 ---
 ### ItemObject {#itemObject2}
 
@@ -539,6 +548,7 @@ Every invoice has its rows. Row has its quantity and price, it also has its gene
 |UOMName|Str 64|Name for the unit|
 |DefLocationCode|Str 20|If company has more than one (default) stock, stock code in this field is required for all stock items.|
 :::
+
 ---
 ### PaymentObject
 
@@ -561,6 +571,7 @@ You can mark the invoice already paid. This is useful when you create invoice on
 |PaidAmount|Decimal 18.2|Amount with VAT (not more) or less if partial payment|
 |PaymDate|Date|YYYYmmddHHii|
 :::
+
 ---
 ### TaxObject
 
@@ -587,6 +598,7 @@ API always counts it as well to assure you have correct calculation.
 |TaxId|Guid|Use `gettaxes` endpoint to detect the guid needed|Required|
 |Amount|Decimal 18.2|||
 :::
+
 ---
 ### DimensionsObject
 ```json
@@ -610,6 +622,7 @@ API always counts it as well to assure you have correct calculation.
 |DimValueId|Guid|||
 |DimCode|Str|||
 :::
+
 ---
 ### PayerObject
 ```json

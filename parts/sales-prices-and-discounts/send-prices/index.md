@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendprices`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Prices": [
@@ -23,13 +22,7 @@
 }
 ```
 
->[!IMPORTANT]
->There is a problem with how the API checks the ItemCode. It has to be in lowercase or else it will not work.
-
 :::details Click to see the query parameters
-
-## Query Parameters
-
 |Field|Type|Comment|
 |-----|----|-------|
 |Prices|Array of prices objects||
@@ -47,12 +40,15 @@
 |StartDate|Date||	
 |EndDate|Date||
 :::
+
+>[!IMPORTANT]
+>There is a problem with how the API checks the ItemCode. It has to be in lowercase or else it will not work.
+
 ---
-:::info Successful Result
+## Successful Result
 ```text
 OK
 ```
-:::
 
 ## API Problems
 [^1]: ItemCode has to be in lowercase or else it will not work.

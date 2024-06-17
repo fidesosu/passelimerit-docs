@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendtax`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Code": "taxcode",
@@ -36,8 +35,8 @@
 |TaxType|Int|Required. Available values:<br> 1 = VAT from sales and purchases<br> 2 = VAT free transaction<br> 5 = Not taxable<br> 6 = Reversed VAT (AVL 8 c §)<br> 8 = Sales revenue taxation (AVL 79 §)<br> 12 = OSS sales to EU customers not VAT responsible<br> 13 = VAT in EU fixed venue<br> 15 = Proportional VAT|
 |CountryCode|Str 2|Required|
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "CreatedTaxId": "0ccadbe0-67a2-40d2-ba78-1cacaa8a2544"

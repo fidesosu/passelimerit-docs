@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/sendvendor`
 
----
-:::info Minimum Query Payload
+## Minimum Query Payload
 ```json
 {
   "Name":"testVendor",
@@ -38,8 +37,8 @@
 |Dimensions|Array of DimensionsObjects|||
 |VendorType|Int|1 - vendor, <br>3 - the reporting entity||
 :::
----
-:::info DimensionsObject
+
+### DimensionsObject
 ```json
 {
   // ...
@@ -60,8 +59,8 @@
 |DimValueId|Guid|||
 |DimCode|Str|||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 {
   "Id": "be20f410-2af5-40b1-xxxx-xxxxxxxxxxxx",

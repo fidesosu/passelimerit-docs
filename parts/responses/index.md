@@ -2,7 +2,7 @@
 ## Successful responses
 Successful response is represented as `JSON` with response code `200`. <br>In many cases, when needed and possible, response will also include details of fulfilled requests (like added `document id`, `transaction id` or `customer id`).
 
-:::info Response to the successful request is usually similar to the following example:
+Response to the successful request is usually similar to the following example:
 ```json
 {
   "CustomerId":"665f01a4-357a-4a6b-a565-2f17e6e1da13",
@@ -11,7 +11,6 @@ Successful response is represented as `JSON` with response code `200`. <br>In ma
   "RefNo":"11219"
 } 
 ```
-:::
 
 ## Unsuccessful responses
 |response.statusCode|response.statusMessage|response.body|Description|

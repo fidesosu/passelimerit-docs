@@ -59,12 +59,11 @@
 <!--@include: @/dist/md/api_url.md-->v2/getmoredata`
 
 ---
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Id4More": "00000000-0000-0000-0000-000000000000"
 }
 ```
-:::
 
 > The request must repeat until HasMore is false

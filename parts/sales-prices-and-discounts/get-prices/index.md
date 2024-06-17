@@ -4,14 +4,13 @@
 
 <!--@include: @/dist/md/api_url.md-->v2/getprices`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 { }
 ```
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {

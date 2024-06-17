@@ -4,8 +4,7 @@
 
 <!--@include: @/dist/md/api_url.md-->v1/getvendors`
 
----
-:::info Query Payload
+## Query Payload
 ```json
 {
   "Id": "01b7732d-ef2b-43a1-bb25-0ad715cf6b22",
@@ -28,8 +27,8 @@
 |CommentsFrom|Date|Date later||
 |ChangedDate|Date|Date of changing or creating customer/vendor (YYYYmmDD)||
 :::
----
-:::info Successful Result
+
+## Successful Result
 ```json
 [
   {
