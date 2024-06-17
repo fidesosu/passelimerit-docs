@@ -1,15 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sidebarData } from '../dist/js/sidebar-collapsed.mjs'
 import footnote from 'markdown-it-footnote'
-import MarkdownIt from "markdown-it";
-import { tab } from "@mdit/plugin-tab";
-
-const mdIt = MarkdownIt().use(tab, {
-  // your options, name is required
-  name: "tabs",
-});
-
-mdIt.render("content");
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
