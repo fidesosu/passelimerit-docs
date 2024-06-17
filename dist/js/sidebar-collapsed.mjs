@@ -76,10 +76,6 @@ export const sidebarData = [
                 link: '/parts/sales-invoices/create-sales-invoice/send-invoice-by-e-mail.md',
               },
               {
-                text: 'Send Sales Invoice as e-invoice',
-                link: '/parts/sales-invoices/create-sales-invoice/send-sales-invoice-by-einvoice.md',
-              },
-              {
                 text: 'Get Sales Invoice PDF',
                 link: '/parts/sales-invoices/create-sales-invoice/get-sales-invoice-pdf/',
               }
@@ -103,13 +99,6 @@ export const sidebarData = [
           {
             text: 'Create Sales Offer',
             link: '/parts/sales-offers/create-sales-offer/',
-            collapsed: true,
-            items: [
-              {
-                text: 'Example create sales offer',
-                link: '/parts/sales-offers/create-sales-offer/example-sales-offer/',
-              }
-            ]
           },
           {
             text: 'Set Offer status',
@@ -170,10 +159,6 @@ export const sidebarData = [
             link: '/parts/purchase-invoices/create-purchase-invoice/',
             collapsed: true,
             items: [
-              {
-                text: 'Example create purchase invoice',
-                link: '/parts/purchase-invoices/create-purchase-invoice/example-create-purchase-invoice/',
-              },
               {
                 text: 'Example create purchase invoice with proportional VAT',
                 link: '/parts/purchase-invoices/create-purchase-invoice/example-create-purchase-invoice-with-proportional-vat/',
