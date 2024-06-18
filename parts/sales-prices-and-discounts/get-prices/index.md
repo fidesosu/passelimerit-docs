@@ -8,7 +8,6 @@
 ```json
 { }
 ```
-:::
 
 ## Successful Result
 ```json
