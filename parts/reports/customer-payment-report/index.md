@@ -9,8 +9,8 @@
 {
   "CustName": "",
   "CustId": "",
-  "PeriodStart": "yyyyMMdd",
-  "PeriodEnd": "yyyyMMdd",
+  "PeriodStart": "YYYYmmDD",
+  "PeriodEnd": "YYYYmmDD",
   "CurrncyCode": "EUR"
 }
 ```

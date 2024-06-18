@@ -10,7 +10,7 @@
   "CustName": "FirstCustomer Inc",
   "CustId": "7da4cd44-9b49-4a35-8d1b-f339a68e7058",
   "OverDueDays": 5,
-  "DebtDate":"yyyyMMdd" 
+  "DebtDate":"YYYYmmDD" 
 }
 ```
 :::details Click to see the query parameters
@@ -19,7 +19,7 @@
 |CustName|Str 150|Required if CustId not used. <br><br>If the CustName `""` then all customers are selected.|Required?|
 |CustId|Guid|||
 |OverDueDays|Int 3|more exceeded days||
-|DebtDate|Date|Date in the format yyyyMMdd, if not used then it defaults to the current date.||
+|DebtDate|Date|Date in the format YYYYmmDD, if not used then it defaults to the current date.||
 :::
 
 ## Successful Result

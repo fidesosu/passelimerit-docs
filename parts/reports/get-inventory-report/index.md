@@ -9,7 +9,7 @@
 {
   "ArticleGroups": [],
   "Location": "",
-  "RepDate": "yyyyMMdd",
+  "RepDate": "YYYYmmDD",
   "ShowZero": false,
   "WithReservations": false
 }

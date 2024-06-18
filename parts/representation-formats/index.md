@@ -3,7 +3,7 @@
 All Passeli Merit API requests are composed of `JSON` and delivered as an HTTP request to the endpoint URL.
 
   - All `JSON` should be `UTF-8` encoded.
-  - Date and time values are of the form `yyyyMMddHHmmss`.
+  - Date and time values are of the form `YYYYmmDDHHmmss`.
   - Preferred time zone in the API requests timestamp is `UTC`.
   - Dot (`.`) is used as a decimal separator.
   - Booleans are either `true` or `false`, lowercase (not 1 or 0).

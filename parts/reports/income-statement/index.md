@@ -8,7 +8,7 @@
 
 ```json
 {
-  "EndDate": "yyyyMMdd",
+  "EndDate": "YYYYmmDD",
   "PerCount": 2,
   "DepFilter": ""
 }

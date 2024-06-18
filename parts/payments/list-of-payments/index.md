@@ -11,15 +11,15 @@
 ## Query Payload
 ```json
 { 
-  "PeriodStart": "yyyyMMdd",
-  "PeriodEnd": "yyyyMMdd" 
+  "PeriodStart": "YYYYmmDD",
+  "PeriodEnd": "YYYYmmDD" 
 }
 ```
 :::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
-|PeriodStart|Date|In format yyyyMMdd|
-|PeriodEnd|Date|In format yyyyMMdd. Period length max 3 months!|
+|PeriodStart|Date|In format YYYYmmDD|
+|PeriodEnd|Date|In format YYYYmmDD. Period length max 3 months!|
 |UnPaid|Bool|true/false|
 :::
 

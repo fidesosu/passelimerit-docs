@@ -7,8 +7,8 @@
 ## Query Payload
 ```json
 {
-  "StartDate": "yyyyMMdd",
-  "EndDate": "yyyyMMdd",
+  "StartDate": "YYYYmmDD",
+  "EndDate": "YYYYmmDD",
   "ReportType": 1,
   "VendChoice": 1,
   "VendGrpFilter": "",

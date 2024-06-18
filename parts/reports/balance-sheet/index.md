@@ -7,8 +7,8 @@
 ## Query Payload
 ```json
 {
-  EndDate: "yyyymmdd",
-  PerCount: 2
+  "EndDate": "YYYYmmDD",
+  "PerCount": 2
 }
 ```
 :::details Click to see the query parameters

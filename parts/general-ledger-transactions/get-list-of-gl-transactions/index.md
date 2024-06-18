@@ -15,8 +15,8 @@
 :::details Click to see the query parameters
 |Field|Type|Comment|
 |-----|----|-------|
-|PeriodStart|Date|In format yyyymmdd|
-|PeriodEnd|Date|In format yyyymmdd . Period length max 3 months!|
+|PeriodStart|Date|In format YYYYmmDD|
+|PeriodEnd|Date|In format YYYYmmDD . Period length max 3 months!|
 |UnPaid|Bool|true/false|
 :::
 
