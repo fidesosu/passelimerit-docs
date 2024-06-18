@@ -6,9 +6,9 @@
 
 ## Query Payload
 ```json
-{    
-  Periodstart: YYYYmmdd,    
-  PeriodEnd: YYYYmmdd  
+{
+  "Periodstart": "YYYYmmDD",
+  "PeriodEnd": "YYYYmmDD"
 }
 ```
 :::details Click to see the query parameters
