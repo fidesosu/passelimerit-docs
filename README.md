@@ -1,20 +1,5 @@
 ## Stuff to check later
 
-http://localhost:5173/parts/cost-centers-list/<br>
-http://localhost:5173/parts/dimensions/dimensionslist/<br>
-http://localhost:5173/parts/dimensions/add-dimensions/<br>
-http://localhost:5173/parts/departments-list/<br>
-http://localhost:5173/parts/sales-prices-and-discounts/get-prices/<br>
-http://localhost:5173/parts/sales-prices-and-discounts/get-discounts/<br>
-http://localhost:5173/parts/banks-list/<br>
-http://localhost:5173/parts/financial-years/<br>
-http://localhost:5173/parts/units-of-measure-list/<br>
-http://localhost:5173/parts/items/get-item-groups/<br>
-Query Payload is `{ }`
-
-http://localhost:5173/parts/recurring-invoices/send-indication-values/<br>
-Successful Result is `Näidud kanti üle x lepingu x reale ja kogused ning summad arvutati uuesti.`
-
 http://localhost:5173/parts/purchase-invoices/create-purchase-invoice/<br>
 What does this mean?: `Tax % 20, Proportion used on VAT deduction in percents 34`
 
