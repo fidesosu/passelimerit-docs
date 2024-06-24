@@ -16,7 +16,9 @@ export default defineConfig({
     // outline: false, // disables the 'on this page' text.
     // aside: false, // disables the 'on this page' area.
     editLink: {
-      pattern: 'https://github.com/fidesosu/passelimerit-docs/tree/main/:path'
+      // pattern: 'https://github.com/fidesosu/passelimerit-docs/tree/main/:path',
+      pattern: 'https://github.com/fidesosu/passelimerit-docs/issues',
+      text: "Report an issue"
     },
     lastUpdated: {
       text: 'Updated at',
@@ -30,11 +32,11 @@ export default defineConfig({
       options: {
         miniSearch: {
           options: {
-            
+
           }
         }
       }
-    }, 
+    },
     nav: [
       {
         text: 'Passeli Merit',

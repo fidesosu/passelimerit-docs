@@ -27,7 +27,7 @@
 |-----|----|-------|
 |Prices|Array of prices objects||
 
-## Prices Object Parameters
+### Prices Object Parameters
 
 |Field|Type|Comment|
 |-----|----|-------|
@@ -50,5 +50,4 @@
 OK
 ```
 
-## API Problems
 [^1]: ItemCode has to be in lowercase or else it will not work.

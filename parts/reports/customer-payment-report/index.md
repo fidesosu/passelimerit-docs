@@ -66,4 +66,4 @@
 }
 ```
 
-> The request must repeat until HasMore is false
+> The request must be repeated until HasMore is false

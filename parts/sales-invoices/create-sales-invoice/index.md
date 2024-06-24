@@ -2,7 +2,7 @@
 ---
   - [Create Sales Invoice v1](#endpointsv1)
   - [Create Sales Invoice v2](#endpointsv2)
----
+
 ## Endpoints v1 {#endpointsv1}
 <!--@include: @/dist/md/api_url.md-->v1/sendinvoice`
 ::: info NOTE:

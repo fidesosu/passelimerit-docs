@@ -1,6 +1,6 @@
 # Add Item groups
 
-## EndPoints
+## Endpoints
 
 <!--@include: @/dist/md/api_url.md-->v2/senditemgroups`
 

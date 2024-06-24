@@ -3,8 +3,12 @@ export const sidebarData = [
     collapsed: true,
     items: [
       {
-        text: 'Introduction',
-        link: '/parts/introduction/',
+        text: 'Information',
+        link: '/parts/information/',
+      },
+      {
+        text: 'Quickstart',
+        link: '/parts/quickstart/',
       },
       {
         text: 'Endpoints',
