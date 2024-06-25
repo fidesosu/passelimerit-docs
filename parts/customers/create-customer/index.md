@@ -35,16 +35,16 @@
 |Field|Type|Comment|Required|
 |---------|----|-------|--------|
 |Id|Guid|||
-|Name|Str 150|The customer name must be unique.|Required[`?`](## "Required when a new customer is added.")|
+|Name|Str 150|The customer name must be unique.|Required, when a new customer is added.|
 |RegNo|Str 30|||
-|NotTDCustomer|Bool|EE True for physical persons and foreign companies. <br><br>PL True for physical persons. Allowed "true" or "false" (lowercase).|Required[`?`](## "Required when a new customer is added.")|
+|NotTDCustomer|Bool|EE True for physical persons and foreign companies. <br><br>PL True for physical persons. Allowed "true" or "false" (lowercase).|Required, when a new customer is added.|
 |VatRegNo|Str 30|||
 |CurrencyCode|Str 30|||
 |PaymentDeadLine|Int|If missing then taken from default settings.||
 |OverDueCharge|Decimal 5.2|If missing then taken from default settings.||
 |RefNoBase|Str 36|||
 |Address|Str 100|||
-|CountryCode|Str 2||Required[`?`](## "Required when a new customer is added.")|
+|CountryCode|Str 2||Required, when a new customer is added.|
 |County|Str 100|||
 |City|Str 30|||
 |PostalCode|Str 15|||

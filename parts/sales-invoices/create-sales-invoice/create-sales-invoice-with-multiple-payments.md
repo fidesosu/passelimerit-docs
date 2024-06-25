@@ -271,7 +271,7 @@ Every invoice has its rows. Row has its quantity and price, it also has its gene
 |DepartmentCode|Str 20|If used then must be found in the company database.||
 |GLAccountCode|Str 10|If used, must be found in the company database.||
 |Dimensions|Array of DimensionsObjects|||
-|ItemCostAmount|Decimal 18.2||Required[?](## "Required for credit invoices when crediting stock items.")|
+|ItemCostAmount|Decimal 18.2||Required for credit invoices when crediting stock items.|
 |VatDate|Date Str|YYYYMMDD type date. In some countries where you have to specify VatDate.||
 |SalesAccCode|Str 10|If included GLAccountCode then the SalesAccCode not used||
 |PurchaseAccCode|Str 10|||

@@ -26,7 +26,7 @@
 |OverDueCharge|Decimal 5.2|If missing then taken from default settings.||
 |RefNoBase|Str36|||
 |Address|Str 100|||
-|CountryCode|Str 2|Required when adding|Required|
+|CountryCode|Str 2||Required, when adding a new vendor|
 |County|Str 100|||
 |City|Str 30|||
 |PostalCode|Str 15|||

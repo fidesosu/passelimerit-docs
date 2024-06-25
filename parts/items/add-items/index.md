@@ -30,8 +30,8 @@
 |Code|Str 20||Required|
 |EANCode|Str|||
 |Description|Str 100||Required|
-|UOMName|Str 64|Required for stock item|Required?|
-|DefLocationCode|Str 20|Required, if multiple stocks in use.|Required?|
+|UOMName|Str 64||Required, if the items is a stock item|
+|DefLocationCode|Str 20||Required, if multiple stocks are in use.|
 |GTUCode|Int|For Usage:1 (sales),  Poland only, values: 1...13||
 |DescriptionEN|Str 100|||
 |DescriptionRU|Str 100|||

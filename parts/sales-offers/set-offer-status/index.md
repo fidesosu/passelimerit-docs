@@ -17,7 +17,7 @@
 |-----|----|-------|--------|
 |Id|Guid||Required|
 |NewStatus|Int|1 unsent, 2 sent, 3 confirmed, 4 rejected, 5 commented, 7 canceled|Required|
-|Comment|Str|Required if NewStatus=5|Required[?](## "Required if NewStatus = 5")|
+|Comment|Str|Required if NewStatus=5|Required, if `NewStatus` = `5`|
 :::
 
 ## Successful Result

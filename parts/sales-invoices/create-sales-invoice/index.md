@@ -138,7 +138,7 @@ V2 should be used when willow dimensions ase used.
 |Id|Guid|If filled and customer is found in the database then following fields are not important. If not found, the customer is added using the following fields.||
 |Name|Str 150|Required when customer is added||
 |RegNo|Str 30|||
-|NotTDCustomer|Bool|- EE True for physical persons and foreign companies. <br><br> - PL True for physical persons. Allowed "true" or "false" (lowercase).|Required[?](## "Required when adding a new customer")|
+|NotTDCustomer|Bool|- EE True for physical persons and foreign companies. <br><br> - PL True for physical persons. Allowed "true" or "false" (lowercase).|Required, when adding a new customer|
 |VatRegNo|Str 30|||
 |CurrencyCode|Str 30|||
 |PaymentDeadLine|Int|If missing then taken from default settings.||
@@ -147,7 +147,7 @@ V2 should be used when willow dimensions ase used.
 |City|Str 30|||
 |County|Str 100|||
 |PostalCode|Str 15|||
-|CountryCode|Str 2||Required[?](## "Required when adding a new customer")|
+|CountryCode|Str 2||Required, when adding a new customer|
 |PhoneNo|Str 50|||
 |PhoneNo2|Str 50|||
 |HomePage|Str 80|||
@@ -664,16 +664,16 @@ API always counts it as well to assure you have correct calculation.
 |Field|Type|Comment|Required|
 |-----|----|-------|--------|
 |Id|Guid|If filled and payer (customer) is found in the database then following fields are not important. If not found, the payer is added using the following fields.||
-|Name|Str 150||Required[?](## "Required when adding a new payer")|
+|Name|Str 150||Required, when adding a new payer|
 |RegNo|Str 30|||
-|NotTDCustomer|Bool|True for physical persons and foreign companies. Allowed "true" or "false" (lowercase).|Required[?](## "Required when adding a new payer")|
+|NotTDCustomer|Bool|True for physical persons and foreign companies. Allowed "true" or "false" (lowercase).|Required, when adding a new payer|
 |VatRegNo|Str 30|||
 |CurrencyCode|Str 30|||
 |PaymentDeadLine|Int|If missing then taken from default settings.||
 |OverDueCharge|Decimal 5.2|If missing then taken from default settings.||
 |RefNoBase|Str 36|||
 |Address|Str 100|||
-|CountryCode|Str 2||Required[?](## "Required when adding a new payer")|
+|CountryCode|Str 2||Required, when adding a new payer|
 |County|Str 100|||
 |City|Str 30|||
 |PostalCode|Str 15|||
