@@ -143,3 +143,13 @@
   font-variation-settings:
     "slnt" 0 !important;
 }
+
+/* ----------- Authentication Images ------------ */
+
+:root.dark [src$="#light-mode-only"] {
+  display: none;
+}
+
+:root:not(.dark) [src$="#dark-mode-only"] {
+  display: none;
+}

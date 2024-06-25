@@ -2,13 +2,14 @@
 ---
 For your company, you'll be given a unique Api ID and Api Key. The admin user can  generate and reset API ID and Key on the [Settings](https://app.passelimerit.fi/settings) >> API Settings.
 
-![An image](../../dist/images/api-key-create-dark.png)
+![An image](../../dist/images/api-key-create-dark.png#dark-mode-only)
+![An image](../../dist/images/api-key-create-light.png#light-mode-only)
 
-There you just input the comment for the key and click "Create", The comment can be anything you like, it's just for your reference.
+There you just input the comment for the key and click "Create", The comment can be anything you like, it's just so you see what the key is used for.
 
-![An image](../../dist/images/api-keys-list-1-dark.png)
+![An image](../../dist/images/api-keys-list-dark.png#dark-mode-only)
+![An image](../../dist/images/api-keys-list-light.png#light-mode-only)
 
->The images are slightly altered to make them fit the page better. The actual UI might look slightly different, but the functionality is the same.
 ---
 >[!IMPORTANT]
 >_**Keep your Api ID and Api Key secret**_. They should be guarded just as you would your regular account password. If you feel your ID and Key has been compromised, you can reset it by deleting and re creating a >new ID and Key.
