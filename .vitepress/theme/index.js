@@ -61,7 +61,7 @@ export default {
               const endIndex = startIndex + firstMatch.length;
 
               // Wrap the matched text in a span with the style applied
-              const styledText = `<span style="font-weight: bold; color: #bbb;">${firstMatch}</span>`;
+              const styledText = `<span class="sidebarNumbers">${firstMatch}</span>`;
               const newTextContent = textContent.substring(0, startIndex) + styledText + textContent.substring(endIndex);
 
               // Set the modified text content back to the element
