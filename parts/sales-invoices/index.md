@@ -2,13 +2,13 @@
 ---
 :::info You can:
 ---
-  - get list of invoices
+  - [get list of invoices](./get-list-of-invoices/)
 ---
-  - get detailed view of one invoice
+  - [get detailed view of one invoice](./get-invoice-details/)
 ---
-  - create invoice
+  - [create sales invoice](./create-sales-invoice/) or<br> [create credit invoice](./create-credit-invoice/)
 ---
-  - delete invoice
+  - [delete invoice](./delete-invoice/)
 ---
   - get PDF of invoice
 ---
